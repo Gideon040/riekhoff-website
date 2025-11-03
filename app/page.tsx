@@ -184,7 +184,7 @@ export default function Homepage() {
         <section className="relative flex items-center bg-dark overflow-hidden" style={{minHeight: '85vh'}}>
           <div className="absolute inset-0">
             <img 
-              src="https://www.plechelmus-parochie.nl/wp-content/uploads/2024/07/1000_pagina_plechelmus_basiliek_2_2024.jpg"
+              src="team-image1.jpg"
               alt="Riekhoff Accountants Oldenzaal"
               className="w-full h-full object-cover opacity-60 object-center"
             />
@@ -269,7 +269,7 @@ export default function Homepage() {
                 Professionele accountancy, fiscaal advies en financiële dienstverlening voor <span className="text-accent-yellow">MKB ondernemers</span>
               </p>
               
-              <a href="#contact" className="inline-flex items-center gap-2 text-gray-600 text-base font-semibold hover:text-accent-yellow transition-colors group">
+              <a href="/contact" className="inline-flex items-center gap-2 text-gray-600 text-base font-semibold hover:text-accent-yellow transition-colors group">
                 Neem contact op en zie wat wij voor jou kunnen betekenen
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
@@ -327,7 +327,7 @@ export default function Homepage() {
                   </p>
                 </div>
                 <div>
-                  <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80" alt="Riekhoff kantoor" className="rounded-lg shadow-xl" />
+                  <img src="waarom-kiezen-riekhoff.jpg" alt="Riekhoff kantoor" className="rounded-lg shadow-xl" />
                 </div>
               </div>
 
@@ -358,7 +358,7 @@ export default function Homepage() {
         {/* OVER ONS */}
         <section className="relative py-20 md:py-24 bg-dark overflow-hidden">
           <div className="absolute inset-0">
-            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80" alt="" className="w-full h-full object-cover opacity-20" />
+            <img src="kantoor-werk-riekhoff.jpg" alt="Het accountantskantoor van Riekhoff" className="w-full h-full object-cover opacity-20" />
           </div>
 
           <div className="container mx-auto px-6 relative z-10">
@@ -520,7 +520,7 @@ export default function Homepage() {
                 </div>
                 <div>
                   <img 
-                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                    src="team-image1.jpg" 
                     alt="Riekhoff team" 
                     className="rounded-lg shadow-xl w-full"
                   />

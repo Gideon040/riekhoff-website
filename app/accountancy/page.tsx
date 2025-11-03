@@ -237,7 +237,7 @@ export default function AccountancyPage() {
           {/* Background Image */}
           <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
             <img
-              src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&h=800&fit=crop"
+              src="/riekhoff-werk-schermen.jpg"
               alt="Accountancy Riekhoff Oldenzaal"
               className="w-full h-full object-cover object-center"
             />
@@ -328,7 +328,7 @@ export default function AccountancyPage() {
 
                 <div className="relative">
                   <img 
-                    src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=800&q=80"
+                    src="/riekhoff-klantgesprek.jpg"
                     alt="Accountancy diensten Oldenzaal Riekhoff"
                     className="rounded-2xl shadow-2xl"
                   />
@@ -529,7 +529,7 @@ export default function AccountancyPage() {
         <section id="contact" className="py-20 lg:py-24 bg-dark relative overflow-hidden">
           <div className="absolute inset-0 opacity-10">
             <img 
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80" 
+              src="/riekhoff-samenwerken.jpg" 
               alt="" 
               className="w-full h-full object-cover"
             />

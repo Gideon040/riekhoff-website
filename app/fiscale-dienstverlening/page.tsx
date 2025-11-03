@@ -323,7 +323,7 @@ export default function FiscaleDienstverleningPage() {
           {/* Background Image */}
           <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
             <img
-              src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&h=800&fit=crop"
+              src="kantoor_skyline.jpg"
               alt="Belastingadviseur Riekhoff Oldenzaal"
               className="w-full h-full object-cover object-center"
             />
@@ -353,7 +353,7 @@ export default function FiscaleDienstverleningPage() {
 
                 {/* Main Heading */}
                 <h1 className="text-white text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                  Register Belastingadviseur in Oldenzaal
+                  Belastingadviseur in Oldenzaal
                 </h1>
 
                 {/* CTA Buttons */}
@@ -396,11 +396,7 @@ export default function FiscaleDienstverleningPage() {
                     om van alle wijzigingen op de hoogte te blijven. Riekhoff helpt je met fiscaal advies op maat, 
                     zodat je geen kansen misloopt en geen boetes riskeert.
                   </p>
-                  <p className="text-gray-600 leading-relaxed mb-6">
-                    Bas Riekhoff is ingeschreven in het Register Belastingadviseurs (RB) en begint elke werkdag met het 
-                    bestuderen van nieuwe jurisprudentie en wetsvoorstellen. Hierdoor kunnen we ondernemers in Oldenzaal 
-                    altijd voorzien van actueel fiscaal advies en proactieve planning.
-                  </p>
+
 
                   <div className="grid sm:grid-cols-2 gap-3">
                     {voordelen.map((voordeel, i) => (
@@ -428,7 +424,7 @@ export default function FiscaleDienstverleningPage() {
 
                 <div className="relative">
                   <img 
-                    src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?auto=format&fit=crop&w=800&q=80"
+                    src="riekhoff-man-beige-shirt.jpg"
                     alt="Belastingadviseur Oldenzaal Riekhoff"
                     className="rounded-2xl shadow-2xl"
                   />
@@ -738,85 +734,7 @@ export default function FiscaleDienstverleningPage() {
           </div>
         </section>
 
-        {/* GROTE CTA SECTIE */}
-        <section id="contact" className="py-20 lg:py-24 bg-dark relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10">
-            <img 
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80" 
-              alt="" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          <div className="container mx-auto px-6 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-                Belastingadviseur nodig in <span className="text-accent-yellow">Oldenzaal</span>?
-              </h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Neem contact met Riekhoff op voor fiscaal advies op maat. Register Belastingadviseur Bas Riekhoff 
-                helpt ondernemers in Oldenzaal en Twente met belastingaangiftes, fiscale planning en bezwaar & beroep.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                <a 
-                  href="tel:+31630397466"
-                  className="bg-accent-yellow text-dark px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-all hover:scale-105 inline-flex items-center justify-center gap-2"
-                >
-                  <Phone className="w-5 h-5" />
-                  Bel Bas: 06 303 974 66
-                </a>
-                <a 
-                  href="tel:+31541200007"
-                  className="border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2"
-                >
-                  <Phone className="w-5 h-5" />
-                  Kantoor: 0541 200 007
-                </a>
-              </div>
-
-              <div className="grid md:grid-cols-3 gap-6 text-left">
-                <div className="flex items-start gap-3">
-                  <Phone className="w-5 h-5 text-accent-yellow mt-1 flex-shrink-0" />
-                  <div>
-                    <div className="text-white font-semibold mb-1">Direct contact</div>
-                    <a href="tel:+31630397466" className="text-gray-400 hover:text-accent-yellow transition-colors text-sm">
-                      Bas: 06 303 974 66
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <Mail className="w-5 h-5 text-accent-yellow mt-1 flex-shrink-0" />
-                  <div>
-                    <div className="text-white font-semibold mb-1">E-mail</div>
-                    <a href="mailto:bas@riekhoff.nl" className="text-gray-400 hover:text-accent-yellow transition-colors text-sm">
-                      bas@riekhoff.nl
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <Clock className="w-5 h-5 text-accent-yellow mt-1 flex-shrink-0" />
-                  <div>
-                    <div className="text-white font-semibold mb-1">Bereikbaar</div>
-                    <div className="text-gray-400 text-sm">
-                      Ma-Vr: 08:30 - 17:30
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Extra info */}
-              <div className="mt-12 pt-12 border-t border-white/10">
-                <div className="flex items-center justify-center gap-2 text-gray-400 text-sm">
-                  <Shield className="w-4 h-4" />
-                  <span>Riekhoff Accountants & Adviseurs | Bentheimergraven 11, Oldenzaal</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+       
 
       </div>
     </>

@@ -189,7 +189,7 @@ export default function VacaturesPage() {
           
           <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
             <img
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&h=800&fit=crop"
+              src="team-working-vacatures.jpg"
               alt="Team Riekhoff Oldenzaal"
               className="w-full h-full object-cover object-center"
             />

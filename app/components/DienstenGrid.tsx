@@ -24,7 +24,7 @@ const DienstenGrid = () => {
       shortTitle: 'ACCOUNTANCY',
       description: 'Voor een efficiënte bedrijfsvoering is een goed opgezette en overzichtelijke administratie van groot belang. Met een goed bijgehouden administratie heb je snel de beschikking over de cijfers en resultaten van jouw onderneming.',
       features: ['Samenstelopdrachten', 'Jaarrekeningen voor MKB', 'Tussentijdse rapportages', 'Financiële analyse'],
-      image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=450&fit=crop',
+      image: '/kantoor_open_3.jpg',
       link: '/accountancy',
       size: 'large'
     },
@@ -35,7 +35,7 @@ const DienstenGrid = () => {
       shortTitle: 'FISCALE\nDIENSTVERLENING',
       description: 'Ook leert onze ervaring dat de belastingwetgeving er niet makkelijker op wordt. Onze werkdag begint met het kennis nemen van de nieuwe jurisprudentie en wetsvoorstellen.',
       features: ['Belastingaangifte IB/VPB/OB', 'Fiscale planning', 'Bezwaar en beroep', 'BTW-advies'],
-      image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=450&fit=crop',
+      image: '/riekhoff-mannelijke-medewerker-portret.jpg',
       link: '/fiscale-dienstverlening',
       size: 'medium'
     },
@@ -46,7 +46,7 @@ const DienstenGrid = () => {
       shortTitle: 'FINANCIËLE\nDIENSTVERLENING',
       description: 'Wij helpen ondernemers met financieringsadvies, kredietaanvragen en het opstellen van professionele businessplannen.',
       features: ['Financieringsadvies', 'Kredietaanvragen', 'Businessplannen', 'Liquiditeitsprognoses'],
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=450&fit=crop',
+      image: '/riekhoff-vrouw-bureau.jpg',
       link: '/financiele-dienstverlening',
       size: 'medium'
     },
@@ -57,7 +57,7 @@ const DienstenGrid = () => {
       shortTitle: 'SALARIS\nADMINISTRATIE',
       description: 'Complete loonverwerking voor jouw medewerkers. Wij verzorgen de aangifte loonheffingen, jaaropgaven en pensioenadministratie.',
       features: ['Loonverwerking', 'Aangifte loonheffingen', 'Jaaropgaven', 'Pensioenadministratie'],
-      image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=450&fit=crop',
+      image: '/riekhoff-samenwerken.jpg',
       link: '/salarisadministratie',
       size: 'medium'
     },
@@ -68,7 +68,7 @@ const DienstenGrid = () => {
       shortTitle: 'STARTERS\nBEGELEIDING',
       description: 'Begin jouw onderneming op de juiste manier. Wij begeleiden starters met advies over rechtsvormen, KvK inschrijving en administratie opzetten.',
       features: ['Rechtsvormen advies', 'KvK inschrijving', 'Administratie opzetten', 'Eerste jaar begeleiding'],
-      image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=450&fit=crop',
+      image: '/riekhoff-gesprek-senior.jpg',
       link: '/starters-begeleiding',
       size: 'medium'
     },
@@ -79,7 +79,7 @@ const DienstenGrid = () => {
       shortTitle: 'ADVIES\nOP MAAT',
       description: 'Elk bedrijf is uniek en verdient persoonlijk advies. Wij kijken naar jouw specifieke situatie en bieden op maat gemaakte oplossingen.',
       features: ['Persoonlijke analyse', 'Strategisch advies', 'Fiscale optimalisatie', 'Toegewijd aanspreekpunt'],
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=450&fit=crop',
+      image: '/kantoor_open_1.jpg',
       link: '/advies-op-maat',
       size: 'medium'
     },

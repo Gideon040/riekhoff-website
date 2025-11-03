@@ -60,13 +60,13 @@ const RiekhoffHeader = () => {
         },
         {
           label: 'Salarisadministratie',
-          href: '/salarisadministratie',
+          href: '/salaris-administratie',
           icon: Users,
           description: 'Complete loonverwerking'
         },
         {
           label: 'Startersbegeleiding',
-          href: '/startersbegeleiding',
+          href: '/starters-begeleiding',
           icon: Rocket,
           description: 'Begeleiding voor startende ondernemers'
         },

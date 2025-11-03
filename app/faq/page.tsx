@@ -233,7 +233,7 @@ export default function FAQ() {
           <div className="absolute inset-0 bg-dark" />
           <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
             <img
-              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1600&h=800&fit=crop"
+              src="/kantoor_solo.jpg"
               alt="FAQ Riekhoff Accountants"
               className="w-full h-full object-cover object-center"
             />
@@ -380,7 +380,7 @@ export default function FAQ() {
         <section id="contact" className="py-20 lg:py-24 bg-dark relative overflow-hidden">
           <div className="absolute inset-0 opacity-10">
             <img 
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80" 
+              src="/kantoor_open_1.jpg" 
               alt="" 
               className="w-full h-full object-cover"
             />

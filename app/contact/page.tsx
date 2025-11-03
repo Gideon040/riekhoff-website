@@ -187,7 +187,7 @@ export default function ContactPage() {
           {/* Background Image */}
           <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
             <img
-              src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1600&h=800&fit=crop"
+              src="kantoor_open_1.jpg"
               alt="Contact Riekhoff Oldenzaal"
               className="w-full h-full object-cover object-center"
             />
@@ -703,35 +703,7 @@ export default function ContactPage() {
           </div>
         </section>
 
-        {/* CTA BANNER */}
-        <section className="py-16 bg-dark">
-          <div className="container mx-auto px-6">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-                Direct <span className="text-accent-yellow">contact</span>?
-              </h2>
-              <p className="text-gray-300 mb-8 text-lg">
-                Bel ons voor een vrijblijvend gesprek in Oldenzaal
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a 
-                  href="tel:+31541200007"
-                  className="bg-accent-yellow text-dark px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-all inline-flex items-center justify-center gap-2"
-                >
-                  <Phone className="w-5 h-5" />
-                  Bel 0541 200 007
-                </a>
-                <a 
-                  href="mailto:info@riekhoff.nl"
-                  className="border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2"
-                >
-                  <Mail className="w-5 h-5" />
-                  Mail ons
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
+ 
 
       </div>
     </>
