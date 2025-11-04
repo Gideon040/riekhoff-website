@@ -186,7 +186,7 @@ export default function Homepage() {
         <section className="relative flex items-center bg-dark overflow-hidden" style={{minHeight: '85vh'}}>
           <div className="absolute inset-0">
             <img 
-              src="team-image1.jpg"
+              src="https://www.touristserver.nl/img/96840/hanzedagen.JPG"
               alt="Riekhoff Accountants Oldenzaal"
               className="w-full h-full object-cover opacity-60 object-center"
             />
