@@ -9,8 +9,6 @@ import {
   Users,
   Rocket,
   Lightbulb,
-  Building2,
-  Award,
   Phone,
   Mail,
   Star,
@@ -80,26 +78,7 @@ const RiekhoffHeader = () => {
     },
     {
       label: 'Over Ons',
-      dropdown: [
-        {
-          label: 'Het team',
-          href: '/over-ons',
-          icon: Users,
-          description: '12 professionals in Oldenzaal'
-        },
-        {
-          label: 'Waarom Riekhoff',
-          href: '/over-ons#waarom',
-          icon: Award,
-          description: 'Wat ons onderscheidt'
-        },
-        {
-          label: 'Onze visie',
-          href: '/over-ons#visie',
-          icon: Building2,
-          description: 'Klant, kennis, kwaliteit'
-        }
-      ]
+      href: '/over-ons'
     },
     {
       label: 'FAQ',
@@ -210,12 +189,12 @@ const RiekhoffHeader = () => {
       <div className="bg-white shadow-sm">
         <div className="container mx-auto px-6">
           <div className="flex items-center justify-between h-20">
-            {/* Logo */}
+            {/* Logo - Groter gemaakt */}
             <a href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
               <img 
                 src="https://primary.jwwb.nl/public/g/i/p/temp-pocitqvymvpxdtkzrqla/20g4jj/image-16.png?enable-io=true&width=161"
                 alt="Riekhoff Accountants"
-                className="h-8 w-auto"
+                className="h-10 sm:h-12 w-auto"
               />
             </a>
 
@@ -288,11 +267,11 @@ const RiekhoffHeader = () => {
               ))}
             </nav>
 
-            {/* CTA Buttons */}
-            <div className="flex items-center gap-3">
+            {/* CTA Buttons - Desktop only */}
+            <div className="hidden lg:flex items-center gap-3">
               <a
                 href="/vacatures"
-                className="hidden lg:block px-6 py-3 border-2 border-accent-yellow text-dark rounded-lg text-sm font-semibold hover:bg-accent-yellow/10 transition-colors"
+                className="px-6 py-3 border-2 border-accent-yellow text-dark rounded-lg text-sm font-semibold hover:bg-accent-yellow/10 transition-colors"
               >
                 Werken Bij
               </a>
@@ -350,6 +329,15 @@ const RiekhoffHeader = () => {
                 )}
               </div>
             ))}
+            
+            {/* Werken Bij button alleen in mobile menu */}
+            <a
+              href="/vacatures"
+              className="block w-full mt-4 px-6 py-3 border-2 border-accent-yellow text-dark rounded-lg text-sm font-semibold hover:bg-accent-yellow/10 transition-colors text-center"
+              onClick={() => setActiveDropdown(null)}
+            >
+              Werken Bij
+            </a>
           </div>
         </div>
       )}

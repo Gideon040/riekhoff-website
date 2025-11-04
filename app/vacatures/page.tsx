@@ -182,57 +182,45 @@ export default function VacaturesPage() {
       />
 
       <div className="bg-white text-dark">
-        
-        {/* HERO */}
-        <section className="relative w-full overflow-hidden h-96">
-          <div className="absolute inset-0 bg-dark" />
+  
+  {/* SUBTLE HERO */}
+  <section className="relative w-full overflow-hidden h-80">
+    <div className="absolute inset-0 bg-dark" />
+    
+    <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
+      <img
+        src="team-working-vacatures.jpg"
+        alt="Team Riekhoff Oldenzaal"
+        className="w-full h-full object-cover object-center"
+      />
+    </div>
+
+    <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-dark/30 lg:from-dark lg:via-dark/90 lg:to-transparent" />
+
+    <div className="relative z-10 h-full flex items-center">
+      <div className="max-w-[1440px] w-full mx-auto px-6 lg:px-16">
+        <div className="max-w-[500px]">
           
-          <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
-            <img
-              src="team-working-vacatures.jpg"
-              alt="Team Riekhoff Oldenzaal"
-              className="w-full h-full object-cover object-center"
-            />
+          <div className="flex items-center gap-2 text-xs text-gray-400 mb-6">
+            <a href="/" className="hover:text-accent-yellow transition-colors">Home</a>
+            <span>/</span>
+            <span className="text-white">Vacatures</span>
           </div>
 
-          <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-dark/30 lg:from-dark lg:via-dark/90 lg:to-transparent" />
+          <p className="text-accent-yellow uppercase mb-3 text-xs font-semibold tracking-wider">
+            WERKEN BIJ RIEKHOFF
+          </p>
 
-          <div className="relative z-10 h-full flex items-center">
-            <div className="max-w-[1440px] w-full mx-auto px-6 lg:px-16">
-              <div className="max-w-[500px]">
-                
-                <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
-                  <a href="/" className="hover:text-accent-yellow transition-colors">Home</a>
-                  <span>/</span>
-                  <span className="text-white">Vacatures</span>
-                </div>
+          <h1 className="text-white text-2xl lg:text-3xl font-bold leading-snug">
+            Kom ons team versterken in Oldenzaal
+          </h1>
 
-                <p className="text-accent-yellow uppercase mb-4 text-sm font-semibold tracking-wider">
-                  WERKEN BIJ RIEKHOFF
-                </p>
+        </div>
+      </div>
+    </div>
 
-                <h1 className="text-white text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                  Kom ons team versterken in Oldenzaal
-                </h1>
-
-                <p className="text-gray-300 mb-6 text-lg">
-                  Werk bij een modern, groeiend accountantskantoor in Twente waar je echt impact kunt maken
-                </p>
-
-                <a 
-                  href="#vacatures"
-                  className="inline-flex items-center gap-2 bg-accent-yellow text-dark px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all text-sm"
-                >
-                  Bekijk vacatures
-                  <ArrowRight className="w-4 h-4" />
-                </a>
-
-              </div>
-            </div>
-          </div>
-
-          <div className="absolute inset-0 lg:hidden bg-gradient-to-b from-black/30 via-transparent to-black/30" />
-        </section>
+    <div className="absolute inset-0 lg:hidden bg-gradient-to-b from-black/30 via-transparent to-black/30" />
+  </section>
 
     
 

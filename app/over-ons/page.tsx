@@ -190,51 +190,39 @@ export default function OverOns() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <div className="bg-white text-dark">
-        
-        {/* COMPACT HERO - Same as service pages */}
-        <section className="relative w-full overflow-hidden h-96">
-          <div className="absolute inset-0 bg-dark" />
-          <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
-            <img
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&h=800&fit=crop"
-              alt="Riekhoff Accountants kantoor Oldenzaal"
-              className="w-full h-full object-cover object-center"
-            />
+  
+  {/* SUBTLE HERO */}
+  <section className="relative w-full overflow-hidden h-80">
+    <div className="absolute inset-0 bg-dark" />
+    <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
+      <img
+        src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&h=800&fit=crop"
+        alt="Riekhoff Accountants kantoor Oldenzaal"
+        className="w-full h-full object-cover object-center"
+      />
+    </div>
+    <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-dark/30 lg:from-dark lg:via-dark/90 lg:to-transparent" />
+    
+    <div className="relative z-10 h-full flex items-center">
+      <div className="max-w-[1440px] w-full mx-auto px-6 lg:px-16">
+        <div className="max-w-[500px]">
+          <div className="flex items-center gap-2 text-xs text-gray-400 mb-6">
+            <a href="/" className="hover:text-accent-yellow transition-colors">Home</a>
+            <span>/</span>
+            <span className="text-white">Over ons</span>
           </div>
-          <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-dark/30 lg:from-dark lg:via-dark/90 lg:to-transparent" />
           
-          <div className="relative z-10 h-full flex items-center">
-            <div className="max-w-[1440px] w-full mx-auto px-6 lg:px-16">
-              <div className="max-w-[500px]">
-                <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
-                  <a href="/" className="hover:text-accent-yellow transition-colors">Home</a>
-                  <span>/</span>
-                  <span className="text-white">Over ons</span>
-                </div>
-                
-                <p className="text-accent-yellow uppercase mb-4 text-sm font-semibold tracking-wider">
-                  HET TEAM ACHTER UW SUCCES
-                </p>
-                
-                <h1 className="text-white text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                  Modern accountantskantoor in Oldenzaal
-                </h1>
-                
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <a href="#team" className="bg-accent-yellow text-dark px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all inline-flex items-center justify-center gap-2 text-sm">
-                    Ontmoet het team
-                    <ArrowRight className="w-4 h-4" />
-                  </a>
-                  <a href="tel:+31541200007" className="border-2 border-white/30 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2 text-sm">
-                    <Phone className="w-4 h-4" />
-                    0541 200 007
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
+          <p className="text-accent-yellow uppercase mb-3 text-xs font-semibold tracking-wider">
+            HET TEAM ACHTER UW SUCCES
+          </p>
+          
+          <h1 className="text-white text-2xl lg:text-3xl font-bold leading-snug">
+            Modern accountantskantoor in Oldenzaal
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
         {/* INTRO WITH LARGE STATEMENT */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-6">

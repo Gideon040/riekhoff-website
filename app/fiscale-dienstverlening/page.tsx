@@ -314,74 +314,55 @@ export default function FiscaleDienstverleningPage() {
       />
 
       <div className="bg-white text-dark">
-        
-        {/* COMPACT HERO */}
-        <section className="relative w-full overflow-hidden h-96">
-          {/* Background */}
-          <div className="absolute inset-0 bg-dark" />
+  
+  {/* SUBTLE HERO */}
+  <section className="relative w-full overflow-hidden h-80">
+    {/* Background */}
+    <div className="absolute inset-0 bg-dark" />
 
-          {/* Background Image */}
-          <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
-            <img
-              src="kantoor_skyline.jpg"
-              alt="Belastingadviseur Riekhoff Oldenzaal"
-              className="w-full h-full object-cover object-center"
-            />
+    {/* Background Image */}
+    <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
+      <img
+        src="kantoor_skyline.jpg"
+        alt="Belastingadviseur Riekhoff Oldenzaal"
+        className="w-full h-full object-cover object-center"
+      />
+    </div>
+
+    {/* Gradient Overlay */}
+    <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-dark/30 lg:from-dark lg:via-dark/90 lg:to-transparent" />
+
+    {/* Content Container */}
+    <div className="relative z-10 h-full flex items-center">
+      <div className="max-w-[1440px] w-full mx-auto px-6 lg:px-16">
+        <div className="max-w-[500px]">
+          
+          {/* Breadcrumb */}
+          <div className="flex items-center gap-2 text-xs text-gray-400 mb-6">
+            <a href="/" className="hover:text-accent-yellow transition-colors">Home</a>
+            <span>/</span>
+            <a href="/#diensten" className="hover:text-accent-yellow transition-colors">Diensten</a>
+            <span>/</span>
+            <span className="text-white">Fiscale dienstverlening</span>
           </div>
 
-          {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-dark/30 lg:from-dark lg:via-dark/90 lg:to-transparent" />
+          {/* Label */}
+          <p className="text-accent-yellow uppercase mb-3 text-xs font-semibold tracking-wider">
+            BELASTINGADVIES
+          </p>
 
-          {/* Content Container */}
-          <div className="relative z-10 h-full flex items-center">
-            <div className="max-w-[1440px] w-full mx-auto px-6 lg:px-16">
-              <div className="max-w-[500px]">
-                
-                {/* Breadcrumb */}
-                <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
-                  <a href="/" className="hover:text-accent-yellow transition-colors">Home</a>
-                  <span>/</span>
-                  <a href="/#diensten" className="hover:text-accent-yellow transition-colors">Diensten</a>
-                  <span>/</span>
-                  <span className="text-white">Fiscale dienstverlening</span>
-                </div>
+          {/* Main Heading */}
+          <h1 className="text-white text-2xl lg:text-3xl font-bold leading-snug">
+            Belastingadviseur in Oldenzaal
+          </h1>
 
-                {/* Label */}
-                <p className="text-accent-yellow uppercase mb-4 text-sm font-semibold tracking-wider">
-                  BELASTINGADVIES
-                </p>
+        </div>
+      </div>
+    </div>
 
-                {/* Main Heading */}
-                <h1 className="text-white text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                  Belastingadviseur in Oldenzaal
-                </h1>
-
-                {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <a 
-                    href="#contact" 
-                    className="bg-accent-yellow text-dark px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all inline-flex items-center justify-center gap-2 text-sm"
-                  >
-                    Gratis fiscaal gesprek
-                    <ArrowRight className="w-4 h-4" />
-                  </a>
-                  <a 
-                    href="tel:+31630397466" 
-                    className="border-2 border-white/30 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2 text-sm"
-                  >
-                    <Phone className="w-4 h-4" />
-                    06 303 974 66
-                  </a>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-          {/* Mobile: Extra dark overlay */}
-          <div className="absolute inset-0 lg:hidden bg-gradient-to-b from-black/30 via-transparent to-black/30" />
-        </section>
-
+    {/* Mobile: Extra dark overlay */}
+    <div className="absolute inset-0 lg:hidden bg-gradient-to-b from-black/30 via-transparent to-black/30" />
+  </section>
         {/* INTRO */}
         <section className="py-20 lg:py-24 bg-white">
           <div className="container mx-auto px-6">

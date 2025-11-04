@@ -212,53 +212,42 @@ export default function AdviesOpMaat() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
-      <div className="bg-white text-dark">
-        
-        {/* COMPACT HERO */}
-        <section className="relative w-full overflow-hidden h-96">
-          <div className="absolute inset-0 bg-dark" />
-          <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
-            <img
-              src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=1600&h=800&fit=crop"
-              alt="Advies op maat Oldenzaal"
-              className="w-full h-full object-cover object-center"
-            />
+<div className="bg-white text-dark">
+  
+  {/* SUBTLE HERO */}
+  <section className="relative w-full overflow-hidden h-80">
+    <div className="absolute inset-0 bg-dark" />
+    <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
+      <img
+        src="kantoor_duo.jpg"
+        alt="Advies op maat Oldenzaal"
+        className="w-full h-full object-cover object-center"
+      />
+    </div>
+    <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-dark/30 lg:from-dark lg:via-dark/90 lg:to-transparent" />
+    
+    <div className="relative z-10 h-full flex items-center">
+      <div className="max-w-[1440px] w-full mx-auto px-6 lg:px-16">
+        <div className="max-w-[500px]">
+          <div className="flex items-center gap-2 text-xs text-gray-400 mb-6">
+            <a href="/" className="hover:text-accent-yellow transition-colors">Home</a>
+            <span>/</span>
+            <a href="/#diensten" className="hover:text-accent-yellow transition-colors">Diensten</a>
+            <span>/</span>
+            <span className="text-white">Advies op maat</span>
           </div>
-          <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-dark/30 lg:from-dark lg:via-dark/90 lg:to-transparent" />
           
-          <div className="relative z-10 h-full flex items-center">
-            <div className="max-w-[1440px] w-full mx-auto px-6 lg:px-16">
-              <div className="max-w-[500px]">
-                <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
-                  <a href="/" className="hover:text-accent-yellow transition-colors">Home</a>
-                  <span>/</span>
-                  <a href="/#diensten" className="hover:text-accent-yellow transition-colors">Diensten</a>
-                  <span>/</span>
-                  <span className="text-white">Advies op maat</span>
-                </div>
-                
-                <p className="text-accent-yellow uppercase mb-4 text-sm font-semibold tracking-wider">
-                  MAATWERK BEDRIJFSADVIES
-                </p>
-                
-                <h1 className="text-white text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                  Advies op maat voor ondernemers in Oldenzaal
-                </h1>
-                
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <a href="#aanvraag" className="bg-accent-yellow text-dark px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all inline-flex items-center justify-center gap-2 text-sm">
-                    Vraag advies aan
-                    <ArrowRight className="w-4 h-4" />
-                  </a>
-                  <a href="tel:+31541200007" className="border-2 border-white/30 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2 text-sm">
-                    <Phone className="w-4 h-4" />
-                    0541 200 007
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+          <p className="text-accent-yellow uppercase mb-3 text-xs font-semibold tracking-wider">
+            MAATWERK BEDRIJFSADVIES
+          </p>
+          
+          <h1 className="text-white text-2xl lg:text-3xl font-bold leading-snug">
+            Advies op maat voor ondernemers in Oldenzaal
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
 
         {/* INTRO WITH LARGE STATEMENT */}
         <section className="py-20 bg-white">
@@ -316,7 +305,7 @@ export default function AdviesOpMaat() {
                 <div className="lg:col-span-1">
                   <div className="relative">
                     <img 
-                      src="https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&w=400&h=500&q=80"
+                      src="riekhoff-man-portret.jpg"
                       alt="Maatwerk advies Riekhoff Oldenzaal"
                       className="rounded-2xl shadow-xl w-full h-auto"
                     />
@@ -366,7 +355,7 @@ export default function AdviesOpMaat() {
                   <a href="#aanvraag" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] lg:h-[500px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
                     <div className="absolute inset-0">
                       <img
-                        src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop"
+                        src="riekhoff-vrouw-laptop.jpg"
                         alt="Strategisch bedrijfsadvies"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
@@ -406,7 +395,7 @@ export default function AdviesOpMaat() {
                   <a href="#aanvraag" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] lg:h-[500px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
                     <div className="absolute inset-0">
                       <img
-                        src="https://images.unsplash.com/photo-1560472355-536de3962603?w=600&h=500&fit=crop"
+                        src="riekhoff-team-computer.jpg"
                         alt="Bedrijfsovername"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
@@ -446,7 +435,7 @@ export default function AdviesOpMaat() {
                   <a href="#aanvraag" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
                     <div className="absolute inset-0">
                       <img
-                        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
+                        src="riekhoff-man-blauw-overhemd-1.jpg"
                         alt="Risicomanagement"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
@@ -485,7 +474,7 @@ export default function AdviesOpMaat() {
                   <a href="#aanvraag" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
                     <div className="absolute inset-0">
                       <img
-                        src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=600&h=400&fit=crop"
+                        src="kantoor_open_3.jpg"
                         alt="Vermogensplanning"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
@@ -936,7 +925,7 @@ export default function AdviesOpMaat() {
         <section className="py-24 bg-dark text-white relative overflow-hidden">
           <div className="absolute inset-0 opacity-10">
             <img 
-              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=2000&h=800&fit=crop"
+              src="skyline_detail.jpg"
               alt="Oldenzaal kantoren"
               className="w-full h-full object-cover"
             />
@@ -1021,46 +1010,7 @@ export default function AdviesOpMaat() {
           </div>
         </section>
 
-        {/* CTA */}
-        <section id="contact" className="py-20 lg:py-24 bg-dark relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10">
-            <img 
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80" 
-              alt="" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          <div className="container mx-auto px-6 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-                Heeft u advies nodig voor uw bedrijf in <span className="text-accent-yellow">Oldenzaal</span>?
-              </h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Neem vandaag nog contact op met Riekhoff voor een vrijblijvend gesprek. 
-                We denken graag mee over de beste oplossing voor uw situatie.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                <a href="tel:+31541200007" className="bg-accent-yellow text-dark px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-all hover:scale-105 inline-flex items-center justify-center gap-2">
-                  <Phone className="w-5 h-5" />
-                  Bel direct: 0541 200 007
-                </a>
-                <a href="mailto:info@riekhoff.nl" className="border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2">
-                  <Mail className="w-5 h-5" />
-                  Mail: info@riekhoff.nl
-                </a>
-              </div>
-
-              <div className="pt-12 border-t border-white/10">
-                <div className="flex items-center justify-center gap-2 text-gray-400 text-sm">
-                  <Building2 className="w-4 h-4" />
-                  <span>Riekhoff Accountants & Adviseurs | Bentheimergraven 11, 7577 DA Oldenzaal | Advies voor heel Twente</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+    
 
       </div>
     </>

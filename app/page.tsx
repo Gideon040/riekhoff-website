@@ -10,6 +10,7 @@ import {
   Phone,
   Quote,
   Star,
+  Check,
   MapPin,
   Clock,
   Zap,
@@ -32,11 +33,12 @@ export default function Homepage() {
   ];
 
   const partners = [
-    { name: 'NBA', alt: 'Nederlandse Beroepsorganisatie van Accountants', logo: 'https://via.placeholder.com/180x80/0F0F0F/F9C932?text=NBA' },
-    { name: 'Register Belastingadviseurs', alt: 'Register Belastingadviseurs', logo: 'https://via.placeholder.com/180x80/0F0F0F/F9C932?text=RB' },
-    { name: 'Twinfield', alt: 'Twinfield Partner', logo: 'https://via.placeholder.com/180x80/0F0F0F/F9C932?text=Twinfield' },
-    { name: 'AFAS', alt: 'AFAS Software', logo: 'https://via.placeholder.com/180x80/0F0F0F/F9C932?text=AFAS' },
-    { name: 'Exact Online', alt: 'Exact Online', logo: 'https://via.placeholder.com/180x80/0F0F0F/F9C932?text=Exact' },
+    { name: 'NBA', alt: 'Nederlandse Beroepsorganisatie van Accountants', logo: 'https://mnadviseurs.nl/application/files/4115/4703/8638/logo_nba.png' },
+    { name: 'Register Belastingadviseurs', alt: 'Register Belastingadviseurs', logo: 'https://www.oafinance.nl/wp-content/uploads/2020/07/Register-Belastingadviseurs-Logo.webp' },
+    { name: 'Twinfield', alt: 'Twinfield Partner', logo: 'https://ac.nl/uploads/api/Twinfield-logo.png' },
+    { name: 'Snelstart', alt: 'AFAS Software', logo: 'https://vdstapadministratie.nl/wp-content/uploads/2017/11/Logo-Snelstart.png' },
+    { name: 'Exact Online', alt: 'Exact Online', logo: 'https://i0.wp.com/www.studyspace.nl/wp-content/uploads/2021/01/Logo-Exact-Online-e1578486135684.png?ssl=1' },
+
   ];
 
   // Schema.org Structured Data
@@ -179,7 +181,7 @@ export default function Homepage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData.breadcrumb) }}
       />
 
-      <div className="bg-white text-dark">
+<div className="bg-white text-dark">
         {/* HERO */}
         <section className="relative flex items-center bg-dark overflow-hidden" style={{minHeight: '85vh'}}>
           <div className="absolute inset-0">
@@ -205,8 +207,8 @@ export default function Homepage() {
                 Bij <strong className="text-white">Riekhoff accountants en adviseurs</strong> weten we als geen ander dat ondernemen een uitdaging is. Wij willen jou graag helpen! Want wanneer het gaat om jouw financiën is het belangrijk om met betrouwbare accountants en adviseurs te werken.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-8 sm:mb-12">
-                <a href="#contact" className="bg-accent-yellow text-dark px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base font-semibold hover:bg-yellow-400 transition-all hover:scale-105 inline-flex items-center justify-center gap-2 group">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8">
+                <a href="/contact" className="bg-accent-yellow text-dark px-6 sm:px-8 py-3 sm:py-4 rounded-lg text-base font-semibold hover:bg-yellow-400 transition-all hover:scale-105 inline-flex items-center justify-center gap-2 group">
                   <Mail className="w-5 h-5" />
                   Neem contact op
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -218,16 +220,19 @@ export default function Homepage() {
                 </a>
               </div>
 
-              <div className="hidden md:grid md:grid-cols-4 gap-6">
+              {/* Compacte USPs met vinkjes */}
+              <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
                 {[
-                  { value: '2020', label: 'Opgericht' },
-                  { value: '100+', label: 'Klanten' },
-                  { value: '12', label: 'Professionals' },
-                  { value: '24u', label: 'Responstijd' },
-                ].map((stat, i) => (
-                  <div key={i} className="bg-dark-secondary/50 backdrop-blur-sm border border-white/10 rounded-lg p-4 hover:border-accent-yellow/30 transition-all">
-                    <div className="text-3xl font-bold text-accent-yellow mb-1">{stat.value}</div>
-                    <div className="text-xs text-gray-400 uppercase tracking-wider">{stat.label}</div>
+                  { text: 'Opgericht in 2020' },
+                  { text: '100+ tevreden klanten' },
+                  { text: '12 professionals' },
+                  { text: '24u responstijd' },
+                ].map((item, i) => (
+                  <div key={i} className="flex items-center gap-2 text-gray-300">
+                    <div className="flex-shrink-0 w-5 h-5 rounded-full bg-accent-yellow/20 border border-accent-yellow flex items-center justify-center">
+                      <Check className="w-3 h-3 text-accent-yellow" />
+                    </div>
+                    <span className="text-sm font-medium">{item.text}</span>
                   </div>
                 ))}
               </div>
@@ -513,7 +518,7 @@ export default function Homepage() {
                     Wij geloven in persoonlijk contact en korte lijnen. Geen wisselende adviseurs, maar één team dat jouw situatie kent en met je meedenkt.
                   </p>
                   
-                  <a href="#contact" className="inline-flex items-center gap-2 text-dark text-base font-semibold hover:text-accent-yellow transition-colors">
+                  <a href="/contact" className="inline-flex items-center gap-2 text-dark text-base font-semibold hover:text-accent-yellow transition-colors">
                     Maak kennis met ons
                     <ArrowRight className="w-5 h-5" />
                   </a>

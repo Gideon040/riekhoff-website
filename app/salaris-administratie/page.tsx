@@ -185,7 +185,7 @@ export default function Salarisadministratie() {
           <div className="absolute inset-0 bg-dark" />
           <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
             <img
-              src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1600&h=800&fit=crop"
+              src="kantoor_breed.jpg"
               alt="Salarisadministratie Oldenzaal"
               className="w-full h-full object-cover object-center"
             />
@@ -280,7 +280,7 @@ export default function Salarisadministratie() {
                 <div className="lg:col-span-1">
                   <div className="relative">
                     <img 
-                      src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&h=500&q=80"
+                      src="oranje_shirt_1.jpg"
                       alt="Salarisadministratie Oldenzaal Riekhoff"
                       className="rounded-2xl shadow-xl w-full h-auto"
                     />
@@ -328,7 +328,7 @@ export default function Salarisadministratie() {
                   <a href="#contact" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] lg:h-[500px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
                     <div className="absolute inset-0">
                       <img
-                        src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=500&fit=crop"
+                        src="riekhoff-man-lachend.jpg"
                         alt="Loonverwerking Oldenzaal"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
@@ -369,7 +369,7 @@ export default function Salarisadministratie() {
                   <a href="#contact" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] lg:h-[500px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
                     <div className="absolute inset-0">
                       <img
-                        src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&h=500&fit=crop"
+                        src="riekhoff-werk-schermen.jpg"
                         alt="Aangifte loonheffingen"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
@@ -409,7 +409,7 @@ export default function Salarisadministratie() {
                   <a href="#contact" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
                     <div className="absolute inset-0">
                       <img
-                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop"
+                        src="kantoor_skyline.jpg"
                         alt="Jaaropgaven"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
@@ -449,7 +449,7 @@ export default function Salarisadministratie() {
                   <a href="#contact" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
                     <div className="absolute inset-0">
                       <img
-                        src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop"
+                        src="koffie_gesprek.jpg"
                         alt="Pensioenadministratie"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
@@ -764,7 +764,7 @@ export default function Salarisadministratie() {
         <section className="py-24 bg-dark text-white relative overflow-hidden">
           <div className="absolute inset-0 opacity-10">
             <img 
-              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=2000&h=800&fit=crop"
+              src="kantoor_team.jpg"
               alt="Oldenzaal skyline"
               className="w-full h-full object-cover"
             />
@@ -850,46 +850,7 @@ export default function Salarisadministratie() {
           </div>
         </section>
 
-        {/* CTA */}
-        <section id="contact" className="py-20 lg:py-24 bg-dark relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10">
-            <img 
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80" 
-              alt="" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          <div className="container mx-auto px-6 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-                Salarisadministratie uitbesteden in <span className="text-accent-yellow">Oldenzaal</span>?
-              </h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Neem contact op met Riekhoff voor een vrijblijvende offerte. We ontzorgen MKB-bedrijven 
-                in heel Twente op het gebied van loonadministratie.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                <a href="tel:+31541200007" className="bg-accent-yellow text-dark px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-all hover:scale-105 inline-flex items-center justify-center gap-2">
-                  <Phone className="w-5 h-5" />
-                  Bel direct: 0541 200 007
-                </a>
-                <a href="mailto:info@riekhoff.nl" className="border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2">
-                  <Mail className="w-5 h-5" />
-                  Mail: info@riekhoff.nl
-                </a>
-              </div>
-
-              <div className="pt-12 border-t border-white/10">
-                <div className="flex items-center justify-center gap-2 text-gray-400 text-sm">
-                  <Building2 className="w-4 h-4" />
-                  <span>Riekhoff Accountants & Adviseurs | Bentheimergraven 11, 7577 DA Oldenzaal | Werkgebied: Oldenzaal, Losser, Denekamp, Enschede, Hengelo en heel Twente</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
       </div>
     </>

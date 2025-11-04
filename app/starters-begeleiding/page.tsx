@@ -215,7 +215,7 @@ export default function Startersbegeleiding() {
           <div className="absolute inset-0 bg-dark" />
           <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
             <img
-              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1600&h=800&fit=crop"
+              src="kantoor_open_2.jpg"
               alt="Startersbegeleiding Oldenzaal"
               className="w-full h-full object-cover object-center"
             />
@@ -310,7 +310,7 @@ export default function Startersbegeleiding() {
                 <div className="lg:col-span-1">
                   <div className="relative">
                     <img 
-                      src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=400&h=500&q=80"
+                      src="kantoor_open_2.jpg"
                       alt="Starter Oldenzaal Riekhoff"
                       className="rounded-2xl shadow-xl w-full h-auto"
                     />
@@ -360,7 +360,7 @@ export default function Startersbegeleiding() {
                   <a href="#contact" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] lg:h-[500px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
                     <div className="absolute inset-0">
                       <img
-                        src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=500&fit=crop"
+                        src="riekhoff-man-closeup.jpg"
                         alt="Rechtsvorm advies"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
@@ -400,7 +400,7 @@ export default function Startersbegeleiding() {
                   <a href="#contact" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] lg:h-[500px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
                     <div className="absolute inset-0">
                       <img
-                        src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&h=500&fit=crop"
+                        src="riekhoff-man-meeting.jpg"
                         alt="Ondernemingsplan"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
@@ -440,7 +440,7 @@ export default function Startersbegeleiding() {
                   <a href="#contact" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
                     <div className="absolute inset-0">
                       <img
-                        src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop"
+                        src="riekhoff-vrouw-bureau.jpg"
                         alt="Administratie opzetten"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
@@ -479,7 +479,7 @@ export default function Startersbegeleiding() {
                   <a href="#contact" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
                     <div className="absolute inset-0">
                       <img
-                        src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600&h=400&fit=crop"
+                        src="vergader_deur.jpg"
                         alt="Eerste jaar begeleiding"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
@@ -862,7 +862,7 @@ export default function Startersbegeleiding() {
         <section className="py-24 bg-dark text-white relative overflow-hidden">
           <div className="absolute inset-0 opacity-10">
             <img 
-              src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=2000&h=800&fit=crop"
+              src="skyline_detail.jpg"
               alt="Oldenzaal centrum"
               className="w-full h-full object-cover"
             />
@@ -948,46 +948,7 @@ export default function Startersbegeleiding() {
           </div>
         </section>
 
-        {/* CTA */}
-        <section id="contact" className="py-20 lg:py-24 bg-dark relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10">
-            <img 
-              src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=2000&q=80" 
-              alt="" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          <div className="container mx-auto px-6 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-                Start uw onderneming in <span className="text-accent-yellow">Oldenzaal</span>
-              </h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Maak een afspraak voor een gratis startgesprek bij Riekhoff Accountants. 
-                We helpen starters in heel Twente met persoonlijke begeleiding.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                <a href="tel:+31541200007" className="bg-accent-yellow text-dark px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-all hover:scale-105 inline-flex items-center justify-center gap-2">
-                  <Phone className="w-5 h-5" />
-                  Bel direct: 0541 200 007
-                </a>
-                <a href="mailto:info@riekhoff.nl" className="border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2">
-                  <Mail className="w-5 h-5" />
-                  Mail: info@riekhoff.nl
-                </a>
-              </div>
-
-              <div className="pt-12 border-t border-white/10">
-                <div className="flex items-center justify-center gap-2 text-gray-400 text-sm">
-                  <Building2 className="w-4 h-4" />
-                  <span>Riekhoff Accountants & Adviseurs | Bentheimergraven 11, 7577 DA Oldenzaal | Voor starters in heel Twente</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+       
 
       </div>
     </>
