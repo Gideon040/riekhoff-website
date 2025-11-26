@@ -24,88 +24,126 @@ export default function FAQ() {
     {
       titel: 'Algemeen',
       icon: HelpCircle,
-      beschrijving: 'Veelgestelde vragen over Riekhoff en onze dienstverlening',
-      kleur: 'from-dark to-dark-secondary',
       vragen: [
         {
+          vraag: 'Wat kost Riekhoff accountants en adviseurs?',
+          antwoord: 'Onze tarieven zijn transparant en afhankelijk van de specifieke dienstverlening. Wij werken indien mogelijk met vaste prijzen waardoor u niet voor verrassingen komt te staan. Onze lage overheadkosten en vergaande automatisering zorgt ervoor dat wij efficiënt kunnen werken. Neem contact op voor een vrijblijvende offerte op maat.'
+        },
+        {
           vraag: 'Waar is Riekhoff Accountants gevestigd?',
-          antwoord: 'Riekhoff Accountants is gevestigd aan de Bentheimergraven 11, 7577 DA in Oldenzaal. Ons moderne kantoor ligt centraal in Twente en is goed bereikbaar vanuit Losser, Denekamp, Enschede, Hengelo en Almelo. We hebben ruime parkeergelegenheid en zijn ook per openbaar vervoer goed te bereiken.'
+          antwoord: 'Riekhoff Accountants en Adviseurs is gevestigd aan de Bentheimergraven 11, 7577 DA in Oldenzaal. Ons moderne kantoor ligt centraal in Twente en is goed bereikbaar vanuit Losser, Denekamp, Enschede, Hengelo en Almelo. We hebben ruime parkeergelegenheid voor onze klanten.'
         },
         {
           vraag: 'Wat zijn de openingstijden van Riekhoff?',
-          antwoord: 'Ons kantoor in Oldenzaal is geopend van maandag tot en met vrijdag van 8:30 tot 17:30 uur. Voor urgente zaken zijn we ook buiten kantooruren bereikbaar. Afspraken kunnen flexibel worden ingepland, ook in de avonduren indien gewenst. In het weekend zijn we telefonisch bereikbaar voor noodgevallen.'
+          antwoord: 'Ons kantoor in Oldenzaal is geopend van maandag tot en met vrijdag van 08:30 tot 17:30 uur. Afspraken in de avonden en weekenden zijn ons niet vreemd. We streven naar een responstijd van 24 uur op al uw vragen.'
         },
         {
-          vraag: 'Voor welke branches werkt Riekhoff?',
-          antwoord: 'Riekhoff werkt voor alle branches in het MKB. We hebben specifieke expertise in horeca, detailhandel, bouw, zorg, zakelijke dienstverlening, transport, productie en techniek. Door onze brede ervaring in Twente kennen we de specifieke uitdagingen per sector en kunnen we gerichte adviezen geven.'
+          vraag: 'Welke bedrijven worden door Riekhoff ontzorgt?',
+          antwoord: 'Wij zijn gespecialiseerd in het midden- en kleinbedrijf (MKB). Onze klanten zitten door heel Nederland maar voornamelijk in de regio Twente. Wij bieden dienstverlening aan vrijwel alle sectoren, van ZZP\'ers tot aan ondernemingen met 100 medewerkers.'
         },
         {
           vraag: 'Hoe groot is het team van Riekhoff?',
-          antwoord: 'Ons team bestaat uit 12 professionals, waaronder 3 eigenaren. We hebben accountants, belastingadviseurs en assistenten die samenwerken om ondernemers in Oldenzaal en Twente optimaal te bedienen. Door onze omvang kunnen we persoonlijke aandacht combineren met professionele dienstverlening.'
+          antwoord: 'Ons team bestaat uit 15 professionals die allemaal een eigen expertise hebben in de accountancy, fiscaliteit en advisering. Door onze visie - niet te groot, niet te klein – stap je binnen bij een betrokken groep medewerkers. We geloven in persoonlijk contact en korte lijnen.'
+        },
+        {
+          vraag: 'Hoe snel reageren jullie op vragen?',
+          antwoord: 'Door de inrichting van ons bedrijf behandelen wij verzoeken snel en adequaat. Afspraken in de avonden en weekenden zijn ons niet vreemd. Wij streven naar een responstijd van 24 uur. Bij ons hoeft u niet dagen of weken te wachten op respons!'
+        },
+        {
+          vraag: 'Waarbij is Riekhoff aangesloten?',
+          antwoord: 'Wij zijn aangesloten bij de NBA (Nederlandse Beroepsorganisatie van accountants), de RB (register Belastingadviseurs) en de Novak (serviceorganisatie accountantskantoren). Dit garandeert kwaliteit en onafhankelijkheid.'
         }
       ]
     },
     {
       titel: 'Accountancy',
       icon: Calculator,
-      beschrijving: 'Vragen over jaarrekeningen, administratie en boekhouding',
-      kleur: 'from-gray-50 to-white',
       vragen: [
         {
-          vraag: 'Wat kost het samenstellen van een jaarrekening?',
-          antwoord: 'Het samenstellen van een jaarrekening kost bij Riekhoff vanaf €1.250,- voor een eenmanszaak en vanaf €1.750,- voor een BV. De exacte prijs hangt af van de complexiteit van uw administratie en de omvang van uw bedrijf. Voor ondernemers in Oldenzaal maken we graag een offerte op maat.'
+          vraag: 'Wat houdt accountancy precies in?',
+          antwoord: 'Voor een goede en efficiënte bedrijfsvoering zijn actuele cijfers van groot belang. Bij Riekhoff zorgen wij voor actueel inzicht in de cijfers en resultaten van jouw onderneming. Niet de focus op historische jaarcijfers, maar praten over het hier en nu. We verzorgen jaarrekeningen, samenstelopdrachten, tussentijdse rapportages, financiële analyses en pre-audit dienstverlening.'
         },
         {
           vraag: 'Wanneer moet mijn jaarrekening klaar zijn?',
-          antwoord: 'Voor een BV moet de jaarrekening binnen 5 maanden na afloop van het boekjaar worden opgesteld en binnen 8 maanden worden gedeponeerd bij de KvK. Voor eenmanszaken geldt dat de aangifte inkomstenbelasting voor 1 mei moet zijn ingediend. Riekhoff bewaakt deze deadlines voor u.'
+          antwoord: 'Voor een BV moet de jaarrekening binnen 5 maanden na afloop van het boekjaar worden opgesteld en binnen 8 maanden worden gedeponeerd bij de KvK. Voor eenmanszaken geldt dat de aangifte inkomstenbelasting voor 1 mei moet zijn ingediend. Riekhoff bewaakt deze deadlines voor u en zorgt voor tijdige oplevering.'
         },
         {
-          vraag: 'Kan Riekhoff mijn complete boekhouding verzorgen?',
-          antwoord: 'Ja, Riekhoff verzorgt complete boekhoudingen voor MKB-bedrijven in Twente. Van het verwerken van facturen tot het opstellen van tussentijdse rapportages. We werken met moderne software zoals Exact Online en Twinfield. U kunt zelf boeken of alles aan ons uitbesteden.'
+          vraag: 'Kan Riekhoff mijn complete financiële administratie verzorgen?',
+          antwoord: 'Ja, absoluut. Om tot betrouwbare en actuele cijfers te komen is een goede financiële administratie van groot belang. Bij Riekhoff kunnen wij hierin ondersteunen óf compleet ontzorgen. Wij maken gebruik van vergaande automatisering waardoor de administratieve last vaak sterk kan worden teruggedrongen. We kunnen ook professionals bij u op locatie detacheren.'
         },
         {
           vraag: 'Hoe vaak krijg ik inzicht in mijn cijfers?',
-          antwoord: 'Dat bepaalt u zelf. Standaard leveren we kwartaalrapportages, maar maandelijkse of zelfs real-time inzage is ook mogelijk. Via online dashboards heeft u altijd toegang tot uw actuele cijfers. Voor ondernemers in Oldenzaal komen we graag langs om de cijfers persoonlijk te bespreken.'
+          antwoord: 'Dat bepaalt u zelf. Standaard leveren we kwartaalrapportages, maar maandelijkse of zelfs real-time inzage is ook mogelijk. Via online dashboards heeft u altijd toegang tot uw actuele cijfers. Voor ondernemers in de regio Twente komen we graag langs om de cijfers persoonlijk te bespreken.'
+        },
+        {
+          vraag: 'Met welke software werken jullie?',
+          antwoord: 'De visie van Riekhoff is dat wij niet werken met vaste softwarepakketten. Uw onderneming hoeft zich niet te schikken in \'onze\' software, maar wij passen ons aan naar uw software. Wij hebben uitgebreide kennis van digitalisering en automatisering. Indien nodig helpen wij u met het selecteren en implementeren van boekhoudsystemen.'
         }
       ]
     },
     {
-      titel: 'Belastingadvies',
+      titel: 'Fiscale dienstverlening',
       icon: FileText,
-      beschrijving: 'Fiscale vragen en belastingaangiftes',
-      kleur: 'from-gray-50 to-white',
       vragen: [
         {
+          vraag: 'Welke fiscale diensten biedt Riekhoff aan?',
+          antwoord: 'Riekhoff heeft ervaren belastingadviseurs in dienst en beschikt over een breed netwerk aan gespecialiseerde fiscalisten om u van de beste dienstverlening te voorzien. Wij zijn proactief in het signaleren en toepassen van belastingbesparende maatregelen. We verzorgen belastingaangiften, bezwaar en beroep procedures, fiscale planning en advisering, en BTW-advies.'
+        },
+        {
           vraag: 'Welke belastingaangiftes verzorgt Riekhoff?',
-          antwoord: 'Riekhoff verzorgt alle belastingaangiftes voor ondernemers: inkomstenbelasting, vennootschapsbelasting, omzetbelasting (BTW), loonheffingen en dividendbelasting. Ook voor particulieren in Oldenzaal doen we de aangifte inkomstenbelasting. We zorgen voor tijdige indiening en maximale aftrekposten.'
+          antwoord: 'Riekhoff verzorgt alle belastingaangiftes voor ondernemers: inkomstenbelasting, vennootschapsbelasting, omzetbelasting (BTW), loonheffingen en dividendbelasting. Ook voor particulieren in de regio Twente doen we de aangifte inkomstenbelasting. We zorgen voor tijdige indiening en maximale aftrekposten.'
         },
         {
           vraag: 'Kan ik belasting besparen door een BV op te richten?',
-          antwoord: 'Een BV wordt meestal fiscaal voordeliger vanaf €50.000 à €70.000 winst per jaar. Riekhoff maakt een persoonlijke berekening voor uw situatie. We kijken naar belastingdruk, pensioenopbouw, aansprakelijkheid en toekomstplannen. Voor ondernemers in Twente maken we een complete vergelijking.'
+          antwoord: 'Of een BV fiscaal voordeliger is hangt af van uw specifieke situatie. Riekhoff maakt een persoonlijke berekening waarbij we kijken naar belastingdruk, pensioenopbouw, aansprakelijkheid en toekomstplannen. Voor ondernemers in Twente maken we een complete vergelijking zodat u een weloverwogen keuze kunt maken.'
         },
         {
           vraag: 'Hoe werkt de BTW-aangifte via Riekhoff?',
-          antwoord: 'U levert uw administratie aan (digitaal of fysiek) en Riekhoff verzorgt de complete BTW-aangifte. We controleren alle boekingen, berekenen de BTW en dienen de aangifte digitaal in. U ontvangt een kopie en we informeren u over het te betalen of terug te ontvangen bedrag. Voor bedrijven in Oldenzaal kunnen we ook de administratie ophalen.'
+          antwoord: 'U levert uw administratie aan (digitaal of fysiek) en Riekhoff verzorgt de complete BTW-aangifte. We controleren alle boekingen, berekenen de BTW en dienen de aangifte digitaal in bij de Belastingdienst. U ontvangt een kopie en we informeren u over het te betalen of terug te ontvangen bedrag.'
         },
         {
           vraag: 'Helpt Riekhoff ook met belastingcontroles?',
-          antwoord: 'Ja, Riekhoff begeleidt ondernemers bij belastingcontroles. We bereiden de controle voor, zijn aanwezig bij het bezoek en handelen de correspondentie af. Met onze kennis van de Belastingdienst procedures zorgen we voor een soepel verloop. We hebben veel ervaring met controles bij MKB-bedrijven in Twente.'
+          antwoord: 'Ja, Riekhoff begeleidt ondernemers bij belastingcontroles van de Belastingdienst. We bereiden de controle voor, zijn aanwezig bij het bezoek en handelen de correspondentie af. Met onze kennis van de Belastingdienst procedures zorgen we voor een soepel verloop.'
+        }
+      ]
+    },
+    {
+      titel: 'Financiële dienstverlening',
+      icon: TrendingUp,
+      vragen: [
+        {
+          vraag: 'Welke financiële diensten biedt Riekhoff?',
+          antwoord: 'Wij helpen ondernemers met financieringsadvies, kredietaanvragen, herstructureringen en bedrijfswaarderingen. Riekhoff beschikt over de juiste kennis én ervaring en staat in deze processen pal naast u. We verzorgen ook begrotingen en liquiditeitsprognoses, en begeleiden overgang naar een BV. Ook voor due diligence onderzoeken kunt u bij ons terecht.'
+        },
+        {
+          vraag: 'Kan Riekhoff helpen met het verkrijgen van een bedrijfslening?',
+          antwoord: 'Ja, Riekhoff ondersteunt bij het aanvragen van financiering. We maken professionele businessplannen, stellen realistische prognoses op en begeleiden het contact met banken en financiers. Door onze ervaring weten we wat financiers willen zien en verhogen we uw kansen op een succesvolle aanvraag.'
+        },
+        {
+          vraag: 'Wat houdt een bedrijfswaardering in?',
+          antwoord: 'Bij een bedrijfswaardering bepalen we de economische waarde van uw onderneming. Dit is belangrijk bij verkoop, overname, successieplanning of geschillen. Riekhoff gebruikt erkende waarderingsmethoden en zorgt voor een objectieve en goed onderbouwde waardering die stand houdt bij banken en de Belastingdienst.'
+        },
+        {
+          vraag: 'Wanneer is het verstandig om naar een BV over te stappen?',
+          antwoord: 'Een overgang naar een BV kan verschillende redenen hebben: fiscale optimalisatie, beperking van aansprakelijkheid, professionalisering of voorbereiding op bedrijfsoverdracht. Riekhoff analyseert uw situatie en adviseert wanneer de overstap het meest voordelig is. We begeleiden het complete proces inclusief oprichting en overdracht.'
         }
       ]
     },
     {
       titel: 'Salarisadministratie',
       icon: Users,
-      beschrijving: 'Loonverwerking en personeelszaken',
-      kleur: 'from-gray-50 to-white',
       vragen: [
         {
-          vraag: 'Wat kost salarisadministratie bij Riekhoff?',
-          antwoord: 'Salarisadministratie kost vanaf €25,- per loonstrook. Voor bedrijven tot 5 medewerkers hebben we een starttarief van €125,- per maand all-in. Bij meer medewerkers maken we een offerte op maat. Er zijn geen opstartkosten en het eerste gesprek is vrijblijvend.'
+          vraag: 'Wat houdt salarisadministratie bij Riekhoff in?',
+          antwoord: 'Complete loonverwerking voor jouw personeel. Wij verzorgen de aangifte loonheffing, jaaropgaven en loonstroken, pensioenadministratie en meer. Onze loonadministratie is zeer flexibel en precies in te richten zoals u dat wilt. We bieden ook HR-advies en helpen met arbeidscontracten en overeenkomsten.'
+        },
+        {
+          vraag: 'Wat zijn de kosten voor salarisadministratie?',
+          antwoord: 'De kosten voor salarisadministratie zijn afhankelijk van het aantal medewerkers en de complexiteit van uw situatie. Voor een exacte prijsopgave maken we graag een offerte op maat. Er zijn geen opstartkosten en het eerste gesprek is vrijblijvend. Neem contact op voor een persoonlijk advies.'
         },
         {
           vraag: 'Hoe snel kan Riekhoff mijn loonadministratie overnemen?',
-          antwoord: 'Riekhoff kan uw salarisadministratie binnen 5 werkdagen overnemen. We halen alle gegevens op bij uw huidige verwerker, richten de administratie in en zorgen dat de eerstvolgende salarisrun perfect verloopt. Voor bedrijven in Oldenzaal kunnen we indien nodig binnen 24 uur starten.'
+          antwoord: 'Riekhoff kan uw salarisadministratie snel overnemen. We halen alle gegevens op bij uw huidige verwerker, richten de administratie in en zorgen dat de eerstvolgende salarisrun perfect verloopt. Voor bedrijven in de regio Twente kunnen we indien nodig snel schakelen.'
         },
         {
           vraag: 'Verzorgt Riekhoff ook de pensioenaangifte?',
@@ -113,61 +151,39 @@ export default function FAQ() {
         },
         {
           vraag: 'Hoe werkt de maandelijkse salarisverwerking?',
-          antwoord: 'U levert voor de 20e van de maand de mutaties aan (verlof, overwerk, etc.). Binnen 2 werkdagen verwerken we de salarissen en ontvangt u concept loonstroken. Na uw akkoord maken we het betaalbestand en versturen we de definitieve loonstroken digitaal naar uw medewerkers.'
+          antwoord: 'U levert tijdig de mutaties aan (verlof, overwerk, ziekte, etc.). Wij verwerken de salarissen en u ontvangt concept loonstroken ter controle. Na uw akkoord maken we het betaalbestand en versturen we de definitieve loonstroken digitaal naar uw medewerkers. De loonheffingsaangifte wordt automatisch verzorgd.'
         }
       ]
     },
     {
-      titel: 'Starters',
-      icon: TrendingUp,
-      beschrijving: 'Specifieke vragen voor startende ondernemers',
-      kleur: 'from-gray-50 to-white',
-      vragen: [
-        {
-          vraag: 'Wat kost startersbegeleiding bij Riekhoff?',
-          antwoord: 'Startersbegeleiding kost vanaf €125,- per maand. Dit is inclusief BTW-aangiftes, jaarrekening en kwartaal check-ups. We hebben ook een uitgebreid pakket vanaf €195,- per maand met extra diensten. Het eerste gesprek op ons kantoor in Oldenzaal is altijd gratis en vrijblijvend.'
-        },
-        {
-          vraag: 'Wanneer moet ik als starter een accountant inschakelen?',
-          antwoord: 'Het beste moment is VOOR u start. Riekhoff adviseert over de juiste rechtsvorm, helpt met het ondernemingsplan en richt de administratie in. Dit voorkomt kostbare fouten. Idealiter 2-3 maanden voor de start, maar we kunnen ook direct helpen als u al bent begonnen.'
-        },
-        {
-          vraag: 'Eenmanszaak of direct een BV oprichten?',
-          antwoord: 'Dit hangt af van uw situatie. Een eenmanszaak is snel en goedkoop te starten, ideaal bij weinig risico en lagere winsten. Een BV biedt bescherming van privévermogen en is fiscaal voordeliger vanaf €50.000 winst. Riekhoff maakt een persoonlijke berekening voor starters in Twente.'
-        },
-        {
-          vraag: 'Helpt Riekhoff met subsidies voor starters?',
-          antwoord: 'Ja, Riekhoff kent de subsidiemogelijkheden voor starters in Oldenzaal en Twente. We adviseren over startersleningen, innovatievouchers, duurzaamheidssubsidies en regionale regelingen. Ook helpen we met de aanvraag en kennen we de voorwaarden voor startersaftrek.'
-        }
-      ]
-    },
-    {
-      titel: 'Advies & Begeleiding',
+      titel: 'Advies op maat',
       icon: Briefcase,
-      beschrijving: 'Vragen over bedrijfsadvies en ondersteuning',
-      kleur: 'from-gray-50 to-white',
       vragen: [
         {
           vraag: 'Wat voor soort advies geeft Riekhoff?',
-          antwoord: 'Riekhoff geeft breed bedrijfsadvies: strategisch advies voor groei, financieringsadvies, bedrijfsovernames, reorganisaties, vermogensplanning en risicomanagement. We kijken altijd naar de totale situatie van de ondernemer, zowel zakelijk als privé. Voor MKB in Oldenzaal zijn we een complete sparringpartner.'
+          antwoord: 'Elk bedrijf is uniek en kent zijn eigen processen en werkwijzen. Wij kijken graag naar jouw specifieke situatie en bieden op maat gemaakte oplossingen. We bieden een vrijblijvende kennismaking, persoonlijke analyse, en stellen een maatwerkpakket voor dienstverlening samen die bij ú past, met transparante tarieven en vaste prijsafspraken.'
         },
         {
           vraag: 'Kan Riekhoff helpen met een bedrijfsovername?',
-          antwoord: 'Ja, Riekhoff begeleidt complete overnamtrajecten. Van bedrijfswaardering tot due diligence, van onderhandeling tot financiering. We hebben ervaring met overnames in Twente en kennen de lokale markt. Ook voor verkoop van uw bedrijf bent u bij ons aan het juiste adres.'
+          antwoord: 'Ja, Riekhoff begeleidt complete overnamtrajecten. Van bedrijfswaardering tot due diligence, van onderhandeling tot financiering. We hebben ervaring met overnames in Twente en kennen de lokale markt goed. Ook voor verkoop van uw bedrijf bent u bij ons aan het juiste adres.'
         },
         {
           vraag: 'Biedt Riekhoff ook interim diensten?',
-          antwoord: 'Ja, bij tijdelijke uitval of piekdrukte kunnen we interim diensten leveren. Denk aan tijdelijke CFO, controller of administrateur. Ook voor specifieke projecten zoals ERP-implementatie of reorganisatie kunnen we tijdelijk ondersteunen. Voor bedrijven in Oldenzaal kunnen we snel schakelen.'
+          antwoord: 'Ja, bij tijdelijke uitval of piekdrukte kunnen we ondersteuning bieden. We kunnen professionals detacheren die bij u op locatie de administratie komen voeren. Ook voor specifieke projecten zoals systeem-implementatie of reorganisatie kunnen we tijdelijk ondersteunen.'
         },
         {
           vraag: 'Hoe werkt een second opinion bij Riekhoff?',
-          antwoord: 'Voor een second opinion analyseren we uw huidige situatie objectief. We beoordelen fiscale structuur, administratieve processen of specifieke vraagstukken. U ontvangt een onafhankelijk advies met concrete aanbevelingen. Een second opinion kost vanaf €750,- en duurt 1-2 weken.'
+          antwoord: 'Voor een second opinion analyseren we uw huidige situatie objectief. We beoordelen fiscale structuur, administratieve processen of specifieke vraagstukken. U ontvangt een onafhankelijk advies met concrete aanbevelingen. Neem contact op voor meer informatie over de mogelijkheden.'
+        },
+        {
+          vraag: 'Werkt Riekhoff ook samen met andere adviseurs?',
+          antwoord: 'Ja, door ons uitgebreide netwerk van onafhankelijke professionals is geen vraagstuk ons te groot of te klein. We werken samen met gespecialiseerde fiscalisten, notarissen, advocaten en andere adviseurs om u de beste dienstverlening te kunnen bieden. Uw belang staat altijd voorop.'
         }
       ]
     }
   ];
 
-  // Alle vragen voor zoekfunctie
+  // Alle vragen voor schema
   const alleVragen = faqCategorieen.flatMap(cat => 
     cat.vragen.map(v => ({ ...v, categorie: cat.titel }))
   );
@@ -193,7 +209,7 @@ export default function FAQ() {
       titel: 'Plan gesprek',
       beschrijving: 'Vrijblijvend kennismaken',
       actie: 'Plan afspraak',
-      link: '#contact'
+      link: '/contact'
     }
   ];
 
@@ -226,97 +242,59 @@ export default function FAQ() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
-    <div className="bg-white text-dark">
+      <div className="bg-white text-dark">
   
-  {/* SUBTLE HERO */}
-  <section className="relative w-full overflow-hidden h-80">
-    <div className="absolute inset-0 bg-dark" />
-    <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
-      <img
-        src="/kantoor_solo.jpg"
-        alt="FAQ Riekhoff Accountants"
-        className="w-full h-full object-cover object-center"
-      />
-    </div>
-    <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-dark/30 lg:from-dark lg:via-dark/90 lg:to-transparent" />
-    
-    <div className="relative z-10 h-full flex items-center">
-      <div className="max-w-[1440px] w-full mx-auto px-6 lg:px-16">
-        <div className="max-w-[500px]">
-          <div className="flex items-center gap-2 text-xs text-gray-400 mb-6">
-            <a href="/" className="hover:text-accent-yellow transition-colors">Home</a>
-            <span>/</span>
-            <span className="text-white">FAQ</span>
+        {/* SUBTLE HERO */}
+        <section className="relative w-full overflow-hidden h-80">
+          <div className="absolute inset-0 bg-dark" />
+          <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
+            <img
+              src="/kantoor_solo.jpg"
+              alt="FAQ Riekhoff Accountants"
+              className="w-full h-full object-cover object-center"
+            />
           </div>
+          <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-dark/30 lg:from-dark lg:via-dark/90 lg:to-transparent" />
           
-          <p className="text-accent-yellow uppercase mb-3 text-xs font-semibold tracking-wider">
-            VEELGESTELDE VRAGEN
-          </p>
-          
-          <h1 className="text-white text-2xl lg:text-3xl font-bold leading-snug">
-            Alles wat u wilt weten over Riekhoff
-          </h1>
-        </div>
-      </div>
-    </div>
-  </section>
+          <div className="relative z-10 h-full flex items-center">
+            <div className="max-w-[1440px] w-full mx-auto px-6 lg:px-16">
+              <div className="max-w-[500px]">
+                <div className="flex items-center gap-2 text-xs text-gray-400 mb-6">
+                  <a href="/" className="hover:text-accent-yellow transition-colors">Home</a>
+                  <span>/</span>
+                  <span className="text-white">FAQ</span>
+                </div>
+                
+                <p className="text-accent-yellow uppercase mb-3 text-xs font-semibold tracking-wider">
+                  VEELGESTELDE VRAGEN
+                </p>
+                
+                <h1 className="text-white text-2xl lg:text-3xl font-bold leading-snug">
+                  Veelgestelde vragen over Riekhoff
+                </h1>
+              </div>
+            </div>
+          </div>
+        </section>
 
-
-
-        {/* FAQ CATEGORIEEN - Visual cards */}
+        {/* FAQ VRAGEN - Direct naar vragen */}
         <section id="vragen" className="py-20 lg:py-24 bg-gray-50 relative overflow-hidden">
           {/* Subtle gradient effect */}
           <div className="absolute inset-0 bg-gradient-to-b from-accent-yellow/8 via-transparent to-accent-yellow/8" />
           <div className="absolute top-1/4 left-1/4 w-1/2 h-1/2 bg-accent-yellow/12 blur-3xl" />
           
           <div className="container mx-auto px-6 relative z-10">
-            <div className="max-w-7xl mx-auto">
-              <div className="mb-16">
-                <div className="bg-accent-yellow/10 px-4 py-2 rounded-lg mb-6 inline-block">
-                  <span className="text-xs font-semibold text-accent-yellow uppercase tracking-wider">
-                    FAQ Categorieën
-                  </span>
-                </div>
-                <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                  Vragen per <span className="text-accent-yellow">onderwerp</span>
-                </h2>
-                <p className="text-gray-600 max-w-2xl">
-                  Klik op een categorie om de meest gestelde vragen te bekijken
-                </p>
-              </div>
-
-              {/* Categorie cards - Visual grid */}
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-                {faqCategorieen.map((cat, i) => {
-                  const Icon = cat.icon;
-                  const isDark = cat.kleur.includes('dark');
-                  
-                  return (
-                    <div key={i} className={`group relative bg-gradient-to-br ${cat.kleur} rounded-2xl p-8 border-2 ${isDark ? 'border-transparent' : 'border-gray-100'} hover:border-accent-yellow transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl cursor-pointer`}>
-                      <div className={`w-14 h-14 ${isDark ? 'bg-white/10' : 'bg-accent-yellow/10'} rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent-yellow group-hover:scale-110 transition-all duration-500`}>
-                        <Icon className={`w-7 h-7 ${isDark ? 'text-accent-yellow' : 'text-accent-yellow'} group-hover:text-dark transition-colors duration-500`} />
-                      </div>
-                      <h3 className={`text-xl font-bold mb-2 ${isDark ? 'text-white' : 'text-dark'}`}>{cat.titel}</h3>
-                      <p className={`text-sm mb-4 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>{cat.beschrijving}</p>
-                      <div className={`flex items-center gap-2 ${isDark ? 'text-accent-yellow' : 'text-accent-yellow'} font-bold text-sm uppercase tracking-wider`}>
-                        {cat.vragen.length} vragen
-                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-
+            <div className="max-w-4xl mx-auto">
               {/* Alle FAQ's per categorie */}
               <div className="space-y-12">
                 {faqCategorieen.map((cat, catIndex) => (
                   <div key={catIndex}>
-                    <h3 className="text-2xl font-bold mb-6">{cat.titel}</h3>
+                    <h2 className="text-2xl lg:text-3xl font-bold mb-6 text-dark">{cat.titel}</h2>
                     <div className="space-y-4">
                       {cat.vragen.map((faq, i) => (
                         <details key={i} className="group bg-white rounded-xl border-2 border-gray-100 hover:border-accent-yellow transition-all">
                           <summary className="flex items-center justify-between p-6 cursor-pointer">
-                            <h4 className="font-bold pr-8 text-left">{faq.vraag}</h4>
+                            <h3 className="font-bold pr-8 text-left text-dark">{faq.vraag}</h3>
                             <ChevronRight className="w-5 h-5 text-accent-yellow transform group-open:rotate-90 transition-transform flex-shrink-0" />
                           </summary>
                           <div className="px-6 pb-6">
@@ -359,48 +337,6 @@ export default function FAQ() {
                     </a>
                   );
                 })}
-              </div>
-            </div>
-          </div>
-        </section>
-
-       
-        {/* CTA */}
-        <section id="contact" className="py-20 lg:py-24 bg-dark relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10">
-            <img 
-              src="/kantoor_open_1.jpg" 
-              alt="" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          <div className="container mx-auto px-6 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-                Heeft u een specifieke <span className="text-accent-yellow">vraag</span>?
-              </h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Neem contact op met Riekhoff Accountants voor persoonlijk advies. 
-                We staan klaar om ondernemers in Oldenzaal en Twente te helpen.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                <a href="tel:+31541200007" className="bg-accent-yellow text-dark px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-all hover:scale-105 inline-flex items-center justify-center gap-2">
-                  <Phone className="w-5 h-5" />
-                  Bel direct: 0541 200 007
-                </a>
-                <a href="mailto:info@riekhoff.nl" className="border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2">
-                  <Mail className="w-5 h-5" />
-                  Mail: info@riekhoff.nl
-                </a>
-              </div>
-
-              <div className="pt-12 border-t border-white/10">
-                <div className="flex items-center justify-center gap-2 text-gray-400 text-sm">
-                  <Building2 className="w-4 h-4" />
-                  <span>Riekhoff Accountants & Adviseurs | Bentheimergraven 11, 7577 DA Oldenzaal</span>
-                </div>
               </div>
             </div>
           </div>

@@ -49,7 +49,7 @@ const RiekhoffFooter = () => {
               <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-6">
                 <div>
                   <h2 className="text-2xl lg:text-3xl font-bold mb-2">
-                    Klaar om uw administratie te optimaliseren?
+                    Klaar om uw bedrijf te optimaliseren?
                   </h2>
                   <p className="text-gray-300">
                     Neem contact op voor een vrijblijvend gesprek in Oldenzaal

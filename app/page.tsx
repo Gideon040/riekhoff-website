@@ -1,5 +1,5 @@
 import React from 'react';
-import DienstenGrid from './components/DienstenGrid';  // ← DEZE LIJN
+import DienstenGrid from './components/DienstenGrid';
 import RiekhoffHeader from './components/RiekhoffHeader';
 import { 
   ArrowRight, 
@@ -19,26 +19,68 @@ import {
 
 export default function Homepage() {
   const testimonials = [
-    { name: 'Jan S.', company: 'Eenmanszaak Oldenzaal', text: 'Riekhoff heeft mijn belastingaangifte perfect geregeld en ik kreeg zelfs geld terug!', rating: 5 },
-    { name: 'Maria J.', company: 'Starter Twente', text: 'Als starter kreeg ik alle begeleiding die ik nodig had. Van KvK inschrijving tot eerste jaarrekening!', rating: 5 },
-    { name: 'Peter H.', company: 'MKB Bedrijf', text: 'Kleinschalig kantoor met persoonlijke aandacht. Je hebt altijd direct contact met je adviseur.', rating: 5 },
+    { 
+      name: 'Bedrijf A', 
+      company: 'MKB Bedrijf', 
+      text: 'Uitstekende service en altijd bereikbaar. Riekhoff denkt actief mee met onze fiscale planning.', 
+      rating: 5,
+      logo: 'placeholder-logo-a.jpg'
+    },
+    { 
+      name: 'Bedrijf B', 
+      company: 'Productiebedrijf', 
+      text: 'Transparant, deskundig en persoonlijk. Precies wat wij zochten in een accountant.', 
+      rating: 5,
+      logo: 'placeholder-logo-b.jpg'
+    },
+    { 
+      name: 'Bedrijf C', 
+      company: 'Retailonderneming', 
+      text: 'De combinatie van moderne tools en persoonlijke aandacht maakt het verschil.', 
+      rating: 5,
+      logo: 'placeholder-logo-c.jpg'
+    },
+    { 
+      name: 'Bedrijf D', 
+      company: 'Dienstverlener', 
+      text: 'Snelle responstijd en altijd een passende oplossing. Een betrouwbare partner.', 
+      rating: 5,
+      logo: 'placeholder-logo-d.jpg'
+    },
   ];
 
   const faqs = [
-    { q: 'Wat kost een accountant in Oldenzaal?', a: 'Onze tarieven zijn transparant en afhankelijk van de dienst. Neem contact op voor een vrijblijvende offerte op maat.' },
-    { q: 'Voor welke bedrijven werkt Riekhoff?', a: 'Wij zijn gespecialiseerd in het midden- en kleinbedrijf (MKB) in Oldenzaal en de rest van Twente. Van ZZP\'ers tot bedrijven met 50 medewerkers.' },
-    { q: 'Hoe snel reageren jullie op vragen?', a: 'Door de kleinschaligheid van ons bedrijf behandelen wij jouw verzoeken snel en adequaat. Wij streven naar een responstijd van 24 uur.' },
-    { q: 'Is Riekhoff gecertificeerd?', a: 'Ja, wij zijn aangesloten bij de NBA (Nederlandse Beroepsorganisatie van Accountants) en het Register Belastingadviseurs (RB).' },
-    { q: 'Werken jullie met digitale tools?', a: 'Ja, wij werken met moderne software zoals Twinfield, AFAS en Exact Online voor optimale dienstverlening.' },
+    { 
+      q: 'Wat kost Riekhoff accountants en adviseurs?', 
+      a: 'Onze tarieven zijn transparant en afhankelijk van de specifieke dienstverlening. Wij werken indien mogelijk met vaste prijzen waardoor u niet voor verrassingen komt te staan. Onze lage overheadkosten en vergaande automatisering zorgt ervoor dat wij efficiënt kunnen werken.' 
+    },
+    { 
+      q: 'Welke bedrijven worden door Riekhoff ontzorgt?', 
+      a: 'Wij zijn gespecialiseerd in het midden- en kleinbedrijf (MKB). Onze klanten zitten door heel Nederland maar voornamelijk in de regio Twente. Wij bieden dienstverlening aan vrijwel alle sectoren, van ZZP\'ers tot aan ondernemingen met 100 medewerkers.' 
+    },
+    { 
+      q: 'Hoe snel reageren jullie op vragen?', 
+      a: 'Door de inrichting van ons bedrijf behandelen wij verzoeken snel en adequaat. Afspraken in de avonden en weekenden zijn ons niet vreemd. Wij streven naar een responstijd van 24 uur. Bij ons hoeft u niet dagen of weken te wachten op respons!' 
+    },
+    { 
+      q: 'Waarbij is Riekhoff aangesloten?', 
+      a: 'Wij zijn aangesloten bij de NBA (Nederlandse Beroepsorganisatie van accountants), de RB (register Belastingadviseurs) en de Novak (serviceorganisatie accountantskantoren).' 
+    },
+    { 
+      q: 'Met welke software werken jullie?', 
+      a: 'De visie van Riekhoff is dat wij niet werken met vaste softwarepakketten. Uw onderneming hoeft zich niet te schikken in \'onze\' software, maar wij passen ons aan naar uw software. Wij hebben uitgebreide kennis van digitalisering en automatisering. Indien nodig helpen wij u met het selecteren en implementeren van boekhoudsystemen.' 
+    },
   ];
 
   const partners = [
     { name: 'NBA', alt: 'Nederlandse Beroepsorganisatie van Accountants', logo: 'https://mnadviseurs.nl/application/files/4115/4703/8638/logo_nba.png' },
     { name: 'Register Belastingadviseurs', alt: 'Register Belastingadviseurs', logo: 'https://www.oafinance.nl/wp-content/uploads/2020/07/Register-Belastingadviseurs-Logo.webp' },
     { name: 'Twinfield', alt: 'Twinfield Partner', logo: 'https://ac.nl/uploads/api/Twinfield-logo.png' },
-    { name: 'Snelstart', alt: 'AFAS Software', logo: 'https://vdstapadministratie.nl/wp-content/uploads/2017/11/Logo-Snelstart.png' },
+    { name: 'Snelstart', alt: 'Snelstart', logo: 'https://vdstapadministratie.nl/wp-content/uploads/2017/11/Logo-Snelstart.png' },
     { name: 'Exact Online', alt: 'Exact Online', logo: 'https://i0.wp.com/www.studyspace.nl/wp-content/uploads/2021/01/Logo-Exact-Online-e1578486135684.png?ssl=1' },
-
+    { name: 'Nmbrs', alt: 'Nmbrs Partner', logo: 'placeholder-nmbrs.jpg' },
+    { name: 'Odoo', alt: 'Odoo Partner', logo: 'placeholder-odoo.jpg' },
+    { name: 'SilvaSoft', alt: 'SilvaSoft Partner', logo: 'placeholder-silvasoft.jpg' },
   ];
 
   // Schema.org Structured Data
@@ -48,7 +90,7 @@ export default function Homepage() {
       "@type": "AccountingService",
       "name": "Riekhoff Accountants en Adviseurs",
       "image": "https://www.riekhoff.nl/logo.jpg",
-      "description": "Modern accountantskantoor in Oldenzaal gespecialiseerd in MKB. Diensten: accountancy, fiscale dienstverlening, salarisadministratie en startersbegeleiding.",
+      "description": "Modern accountantskantoor in de regio Twente. Diensten: accountancy, fiscale dienstverlening, salarisadministratie en financiële dienstverlening voor MKB ondernemers.",
       "url": "https://www.riekhoff.nl",
       "telephone": "+31541200007",
       "email": "info@riekhoff.nl",
@@ -104,11 +146,11 @@ export default function Homepage() {
           "name": "Twente"
         }
       ],
-      "slogan": "Klant, kennis, kwaliteit",
+      "slogan": "Jouw accountantskantoor in de regio Twente",
       "foundingDate": "2020-01-01",
       "numberOfEmployees": {
         "@type": "QuantitativeValue",
-        "value": 12
+        "value": 15
       }
     },
     organization: {
@@ -181,7 +223,7 @@ export default function Homepage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData.breadcrumb) }}
       />
 
-<div className="bg-white text-dark">
+      <div className="bg-white text-dark">
         {/* HERO */}
         <section className="relative flex items-center bg-dark overflow-hidden" style={{minHeight: '85vh'}}>
           <div className="absolute inset-0">
@@ -196,15 +238,12 @@ export default function Homepage() {
           <div className="container mx-auto px-4 sm:px-6 relative z-10 py-20 sm:py-32">
             <div className="max-w-6xl mx-auto">
               <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight mb-4 sm:mb-6">
-                Riekhoff<br />
-                <span className="text-accent-yellow">Accountants</span><br />
-                <span className="text-2xl sm:text-3xl lg:text-4xl text-gray-300 font-normal">
-                  Jouw accountancy in Oldenzaal en omstreken
-                </span>
+                <span className="text-accent-yellow">Riekhoff</span> accountants<br />
+                en adviseurs
               </h1>
               
-              <p className="text-base lg:text-lg text-gray-300 leading-relaxed mb-6 sm:mb-8 max-w-2xl">
-                Bij <strong className="text-white">Riekhoff accountants en adviseurs</strong> weten we als geen ander dat ondernemen een uitdaging is. Wij willen jou graag helpen! Want wanneer het gaat om jouw financiën is het belangrijk om met betrouwbare accountants en adviseurs te werken.
+              <p className="text-xl lg:text-2xl text-gray-200 font-medium mb-6 sm:mb-8">
+                Jouw accountantskantoor in de regio Twente
               </p>
               
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8">
@@ -224,8 +263,8 @@ export default function Homepage() {
               <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
                 {[
                   { text: 'Opgericht in 2020' },
-                  { text: '100+ tevreden klanten' },
-                  { text: '12 professionals' },
+                  { text: '500+ tevreden klanten' },
+                  { text: '15 professionals' },
                   { text: '24u responstijd' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-2 text-gray-300">
@@ -240,7 +279,7 @@ export default function Homepage() {
           </div>
         </section>
 
-        {/* PARTNERS BANNER */}
+        {/* PARTNERS BANNER - Auto-scrolling */}
         <section className="bg-white border-y border-gray-200 py-8">
           <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
@@ -250,34 +289,33 @@ export default function Homepage() {
                 </p>
               </div>
               
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center justify-items-center">
-                {partners.map((partner, i) => (
-                  <div key={i} className="grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
-                    <img 
-                      src={partner.logo} 
-                      alt={partner.alt}
-                      className="h-12 md:h-16 w-auto object-contain"
-                      title={partner.name}
-                    />
-                  </div>
-                ))}
+              {/* Auto-scrolling container */}
+              <div className="relative overflow-hidden">
+                <div className="flex animate-scroll">
+                  {/* Eerste set logos */}
+                  {partners.map((partner, i) => (
+                    <div key={`first-${i}`} className="flex-shrink-0 px-8 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
+                      <img 
+                        src={partner.logo} 
+                        alt={partner.alt}
+                        className="h-12 md:h-16 w-auto object-contain"
+                        title={partner.name}
+                      />
+                    </div>
+                  ))}
+                  {/* Duplicaat voor naadloze loop */}
+                  {partners.map((partner, i) => (
+                    <div key={`second-${i}`} className="flex-shrink-0 px-8 grayscale hover:grayscale-0 transition-all duration-300 opacity-60 hover:opacity-100">
+                      <img 
+                        src={partner.logo} 
+                        alt={partner.alt}
+                        className="h-12 md:h-16 w-auto object-contain"
+                        title={partner.name}
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* INTRO */}
-        <section className="py-20 md:py-24 bg-white">
-          <div className="container mx-auto px-6">
-            <div className="max-w-3xl mx-auto text-left">
-              <p className="text-2xl lg:text-3xl font-bold text-black leading-tight mb-6">
-                Professionele accountancy, fiscaal advies en financiële dienstverlening voor <span className="text-accent-yellow">MKB ondernemers</span>
-              </p>
-              
-              <a href="/contact" className="inline-flex items-center gap-2 text-gray-600 text-base font-semibold hover:text-accent-yellow transition-colors group">
-                Neem contact op en zie wat wij voor jou kunnen betekenen
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </a>
             </div>
           </div>
         </section>
@@ -294,8 +332,8 @@ export default function Homepage() {
           <div className="container mx-auto px-6 relative z-10">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               {[
-                { value: '100+', label: 'Tevreden klanten', desc: 'MKB bedrijven in Twente' },
-                { value: '12', label: 'Professionals', desc: 'Deskundige adviseurs' },
+                { value: '500+', label: 'Tevreden klanten', desc: 'MKB bedrijven in Twente' },
+                { value: '15', label: 'Professionals', desc: 'Deskundige adviseurs' },
                 { value: '24u', label: 'Responstijd', desc: 'Snel schakelen' },
                 { value: '2020', label: 'Opgericht', desc: 'Modern & toekomstgericht' },
               ].map((stat, i) => (
@@ -324,11 +362,11 @@ export default function Homepage() {
                   </h2>
                   
                   <p className="text-base text-gray-600 leading-relaxed mb-6">
-                    Wanneer je voor ons kiest, kies je voor hoogwaardige dienstverlening op het gebied van accountancy en fiscaal advies. Doordat wij de werkzaamheden met de grootste zorg uitvoeren, ben jij verzekerd van het beste resultaat.
+                    Wanneer je voor ons kiest, kies je voor hoogwaardige en persoonlijke dienstverlening. Riekhoff heeft precies de goede omvang om voldoende kennis in huis te hebben maar waarbij u géén nummertje bent. Wij voeren onze werkzaamheden met de grootste zorg voor u uit, voelen ons verbonden met onze klanten en beloven een zeer goede bereikbaarheid.
                   </p>
                   
                   <p className="text-base text-gray-600 leading-relaxed mb-8">
-                    Onze accountants en adviseurs leveren vakwerk voor zowel particulieren als bedrijven. Voor ons is geen opdracht te groot of te klein. Ons vakmanschap in combinatie met moderne tools, zorgen voor het beste resultaat.
+                    Onze klantenportefeuille is divers en bestaat uit ZZP'ers tot aan ondernemingen met 100 medewerkers. Door ons uitgebreide netwerk van onafhankelijke professionals is geen vraagstuk ons te groot of te klein. Onze sterke autonome groei van de afgelopen jaren getuigd van onze goede werkwijze.
                   </p>
                 </div>
                 <div>
@@ -378,11 +416,15 @@ export default function Homepage() {
                 </h2>
                 
                 <p className="text-base text-gray-300 leading-relaxed mb-6">
-                  Riekhoff accountants en adviseurs is een modern kantoor gevestigd in Oldenzaal. Door de kleinschaligheid van ons bedrijf hebben we de volle aandacht voor al onze klanten, zijn we in staat om snel te reageren op vragen en denken we altijd met je mee van a tot z.
+                  Riekhoff accountants en adviseurs is een jong en modern accountantskantoor gevestigd te Oldenzaal. Wij zijn klein genoeg om de volle aandacht te hebben voor onze klanten en mee te denken van a tot z. Echter hebben wij voldoende omvang om alle benodigde expertises in huis te hebben.
                 </p>
                 
+                <p className="text-base text-gray-300 leading-relaxed mb-6">
+                  Wij werken niet met receptionisten en officemanagers, bij ons loop je binnen op de werkvloer. Hierdoor is iedereen bij Riekhoff betrokken en blijven de overheadkosten laag. Op ons kantoor heerst een open sfeer waarbij professionaliteit en collegialiteit hand in hand gaan.
+                </p>
+
                 <p className="text-base text-gray-300 leading-relaxed mb-8">
-                  Op ons kantoor heerst een open sfeer waarbij professionaliteit en collegialiteit hand in hand gaan. Wij stellen ons positief-kritisch op en tonen onze deskundigheid in ieder advies.
+                  Wij zijn laagdrempelig en informeel ingesteld, kom langs voor een kop koffie en maak kennis!
                 </p>
                 
                 <div className="space-y-4">
@@ -430,7 +472,7 @@ export default function Homepage() {
           </div>
         </section>
 
-        {/* TESTIMONIALS */}
+        {/* TESTIMONIALS - Auto-scrolling */}
         <section className="py-20 md:py-24 bg-white">
           <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
@@ -444,22 +486,56 @@ export default function Homepage() {
                 </h2>
               </div>
 
-              <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
-                {testimonials.map((t, i) => (
-                  <div key={i} className="bg-gray-50 p-6 lg:p-8 rounded-lg border border-gray-200 hover:border-accent-yellow transition-all">
-                    <Quote className="w-10 h-10 text-accent-yellow mb-4" />
-                    <div className="flex items-center gap-1 mb-4">
-                      {[...Array(t.rating)].map((_, j) => (
-                        <Star key={j} className="w-4 h-4 fill-accent-yellow text-accent-yellow" />
-                      ))}
+              {/* Auto-scrolling testimonials */}
+              <div className="relative overflow-hidden">
+                <div className="flex animate-scroll-slow gap-6">
+                  {/* Eerste set testimonials */}
+                  {testimonials.map((t, i) => (
+                    <div key={`first-${i}`} className="flex-shrink-0 w-80 bg-gray-50 p-6 lg:p-8 rounded-lg border border-gray-200 hover:border-accent-yellow transition-all">
+                      <div className="mb-4">
+                        <img 
+                          src={t.logo} 
+                          alt={`${t.name} logo`}
+                          className="h-12 w-auto object-contain grayscale opacity-60"
+                        />
+                      </div>
+                      <Quote className="w-10 h-10 text-accent-yellow mb-4" />
+                      <div className="flex items-center gap-1 mb-4">
+                        {[...Array(t.rating)].map((_, j) => (
+                          <Star key={j} className="w-4 h-4 fill-accent-yellow text-accent-yellow" />
+                        ))}
+                      </div>
+                      <p className="text-base text-gray-600 leading-relaxed mb-6 italic">&quot;{t.text}&quot;</p>
+                      <div className="pt-6 border-t border-gray-200">
+                        <div className="text-base font-bold">{t.name}</div>
+                        <div className="text-sm text-gray-500">{t.company}</div>
+                      </div>
                     </div>
-                    <p className="text-base text-gray-600 leading-relaxed mb-6 italic">&quot;{t.text}&quot;</p>
-                    <div className="pt-6 border-t border-gray-200">
-                      <div className="text-base font-bold">{t.name}</div>
-                      <div className="text-sm text-gray-500">{t.company}</div>
+                  ))}
+                  {/* Duplicaat voor naadloze loop */}
+                  {testimonials.map((t, i) => (
+                    <div key={`second-${i}`} className="flex-shrink-0 w-80 bg-gray-50 p-6 lg:p-8 rounded-lg border border-gray-200 hover:border-accent-yellow transition-all">
+                      <div className="mb-4">
+                        <img 
+                          src={t.logo} 
+                          alt={`${t.name} logo`}
+                          className="h-12 w-auto object-contain grayscale opacity-60"
+                        />
+                      </div>
+                      <Quote className="w-10 h-10 text-accent-yellow mb-4" />
+                      <div className="flex items-center gap-1 mb-4">
+                        {[...Array(t.rating)].map((_, j) => (
+                          <Star key={j} className="w-4 h-4 fill-accent-yellow text-accent-yellow" />
+                        ))}
+                      </div>
+                      <p className="text-base text-gray-600 leading-relaxed mb-6 italic">&quot;{t.text}&quot;</p>
+                      <div className="pt-6 border-t border-gray-200">
+                        <div className="text-base font-bold">{t.name}</div>
+                        <div className="text-sm text-gray-500">{t.company}</div>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -475,7 +551,7 @@ export default function Homepage() {
                 </div>
                 
                 <h2 className="text-3xl lg:text-5xl font-bold mb-4">
-                  Vragen over accountants in <span className="text-accent-yellow">Oldenzaal</span>?
+                  Vragen
                 </h2>
               </div>
 
@@ -507,11 +583,11 @@ export default function Homepage() {
                   </div>
                   
                   <h2 className="text-3xl lg:text-5xl font-bold mb-6">
-                    Een team van <span className="text-accent-yellow">12 professionals</span>
+                    Een team van <span className="text-accent-yellow">15 professionals</span>
                   </h2>
                   
                   <p className="text-base lg:text-lg text-gray-600 leading-relaxed mb-6">
-                    Bij Riekhoff werk je met een hecht team van enthousiaste collega's die allemaal expertise hebben in accountancy, fiscaliteit en advies. Door onze kleinschaligheid ken je altijd je vaste contactpersoon.
+                    Bij Riekhoff werk je met een hecht team van enthousiaste collega's die allemaal een eigen expertise hebben in de accountancy, fiscaliteit en advisering. Door onze visie - niet te groot, niet te klein – stap je binnen bij een betrokken groep medewerkers.
                   </p>
                   
                   <p className="text-base text-gray-600 leading-relaxed mb-8">
@@ -519,8 +595,7 @@ export default function Homepage() {
                   </p>
                   
                   <a href="/contact" className="inline-flex items-center gap-2 text-dark text-base font-semibold hover:text-accent-yellow transition-colors">
-                    Maak kennis met ons
-                    <ArrowRight className="w-5 h-5" />
+                    Maak kennis met ons →
                   </a>
                 </div>
                 <div>

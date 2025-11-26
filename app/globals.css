@@ -9,3 +9,80 @@
     padding: 0;
   }
 }
+
+/* Auto-scrolling animations */
+@layer utilities {
+  /* Animation keyframes for partners (faster scroll) */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Animation keyframes for testimonials (slower scroll) */
+  @keyframes scroll-slow {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Apply scroll animation */
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
+    will-change: transform;
+  }
+
+  /* Pause animation on hover */
+  .animate-scroll:hover {
+    animation-play-state: paused;
+  }
+
+  /* Apply slow scroll animation */
+  .animate-scroll-slow {
+    animation: scroll-slow 45s linear infinite;
+    will-change: transform;
+  }
+
+  /* Pause animation on hover */
+  .animate-scroll-slow:hover {
+    animation-play-state: paused;
+  }
+
+  /* Ensure flex items don't shrink in scroll animations */
+  .animate-scroll > *,
+  .animate-scroll-slow > * {
+    flex-shrink: 0;
+  }
+
+  /* Performance optimization for animations */
+  .animate-scroll,
+  .animate-scroll-slow {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+}
+
+/* Mobile responsive animation speeds */
+@media (max-width: 768px) {
+  .animate-scroll {
+    animation: scroll 40s linear infinite;
+  }
+  
+  .animate-scroll-slow {
+    animation: scroll-slow 60s linear infinite;
+  }
+}
+
+/* Accessibility - Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .animate-scroll,
+  .animate-scroll-slow {
+    animation: none !important;
+  }
+}

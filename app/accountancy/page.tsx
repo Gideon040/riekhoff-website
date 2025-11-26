@@ -507,77 +507,7 @@ export default function AccountancyPage() {
           </div>
         </section>
 
-        {/* CTA */}
-        <section id="contact" className="py-20 lg:py-24 bg-dark relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10">
-            <img 
-              src="/riekhoff-samenwerken.jpg" 
-              alt="" 
-              className="w-full h-full object-cover"
-            />
-          </div>
 
-          <div className="container mx-auto px-6 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-                Accountant nodig in <span className="text-accent-yellow">Oldenzaal</span>?
-              </h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Neem contact met Riekhoff op voor een vrijblijvend gesprek. 
-                We kijken graag wat we voor jouw bedrijf in Oldenzaal kunnen betekenen.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                <a 
-                  href="tel:+31541200007"
-                  className="bg-accent-yellow text-dark px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-all hover:scale-105 inline-flex items-center justify-center gap-2"
-                >
-                  <Phone className="w-5 h-5" />
-                  Bel 0541 200 007
-                </a>
-                <a 
-                  href="mailto:info@riekhoff.nl"
-                  className="border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2"
-                >
-                  <Mail className="w-5 h-5" />
-                  Mail ons
-                </a>
-              </div>
-
-              <div className="grid md:grid-cols-3 gap-6 text-left">
-                <div className="flex items-start gap-3">
-                  <Phone className="w-5 h-5 text-accent-yellow mt-1 flex-shrink-0" />
-                  <div>
-                    <div className="text-white font-semibold mb-1">Telefoon</div>
-                    <a href="tel:+31541200007" className="text-gray-400 hover:text-accent-yellow transition-colors text-sm">
-                      0541 200 007
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <Mail className="w-5 h-5 text-accent-yellow mt-1 flex-shrink-0" />
-                  <div>
-                    <div className="text-white font-semibold mb-1">E-mail</div>
-                    <a href="mailto:info@riekhoff.nl" className="text-gray-400 hover:text-accent-yellow transition-colors text-sm">
-                      info@riekhoff.nl
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <Clock className="w-5 h-5 text-accent-yellow mt-1 flex-shrink-0" />
-                  <div>
-                    <div className="text-white font-semibold mb-1">Openingstijden</div>
-                    <div className="text-gray-400 text-sm">
-                      Ma-Vr: 08:30 - 17:30
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
 
       </div>
     </>

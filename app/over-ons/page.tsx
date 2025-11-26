@@ -439,46 +439,7 @@ export default function OverOns() {
 
 
 
-        {/* CTA */}
-        <section id="contact" className="py-20 lg:py-24 bg-dark relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10">
-            <img 
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80" 
-              alt="" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          <div className="container mx-auto px-6 relative z-10">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
-                Kennismaken met <span className="text-accent-yellow">Riekhoff</span>?
-              </h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Kom langs voor een kop koffie op ons kantoor in Oldenzaal. 
-                We maken graag tijd voor een vrijblijvend gesprek.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                <a href="tel:+31541200007" className="bg-accent-yellow text-dark px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-all hover:scale-105 inline-flex items-center justify-center gap-2">
-                  <Phone className="w-5 h-5" />
-                  Bel direct: 0541 200 007
-                </a>
-                <a href="mailto:info@riekhoff.nl" className="border-2 border-white/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2">
-                  <Mail className="w-5 h-5" />
-                  Mail: info@riekhoff.nl
-                </a>
-              </div>
-
-              <div className="pt-12 border-t border-white/10">
-                <div className="flex items-center justify-center gap-2 text-gray-400 text-sm">
-                  <Building2 className="w-4 h-4" />
-                  <span>Riekhoff Accountants & Adviseurs | Bentheimergraven 11, 7577 DA Oldenzaal</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+     
 
       </div>
     </>
