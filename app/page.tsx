@@ -454,11 +454,11 @@ export default function Homepage() {
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
                 <div className="inline-block bg-accent-yellow/10 px-4 py-2 rounded-lg mb-6">
-                  <span className="text-xs font-semibold text-accent-yellow uppercase tracking-wider">Veelgestelde vragen</span>
+                  <span className="text-xs font-semibold text-accent-yellow uppercase tracking-wider">FAQ</span>
                 </div>
                 
                 <h2 className="text-3xl lg:text-5xl font-bold mb-4">
-                  Vragen
+                  Veelgesterde vragen
                 </h2>
               </div>
 
