@@ -40,16 +40,16 @@ export default function Homepage() {
     },
   ];
 
-  const partners = [
-    { name: 'NBA', alt: 'Nederlandse Beroepsorganisatie van Accountants', logo: 'https://mnadviseurs.nl/application/files/4115/4703/8638/logo_nba.png' },
-    { name: 'Register Belastingadviseurs', alt: 'Register Belastingadviseurs', logo: 'https://www.oafinance.nl/wp-content/uploads/2020/07/Register-Belastingadviseurs-Logo.webp' },
-    { name: 'Twinfield', alt: 'Twinfield Partner', logo: 'https://ac.nl/uploads/api/Twinfield-logo.png' },
-    { name: 'Snelstart', alt: 'Snelstart', logo: 'https://vdstapadministratie.nl/wp-content/uploads/2017/11/Logo-Snelstart.png' },
-    { name: 'Exact Online', alt: 'Exact Online', logo: 'https://i0.wp.com/www.studyspace.nl/wp-content/uploads/2021/01/Logo-Exact-Online-e1578486135684.png?ssl=1' },
-    { name: 'Nmbrs', alt: 'Nmbrs Partner', logo: 'placeholder-nmbrs.jpg' },
-    { name: 'Odoo', alt: 'Odoo Partner', logo: 'placeholder-odoo.jpg' },
-    { name: 'SilvaSoft', alt: 'SilvaSoft Partner', logo: 'placeholder-silvasoft.jpg' },
-  ];
+const partners = [
+  { name: 'NBA', alt: 'Nederlandse Beroepsorganisatie van Accountants', logo: 'https://mnadviseurs.nl/application/files/4115/4703/8638/logo_nba.png' },
+  { name: 'Register Belastingadviseurs', alt: 'Register Belastingadviseurs', logo: 'https://www.oafinance.nl/wp-content/uploads/2020/07/Register-Belastingadviseurs-Logo.webp' },
+  { name: 'Twinfield', alt: 'Twinfield Partner', logo: 'https://ac.nl/uploads/api/Twinfield-logo.png' },
+  { name: 'Snelstart', alt: 'Snelstart', logo: 'https://vdstapadministratie.nl/wp-content/uploads/2017/11/Logo-Snelstart.png' },
+  { name: 'Exact Online', alt: 'Exact Online', logo: 'https://i0.wp.com/www.studyspace.nl/wp-content/uploads/2021/01/Logo-Exact-Online-e1578486135684.png?ssl=1' },
+  { name: 'Nmbrs', alt: 'Nmbrs Partner', logo: '/nmrslogoblue.png' },
+  { name: 'Odoo', alt: 'Odoo Partner', logo: '/odoo.png' },  // ✅ GEFIXT
+  { name: 'SilvaSoft', alt: 'SilvaSoft Partner', logo: '/Silvasoft-v1.jpg' },  // ✅ GEFIXT (als bestand bestaat)
+];
 
   // Schema.org Structured Data
   const structuredData = {
