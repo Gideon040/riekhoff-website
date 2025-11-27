@@ -118,7 +118,7 @@ export default function Testimonials({
                   ))}
                 </div>
                 <p className="text-sm text-gray-600 leading-relaxed mb-4 italic flex-grow overflow-hidden line-clamp-4">
-                  &quot;{t.text}&quot;
+                  "{t.text}"
                 </p>
                 <div className="pt-4 border-t border-gray-200 mt-auto flex items-center justify-between gap-4">
                   <div className="flex-1 min-w-0">
@@ -155,7 +155,7 @@ export default function Testimonials({
                   ))}
                 </div>
                 <p className="text-sm text-gray-600 leading-relaxed mb-4 italic flex-grow overflow-hidden line-clamp-4">
-                  &quot;{t.text}&quot;
+                  "{t.text}"
                 </p>
                 <div className="pt-4 border-t border-gray-200 mt-auto flex items-center justify-between gap-4">
                   <div className="flex-1 min-w-0">
