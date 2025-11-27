@@ -1,4 +1,5 @@
 import React from 'react';
+import Testimonials from '../components/Testimonials';
 import { 
   FileText,
   CheckCircle2,
@@ -12,10 +13,9 @@ import {
   Award,
   BookOpen,
   Calculator,
-  AlertCircle,
   Users,
   Building2,
-  Euro
+  ChevronRight
 } from 'lucide-react';
 import { Metadata } from 'next';
 
@@ -67,7 +67,7 @@ export default function FiscaleDienstverleningPage() {
     'Dagelijks up-to-date met nieuwe wetgeving',
     'Proactieve fiscale optimalisatie',
     'Persoonlijk contact met vaste adviseur',
-    'Reactie binnen 24 uur op vragen',
+    'Snelle reactie op vragen',
     'Jarenlange ervaring in Twente',
     'Netwerk van juridische partners',
     'Transparante tarieven'
@@ -101,44 +101,14 @@ export default function FiscaleDienstverleningPage() {
     }
   ];
 
-  const tarieven = [
-    { dienst: 'Belastingaangifte eenmanszaak (IB)', prijs: 'vanaf €350,-' },
-    { dienst: 'Belastingaangifte BV (VPB)', prijs: 'vanaf €750,-' },
-    { dienst: 'OB-aangifte per kwartaal', prijs: 'vanaf €75,-' },
-    { dienst: 'Fiscaal adviesgesprek', prijs: '€125,- per uur' },
-    { dienst: 'Bezwaarschrift Belastingdienst', prijs: 'vanaf €500,-' },
-    { dienst: 'Fiscale jaarplanning', prijs: 'vanaf €400,-' },
-  ];
-
-  const testimonials = [
-    {
-      name: 'Jan de Vries',
-      company: 'Eenmanszaak Oldenzaal',
-      text: 'Bas van Riekhoff heeft mijn belastingaangifte perfect geregeld. Ik kreeg zelfs €1.200 terug door slimme aftrekposten die ik zelf over het hoofd had gezien!',
-      rating: 5
-    },
-    {
-      name: 'Sandra Bos',
-      company: 'BV Twente',
-      text: 'Na overstap naar Riekhoff eindelijk duidelijkheid over mijn fiscale positie. Ze denken proactief mee en besparen me veel belasting. Aanrader voor ondernemers in Oldenzaal!',
-      rating: 5
-    },
-    {
-      name: 'Peter Jansen',
-      company: 'VOF Losser',
-      text: 'Riekhoff hielp me bij een bezwaar tegen de Belastingdienst. Professioneel, persoonlijk en resultaat: €8.000 aanslag verlaagd. Top!',
-      rating: 5
-    },
-  ];
-
   const faqs = [
+    {
+      question: 'Wat kost een belastingadviseur bij Riekhoff?',
+      answer: 'De kosten voor fiscale dienstverlening zijn afhankelijk van de complexiteit van uw situatie, het type aangifte en de benodigde diensten. Omdat iedere fiscale situatie uniek is, stellen wij graag een persoonlijke offerte voor u op. In een eerste vrijblijvend gesprek bespreken we uw behoefte en geven we een indicatie van de investering. Neem contact op voor een offerte op maat.'
+    },
     {
       question: 'Wat is het verschil tussen een accountant en een belastingadviseur?',
       answer: 'Een accountant houdt zich bezig met de financiële administratie en jaarrekeningen. Een belastingadviseur is gespecialiseerd in fiscaal recht en belastingaangiftes. Bij Riekhoff in Oldenzaal hebben we beide expertises in huis. Bas Riekhoff is zowel accountant als Register Belastingadviseur (RB), waardoor je bij één kantoor in Twente terecht kunt voor alle financiële en fiscale vraagstukken.'
-    },
-    {
-      question: 'Wat kost een belastingadviseur in Oldenzaal?',
-      answer: 'De kosten voor fiscaal advies bij Riekhoff zijn afhankelijk van de dienst. Een belastingaangifte voor een eenmanszaak kost vanaf €350,-, voor een BV vanaf €750,-. Het uurtarief voor fiscaal advies is €125,-. Neem contact op met Riekhoff voor een vrijblijvende offerte op maat voor uw situatie in Oldenzaal.'
     },
     {
       question: 'Wanneer moet ik mijn belastingaangifte indienen?',
@@ -193,8 +163,7 @@ export default function FiscaleDienstverleningPage() {
         "addressCountry": "NL"
       },
       "telephone": "+31541200007",
-      "email": "bas@riekhoff.nl",
-      "priceRange": "€€"
+      "email": "bas@riekhoff.nl"
     },
     "areaServed": [
       { "@type": "City", "name": "Oldenzaal" },
@@ -208,20 +177,6 @@ export default function FiscaleDienstverleningPage() {
     "audience": {
       "@type": "Audience",
       "audienceType": "MKB ondernemers, ZZP'ers, eenmanszaken, BV's"
-    },
-    "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "EUR",
-      "lowPrice": "75",
-      "highPrice": "750",
-      "offers": tarieven.map(t => ({
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": t.dienst
-        },
-        "description": t.prijs
-      }))
     },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -315,54 +270,41 @@ export default function FiscaleDienstverleningPage() {
 
       <div className="bg-white text-dark">
   
-  {/* SUBTLE HERO */}
-  <section className="relative w-full overflow-hidden h-80">
-    {/* Background */}
-    <div className="absolute inset-0 bg-dark" />
-
-    {/* Background Image */}
-    <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
-      <img
-        src="kantoor_skyline.jpg"
-        alt="Belastingadviseur Riekhoff Oldenzaal"
-        className="w-full h-full object-cover object-center"
-      />
-    </div>
-
-    {/* Gradient Overlay */}
-    <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-dark/30 lg:from-dark lg:via-dark/90 lg:to-transparent" />
-
-    {/* Content Container */}
-    <div className="relative z-10 h-full flex items-center">
-      <div className="max-w-[1440px] w-full mx-auto px-6 lg:px-16">
-        <div className="max-w-[500px]">
-          
-          {/* Breadcrumb */}
-          <div className="flex items-center gap-2 text-xs text-gray-400 mb-6">
-            <a href="/" className="hover:text-accent-yellow transition-colors">Home</a>
-            <span>/</span>
-            <a href="/#diensten" className="hover:text-accent-yellow transition-colors">Diensten</a>
-            <span>/</span>
-            <span className="text-white">Fiscale dienstverlening</span>
+        {/* SUBTLE HERO */}
+        <section className="relative w-full overflow-hidden h-80">
+          <div className="absolute inset-0 bg-dark" />
+          <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
+            <img
+              src="kantoor_skyline.jpg"
+              alt="Belastingadviseur Riekhoff Oldenzaal"
+              className="w-full h-full object-cover object-center"
+            />
           </div>
+          <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-dark/30 lg:from-dark lg:via-dark/90 lg:to-transparent" />
+          
+          <div className="relative z-10 h-full flex items-center">
+            <div className="max-w-[1440px] w-full mx-auto px-6 lg:px-16">
+              <div className="max-w-[500px]">
+                <div className="flex items-center gap-2 text-xs text-gray-400 mb-6">
+                  <a href="/" className="hover:text-accent-yellow transition-colors">Home</a>
+                  <span>/</span>
+                  <a href="/#diensten" className="hover:text-accent-yellow transition-colors">Diensten</a>
+                  <span>/</span>
+                  <span className="text-white">Fiscale dienstverlening</span>
+                </div>
+                
+                <p className="text-accent-yellow uppercase mb-3 text-xs font-semibold tracking-wider">
+                  BELASTINGADVIES
+                </p>
+                
+                <h1 className="text-white text-2xl lg:text-3xl font-bold leading-snug">
+                  Belastingadviseur in Oldenzaal
+                </h1>
+              </div>
+            </div>
+          </div>
+        </section>
 
-          {/* Label */}
-          <p className="text-accent-yellow uppercase mb-3 text-xs font-semibold tracking-wider">
-            BELASTINGADVIES
-          </p>
-
-          {/* Main Heading */}
-          <h1 className="text-white text-2xl lg:text-3xl font-bold leading-snug">
-            Belastingadviseur in Oldenzaal
-          </h1>
-
-        </div>
-      </div>
-    </div>
-
-    {/* Mobile: Extra dark overlay */}
-    <div className="absolute inset-0 lg:hidden bg-gradient-to-b from-black/30 via-transparent to-black/30" />
-  </section>
         {/* INTRO */}
         <section className="py-20 lg:py-24 bg-white">
           <div className="container mx-auto px-6">
@@ -378,7 +320,6 @@ export default function FiscaleDienstverleningPage() {
                     zodat je geen kansen misloopt en geen boetes riskeert.
                   </p>
 
-
                   <div className="grid sm:grid-cols-2 gap-3">
                     {voordelen.map((voordeel, i) => (
                       <div key={i} className="flex items-start gap-3">
@@ -390,11 +331,10 @@ export default function FiscaleDienstverleningPage() {
                     ))}
                   </div>
 
-                  {/* CTA IN INTRO */}
                   <div className="mt-8 pt-8 border-t border-gray-200">
                     <p className="text-sm font-semibold text-gray-700 mb-3">Fiscaal advies nodig?</p>
                     <a 
-                      href="#contact"
+                      href="/contact"
                       className="inline-flex items-center gap-2 bg-accent-yellow text-dark px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all text-sm"
                     >
                       Neem contact op
@@ -464,7 +404,6 @@ export default function FiscaleDienstverleningPage() {
                 })}
               </div>
 
-              {/* CTA NA DIENSTEN */}
               <div className="mt-12 text-center">
                 <div className="inline-flex flex-col sm:flex-row items-center gap-3 bg-white rounded-xl p-6 border-2 border-accent-yellow/20">
                   <div className="flex-1 text-left">
@@ -516,13 +455,12 @@ export default function FiscaleDienstverleningPage() {
                 ))}
               </div>
 
-              {/* CTA NA PROCES */}
               <div className="mt-12 text-center">
                 <p className="text-gray-600 mb-4">
                   Start vandaag nog met fiscaal advies van Riekhoff in Oldenzaal
                 </p>
                 <a 
-                  href="#contact"
+                  href="/contact"
                   className="inline-flex items-center gap-2 bg-accent-yellow text-dark px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-all"
                 >
                   Plan gratis kennismaking
@@ -533,85 +471,12 @@ export default function FiscaleDienstverleningPage() {
           </div>
         </section>
 
-        {/* TARIEVEN */}
-        <section className="py-20 lg:py-24 bg-gray-50">
-          <div className="container mx-auto px-6">
-            <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-16">
-                <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                  Wat kost een <span className="text-accent-yellow">belastingadviseur</span> in Oldenzaal?
-                </h2>
-                <p className="text-gray-600 max-w-2xl mx-auto">
-                  Transparante tarieven voor fiscale dienstverlening. Riekhoff werkt met vaste prijzen 
-                  voor belastingaangiftes en een uurtarief voor maatwerk advies.
-                </p>
-              </div>
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {tarieven.map((tarief, i) => (
-                  <div key={i} className="bg-white rounded-xl p-6 border-2 border-gray-100 hover:border-accent-yellow transition-all">
-                    <div className="flex flex-col gap-3">
-                      <h3 className="font-bold">{tarief.dienst}</h3>
-                      <div className="text-accent-yellow font-bold text-2xl">
-                        {tarief.prijs}
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-12 text-center bg-white rounded-xl p-8 border-2 border-accent-yellow/20">
-                <div className="flex items-center justify-center gap-2 text-accent-yellow mb-4">
-                  <Euro className="w-6 h-6" />
-                  <p className="font-bold text-lg">Maatwerk tarieven</p>
-                </div>
-                <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-                  Elke fiscale situatie is uniek. Riekhoff maakt een offerte op maat voor jouw situatie in Oldenzaal. 
-                  Het eerste kennismakingsgesprek is altijd vrijblijvend.
-                </p>
-                <a 
-                  href="#contact"
-                  className="inline-flex items-center gap-2 text-dark font-semibold hover:text-accent-yellow transition-colors"
-                >
-                  Vraag offerte aan
-                  <ArrowRight className="w-4 h-4" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* TESTIMONIALS */}
-        <section className="py-20 lg:py-24 bg-white">
-          <div className="container mx-auto px-6">
-            <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-16">
-                <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                  Klanten over <span className="text-accent-yellow">Riekhoff</span> als belastingadviseur
-                </h2>
-              </div>
-
-              <div className="grid md:grid-cols-3 gap-8">
-                {testimonials.map((testimonial, i) => (
-                  <div key={i} className="bg-gray-50 rounded-xl p-8 border-2 border-gray-100">
-                    <div className="flex items-center gap-1 mb-4">
-                      {[...Array(testimonial.rating)].map((_, j) => (
-                        <svg key={j} className="w-5 h-5 fill-accent-yellow text-accent-yellow" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
-                    <p className="text-gray-600 italic mb-6">&quot;{testimonial.text}&quot;</p>
-                    <div className="pt-6 border-t border-gray-200">
-                      <div className="font-bold">{testimonial.name}</div>
-                      <div className="text-sm text-gray-500">{testimonial.company}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
+        <Testimonials 
+          title="Wat klanten van Riekhoff zeggen"
+          filter="fiscaal"
+          bgColor="gray"
+        />
 
         {/* USP'S BANNER */}
         <section className="py-16 bg-dark">
@@ -641,7 +506,7 @@ export default function FiscaleDienstverleningPage() {
                 <div className="w-16 h-16 bg-accent-yellow/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Clock className="w-8 h-8 text-accent-yellow" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">24 uur Respons</h3>
+                <h3 className="text-xl font-bold text-white mb-2">Snelle Respons</h3>
                 <p className="text-gray-400 text-sm">
                   Snelle beantwoording van al je fiscale vragen
                 </p>
@@ -660,7 +525,7 @@ export default function FiscaleDienstverleningPage() {
           </div>
         </section>
 
-        {/* FAQ - UITGEBREID VOOR LLM! */}
+        {/* FAQ */}
         <section className="py-20 lg:py-24 bg-white">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
@@ -679,7 +544,7 @@ export default function FiscaleDienstverleningPage() {
                   <details key={i} className="group bg-gray-50 rounded-xl border-2 border-gray-100 hover:border-accent-yellow transition-all">
                     <summary className="flex items-center justify-between p-6 cursor-pointer">
                       <h3 className="font-bold pr-8 text-left">{faq.question}</h3>
-                      <ArrowRight className="w-5 h-5 text-accent-yellow transform group-open:rotate-90 transition-transform flex-shrink-0" />
+                      <ChevronRight className="w-5 h-5 text-accent-yellow transform group-open:rotate-90 transition-transform flex-shrink-0" />
                     </summary>
                     <div className="px-6 pb-6">
                       <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
@@ -687,35 +552,9 @@ export default function FiscaleDienstverleningPage() {
                   </details>
                 ))}
               </div>
-
-              {/* CTA NA FAQ */}
-              <div className="mt-12 text-center bg-gray-50 rounded-xl p-8 border-2 border-accent-yellow/20">
-                <h3 className="text-xl font-bold mb-3">Vraag niet beantwoord?</h3>
-                <p className="text-gray-600 mb-6">
-                  Neem contact op met Bas Riekhoff voor een persoonlijk antwoord op jouw fiscale vraag
-                </p>
-                <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                  <a 
-                    href="tel:+31630397466"
-                    className="inline-flex items-center justify-center gap-2 bg-accent-yellow text-dark px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all text-sm"
-                  >
-                    <Phone className="w-4 h-4" />
-                    Bel Bas: 06 303 974 66
-                  </a>
-                  <a 
-                    href="mailto:bas@riekhoff.nl"
-                    className="inline-flex items-center justify-center gap-2 border-2 border-gray-300 text-dark px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all text-sm"
-                  >
-                    <Mail className="w-4 h-4" />
-                    Mail Bas
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </section>
-
-       
 
       </div>
     </>

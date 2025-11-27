@@ -31,7 +31,7 @@ const RiekhoffFooter = () => {
     { label: 'Het team', href: '/over-ons#team' },
     { label: 'FAQ', href: '/faq' },
     { label: 'Contact', href: '/contact' },
-    { label: 'Werken bij', href: '/werken-bij' },
+    { label: 'Werken bij', href: '/vacatures' },
     { label: 'Privacy', href: '/privacy' }
   ];
 

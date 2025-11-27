@@ -1,4 +1,5 @@
 import React from 'react';
+import Testimonials from '../components/Testimonials';
 import { 
   ArrowRight,
   Phone,
@@ -6,75 +7,56 @@ import {
   CheckCircle2,
   ChevronRight,
   Users,
-  Building2,
-  Calculator,
   Clock,
   TrendingUp,
-  Euro,
   Target,
   Shield,
   Sparkles,
-  Briefcase,
   MessageSquare,
-  FileCheck,
   HandshakeIcon,
   PieChart
 } from 'lucide-react';
 
 export default function AdviesOpMaat() {
-  // Data voor de pagina
-  const adviesgebieden = [
-    {
-      icon: TrendingUp,
-      title: 'Strategisch bedrijfsadvies',
-      description: 'Riekhoff adviseert ondernemers in Oldenzaal over groei, reorganisatie en strategische keuzes. Met kennis van de Twentse markt helpen we u de juiste beslissingen te nemen voor uw toekomst.',
-      features: ['Groeistrategie ontwikkelen', 'Reorganisatie begeleiding', 'Marktanalyse Twente', 'Scenarioplanning'],
-      populair: true
-    },
-    {
-      icon: HandshakeIcon,
-      title: 'Overname & verkoop',
-      description: 'Bij het kopen of verkopen van een bedrijf in Twente begeleidt het team van Riekhoff het complete traject. Van waardering tot due diligence, we zorgen voor een succesvolle transactie.',
-      features: ['Bedrijfswaardering', 'Due diligence onderzoek', 'Onderhandelingsbegeleiding', 'Financiering regelen']
-    },
-    {
-      icon: Shield,
-      title: 'Risicomanagement',
-      description: 'Identificeer en beheers risico\'s in uw onderneming. Riekhoff analyseert financiële, fiscale en operationele risico\'s voor MKB-bedrijven in Oldenzaal en stelt beheersmaatregelen op.',
-      features: ['Risicoanalyse', 'Interne controle opzetten', 'Verzekeringen optimaliseren', 'Continuïteitsplanning']
-    },
-    {
-      icon: PieChart,
-      title: 'Vermogensplanning',
-      description: 'Persoonlijke vermogensplanning voor ondernemers in Oldenzaal. Van pensioenopbouw tot vermogensoverdracht, Riekhoff adviseert over de fiscaal meest gunstige oplossingen.',
-      features: ['Pensioenadvies', 'Estate planning', 'Vermogensoverdracht', 'Fiscale optimalisatie']
-    }
-  ];
-
   const adviesvormen = [
     {
       titel: 'Quick Scan',
       omschrijving: 'Snelle analyse van een specifiek vraagstuk met direct advies',
-      doorlooptijd: '1 week',
-      prijs: 'vanaf €500,-'
+      timing: 'Snel',
+      features: ['Korte doorlooptijd', 'Analyse specifiek vraagstuk', 'Direct toepasbaar advies', 'Beknopt rapport']
     },
     {
       titel: 'Adviesrapport',
       omschrijving: 'Uitgebreid onderzoek met schriftelijk advies en aanbevelingen',
-      doorlooptijd: '2-3 weken',
-      prijs: 'vanaf €1.500,-'
+      timing: 'Uitgebreid',
+      features: ['Diepgaand onderzoek', 'Schriftelijk adviesrapport', 'Presentatie resultaten', 'Implementatie advies'],
+      populair: true
     },
     {
-      titel: 'Begeleiding',
+      titel: 'Continue begeleiding',
       omschrijving: 'Continue advisering en begeleiding bij implementatie',
-      doorlooptijd: 'Op maat',
-      prijs: 'uurtarief €125,-'
+      timing: 'Doorlopend',
+      features: ['Flexibele inzet', 'Implementatie support', 'Periodiek overleg', 'Directe bereikbaarheid']
     },
     {
       titel: 'Second opinion',
       omschrijving: 'Onafhankelijke beoordeling van bestaand advies of situatie',
-      doorlooptijd: '1-2 weken',
-      prijs: 'vanaf €750,-'
+      timing: 'Op aanvraag',
+      features: ['Objectieve analyse', 'Onafhankelijk advies', 'Vergelijking alternatieven', 'Helder second opinion']
+    },
+    {
+      titel: 'Crisissituatie',
+      omschrijving: 'Direct ingrijpen bij urgente situaties',
+      timing: 'Direct',
+      features: ['Spoedaanpak', 'Crisisteam beschikbaar', 'Direct actieplan', 'Intensieve begeleiding'],
+      urgent: true
+    },
+    {
+      titel: 'Strategietraject',
+      omschrijving: 'Compleet traject voor toekomstplanning',
+      timing: 'Intensief',
+      features: ['Compleet traject', 'Strategiesessies', 'Volledig businessplan', 'Implementatieplan'],
+      compleet: true
     }
   ];
 
@@ -103,7 +85,7 @@ export default function AdviesOpMaat() {
   const faqs = [
     {
       question: 'Wat kost advies op maat bij Riekhoff?',
-      answer: 'Advies op maat bij Riekhoff in Oldenzaal kost vanaf €500,- voor een quick scan. Een uitgebreid adviesrapport kost vanaf €1.500,- en continue begeleiding gebeurt op basis van een uurtarief van €125,-. We maken altijd eerst een vrijblijvende offerte op maat voor ondernemers in Twente, zodat u precies weet waar u aan toe bent.'
+      answer: 'De kosten voor advies op maat zijn afhankelijk van diverse factoren zoals de complexiteit van het vraagstuk, de benodigde doorlooptijd, en de gewenste diepgang van het onderzoek. Omdat iedere situatie uniek is, maken wij altijd eerst een vrijblijvende offerte op maat. In een eerste gesprek bespreken we uw uitdaging en geven we aan welke aanpak passend is. Pas daarna ontvangt u een duidelijk voorstel met investering, zodat u precies weet waar u aan toe bent.'
     },
     {
       question: 'Voor welke vraagstukken kan ik terecht bij Riekhoff?',
@@ -111,7 +93,7 @@ export default function AdviesOpMaat() {
     },
     {
       question: 'Hoe snel kan Riekhoff advies leveren?',
-      answer: 'De snelheid hangt af van de complexiteit. Een quick scan voor ondernemers in Oldenzaal leveren we binnen een week. Voor urgente situaties kunnen we vaak binnen 24-48 uur een eerste advies geven. Een uitgebreid adviesrapport duurt 2-3 weken. Bij crisissituaties schakelt het team direct en zijn we dezelfde dag nog beschikbaar.'
+      answer: 'De snelheid hangt af van de complexiteit en urgentie. Voor urgente situaties kunnen we vaak snel schakelen. Een uitgebreid adviesrapport vraagt uiteraard meer tijd. Bij crisissituaties is het team direct beschikbaar. In een eerste gesprek bespreken we de doorlooptijd die past bij uw situatie.'
     },
     {
       question: 'Heeft Riekhoff ervaring met mijn branche?',
@@ -119,11 +101,11 @@ export default function AdviesOpMaat() {
     },
     {
       question: 'Kan ik ook alleen een second opinion vragen?',
-      answer: 'Ja, Riekhoff geeft regelmatig second opinions voor ondernemers in Oldenzaal die zekerheid willen over een advies of beslissing. We beoordelen onafhankelijk uw situatie, bestaande adviezen of voorgenomen plannen. Een second opinion kost vanaf €750,- en wordt binnen 1-2 weken geleverd. Dit geeft u de zekerheid dat u de juiste keuze maakt.'
+      answer: 'Ja, Riekhoff geeft regelmatig second opinions voor ondernemers in Oldenzaal die zekerheid willen over een advies of beslissing. We beoordelen onafhankelijk uw situatie, bestaande adviezen of voorgenomen plannen. Dit geeft u de zekerheid dat u de juiste keuze maakt. Neem contact op voor een offerte op maat.'
     },
     {
       question: 'Helpt Riekhoff ook bij de uitvoering van het advies?',
-      answer: 'Absoluut. Advies is pas waardevol als het ook uitgevoerd wordt. Riekhoff begeleidt ondernemers in Twente bij de implementatie van adviezen. We helpen met projectmanagement, onderhandelingen, gesprekken met banken, het aansturen van andere adviseurs en het monitoren van resultaten. Deze begeleiding gebeurt op uurbasis of projectbasis.'
+      answer: 'Absoluut. Advies is pas waardevol als het ook uitgevoerd wordt. Riekhoff begeleidt ondernemers in Twente bij de implementatie van adviezen. We helpen met projectmanagement, onderhandelingen, gesprekken met banken, het aansturen van andere adviseurs en het monitoren van resultaten. Deze begeleiding kunnen we op verschillende manieren inrichten, afhankelijk van uw behoefte.'
     },
     {
       question: 'Werkt Riekhoff samen met andere adviseurs?',
@@ -139,7 +121,7 @@ export default function AdviesOpMaat() {
     },
     {
       question: 'Is advies op maat ook beschikbaar voor kleine ondernemers?',
-      answer: 'Zeker! Advies op maat is niet alleen voor grote bedrijven. Ook ZZP\'ers en kleine ondernemers in Oldenzaal hebben soms behoefte aan specialistisch advies. We passen onze aanpak en tarieven aan op uw situatie. Een quick scan of kort adviestraject kan al zeer waardevol zijn voor kleinere ondernemingen in Twente.'
+      answer: 'Zeker! Advies op maat is niet alleen voor grote bedrijven. Ook ZZP\'ers en kleine ondernemers in Oldenzaal hebben soms behoefte aan specialistisch advies. We passen onze aanpak aan op uw situatie. Een quick scan of kort adviestraject kan al zeer waardevol zijn voor kleinere ondernemingen in Twente. Neem contact op om de mogelijkheden te bespreken.'
     }
   ];
 
@@ -149,7 +131,7 @@ export default function AdviesOpMaat() {
     "@type": "Service",
     "serviceType": "Bedrijfsadvies op maat",
     "name": "Advies op Maat Oldenzaal",
-    "description": "Riekhoff biedt maatwerk bedrijfsadvies voor ondernemers in Oldenzaal en Twente. Van strategisch advies tot bedrijfsovername begeleiding. Persoonlijk advies vanaf €500.",
+    "description": "Riekhoff biedt maatwerk bedrijfsadvies voor ondernemers in Oldenzaal en Twente. Van strategisch advies tot bedrijfsovername begeleiding. Persoonlijk advies op maat.",
     "provider": {
       "@type": "AccountingService",
       "name": "Riekhoff Accountants en Adviseurs",
@@ -173,13 +155,7 @@ export default function AdviesOpMaat() {
       {"@type": "City", "name": "Almelo"},
       {"@type": "AdministrativeArea", "name": "Twente"},
       {"@type": "AdministrativeArea", "name": "Overijssel"}
-    ],
-    "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "EUR",
-      "lowPrice": "500",
-      "highPrice": "5000"
-    }
+    ]
   };
 
   const faqSchema = {
@@ -212,42 +188,42 @@ export default function AdviesOpMaat() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
-<div className="bg-white text-dark">
+      <div className="bg-white text-dark">
   
-  {/* SUBTLE HERO */}
-  <section className="relative w-full overflow-hidden h-80">
-    <div className="absolute inset-0 bg-dark" />
-    <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
-      <img
-        src="kantoor_duo.jpg"
-        alt="Advies op maat Oldenzaal"
-        className="w-full h-full object-cover object-center"
-      />
-    </div>
-    <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-dark/30 lg:from-dark lg:via-dark/90 lg:to-transparent" />
-    
-    <div className="relative z-10 h-full flex items-center">
-      <div className="max-w-[1440px] w-full mx-auto px-6 lg:px-16">
-        <div className="max-w-[500px]">
-          <div className="flex items-center gap-2 text-xs text-gray-400 mb-6">
-            <a href="/" className="hover:text-accent-yellow transition-colors">Home</a>
-            <span>/</span>
-            <a href="/#diensten" className="hover:text-accent-yellow transition-colors">Diensten</a>
-            <span>/</span>
-            <span className="text-white">Advies op maat</span>
+        {/* SUBTLE HERO */}
+        <section className="relative w-full overflow-hidden h-80">
+          <div className="absolute inset-0 bg-dark" />
+          <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
+            <img
+              src="kantoor_duo.jpg"
+              alt="Advies op maat Oldenzaal"
+              className="w-full h-full object-cover object-center"
+            />
           </div>
+          <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-dark/30 lg:from-dark lg:via-dark/90 lg:to-transparent" />
           
-          <p className="text-accent-yellow uppercase mb-3 text-xs font-semibold tracking-wider">
-            MAATWERK BEDRIJFSADVIES
-          </p>
-          
-          <h1 className="text-white text-2xl lg:text-3xl font-bold leading-snug">
-            Advies op maat voor ondernemers in Oldenzaal
-          </h1>
-        </div>
-      </div>
-    </div>
-  </section>
+          <div className="relative z-10 h-full flex items-center">
+            <div className="max-w-[1440px] w-full mx-auto px-6 lg:px-16">
+              <div className="max-w-[500px]">
+                <div className="flex items-center gap-2 text-xs text-gray-400 mb-6">
+                  <a href="/" className="hover:text-accent-yellow transition-colors">Home</a>
+                  <span>/</span>
+                  <a href="/#diensten" className="hover:text-accent-yellow transition-colors">Diensten</a>
+                  <span>/</span>
+                  <span className="text-white">Advies op maat</span>
+                </div>
+                
+                <p className="text-accent-yellow uppercase mb-3 text-xs font-semibold tracking-wider">
+                  MAATWERK BEDRIJFSADVIES
+                </p>
+                
+                <h1 className="text-white text-2xl lg:text-3xl font-bold leading-snug">
+                  Advies op maat voor ondernemers in Oldenzaal
+                </h1>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* INTRO WITH LARGE STATEMENT */}
         <section className="py-20 bg-white">
@@ -325,9 +301,8 @@ export default function AdviesOpMaat() {
           </div>
         </section>
 
-        {/* ADVIESGEBIEDEN - Modern visual design like Startersbegeleiding */}
+        {/* ADVIESGEBIEDEN */}
         <section className="py-20 lg:py-24 bg-gray-50 relative overflow-hidden">
-          {/* Subtle gradient effect */}
           <div className="absolute inset-0 bg-gradient-to-b from-accent-yellow/8 via-transparent to-accent-yellow/8" />
           <div className="absolute top-1/4 left-1/4 w-1/2 h-1/2 bg-accent-yellow/12 blur-3xl" />
           
@@ -348,9 +323,7 @@ export default function AdviesOpMaat() {
                 </p>
               </div>
 
-              {/* Asymmetric grid with visual cards - Same style as Startersbegeleiding */}
               <div className="grid lg:grid-cols-12 gap-6">
-                {/* Row 1 - Large card left, medium right */}
                 <div className="lg:col-span-7">
                   <a href="#aanvraag" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] lg:h-[500px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
                     <div className="absolute inset-0">
@@ -430,7 +403,6 @@ export default function AdviesOpMaat() {
                   </a>
                 </div>
 
-                {/* Row 2 - Medium cards */}
                 <div className="lg:col-span-6">
                   <a href="#aanvraag" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
                     <div className="absolute inset-0">
@@ -526,7 +498,7 @@ export default function AdviesOpMaat() {
           </div>
         </section>
 
-        {/* USP'S BANNER - Same style as Startersbegeleiding */}
+        {/* USP'S BANNER */}
         <section className="py-16 bg-dark-secondary">
           <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
@@ -545,9 +517,9 @@ export default function AdviesOpMaat() {
                   <div className="w-16 h-16 bg-accent-yellow/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Clock className="w-8 h-8 text-accent-yellow" />
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-2">24 uur</h3>
+                  <h3 className="text-xl font-bold text-white mb-2">Snel schakelen</h3>
                   <p className="text-gray-400 text-sm">
-                    Reactie bij urgente situaties
+                    Snelle reactie bij urgente situaties
                   </p>
                 </div>
 
@@ -572,7 +544,6 @@ export default function AdviesOpMaat() {
                 </div>
               </div>
 
-              {/* Branches onderaan */}
               <div className="mt-12 pt-12 border-t border-white/10">
                 <p className="text-gray-400 text-sm text-center mb-4">Ervaring met diverse branches in Twente:</p>
                 <div className="flex flex-wrap justify-center gap-2">
@@ -587,9 +558,8 @@ export default function AdviesOpMaat() {
           </div>
         </section>
 
-        {/* ADVIESVORMEN - Visual pricing cards instead of process */}
+        {/* ADVIESVORMEN */}
         <section className="py-20 lg:py-24 bg-white relative overflow-hidden">
-          {/* Subtle gradient background */}
           <div className="absolute inset-0">
             <div className="absolute top-0 right-0 w-96 h-96 bg-accent-yellow/10 rounded-full blur-3xl" />
             <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent-yellow/5 rounded-full blur-3xl" />
@@ -612,201 +582,45 @@ export default function AdviesOpMaat() {
                 </p>
               </div>
 
-              {/* Visual pricing cards grid - same style as Startersbegeleiding */}
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-                {/* Quick Scan */}
-                <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border-2 border-gray-200 hover:border-accent-yellow transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
-                  <div className="mb-6">
-                    <h3 className="text-dark font-bold text-xl mb-2">Quick Scan</h3>
-                    <p className="text-gray-600 text-sm">Snelle analyse, direct advies</p>
-                  </div>
-                  
-                  <div className="mb-6">
-                    <div className="text-dark">
-                      <span className="text-4xl font-bold">€500</span>
-                      <span className="text-lg">,-</span>
+                {adviesvormen.map((vorm, index) => (
+                  <div key={index} className={`group relative bg-gradient-to-br ${vorm.populair || vorm.urgent || vorm.compleet ? 'from-dark to-dark-secondary' : 'from-gray-50 to-white'} rounded-2xl p-8 border-2 ${vorm.populair || vorm.urgent || vorm.compleet ? 'border-transparent hover:border-accent-yellow' : 'border-gray-200 hover:border-accent-yellow'} transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl`}>
+                    {(vorm.populair || vorm.urgent || vorm.compleet) && (
+                      <div className="absolute top-4 right-4">
+                        <div className={`${vorm.urgent ? 'bg-red-500' : vorm.compleet ? 'bg-green-500' : 'bg-accent-yellow'} text-${vorm.urgent || vorm.compleet ? 'white' : 'dark'} px-3 py-1 rounded-full text-xs font-bold uppercase`}>
+                          {vorm.urgent ? 'Urgent' : vorm.compleet ? 'Compleet' : 'Populair'}
+                        </div>
+                      </div>
+                    )}
+                    
+                    <div className="mb-6">
+                      <h3 className={`${vorm.populair || vorm.urgent || vorm.compleet ? 'text-white' : 'text-dark'} font-bold text-xl mb-2`}>{vorm.titel}</h3>
+                      <p className={`${vorm.populair || vorm.urgent || vorm.compleet ? 'text-gray-400' : 'text-gray-600'} text-sm`}>{vorm.omschrijving}</p>
                     </div>
-                    <p className="text-gray-500 text-xs mt-1">vanaf prijs</p>
-                  </div>
-                  
-                  <ul className="space-y-2 mb-6">
-                    {['1 week doorlooptijd', 'Analyse specifiek vraagstuk', 'Direct toepasbaar advies', 'Beknopt rapport'].map((item, i) => (
-                      <li key={i} className="flex items-center gap-2 text-sm text-gray-700">
-                        <CheckCircle2 className="w-4 h-4 text-accent-yellow" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  <a href="#aanvraag" className="block w-full text-center border-2 border-dark text-dark py-3 rounded-lg font-semibold hover:bg-dark hover:text-white transition-all">
-                    Vraag aan
-                  </a>
-                </div>
-
-                {/* Adviesrapport - Featured */}
-                <div className="group relative bg-gradient-to-br from-dark to-dark-secondary rounded-2xl p-8 border-2 border-transparent hover:border-accent-yellow transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
-                  <div className="absolute top-4 right-4">
-                    <div className="bg-accent-yellow text-dark px-3 py-1 rounded-full text-xs font-bold uppercase">
-                      Populair
+                    
+                    <div className="mb-6">
+                      <div className={vorm.populair || vorm.urgent || vorm.compleet ? 'text-accent-yellow' : 'text-dark'}>
+                        <span className="text-3xl font-bold">{vorm.timing}</span>
+                      </div>
+                      <p className={`${vorm.populair || vorm.urgent || vorm.compleet ? 'text-gray-400' : 'text-gray-500'} text-xs mt-1`}>aanpak</p>
                     </div>
+                    
+                    <ul className="space-y-2 mb-6">
+                      {vorm.features.map((item, i) => (
+                        <li key={i} className={`flex items-center gap-2 text-sm ${vorm.populair || vorm.urgent || vorm.compleet ? 'text-gray-300' : 'text-gray-700'}`}>
+                          <CheckCircle2 className="w-4 h-4 text-accent-yellow" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                    
+                    <a href={vorm.urgent ? "tel:+31541200007" : "#aanvraag"} className={`block w-full text-center ${vorm.populair || vorm.urgent || vorm.compleet ? 'bg-accent-yellow text-dark hover:bg-yellow-400' : 'border-2 border-dark text-dark hover:bg-dark hover:text-white'} py-3 rounded-lg font-semibold transition-all`}>
+                      {vorm.urgent ? 'Bel direct' : vorm.titel === 'Adviesrapport' ? 'Start traject' : vorm.titel === 'Continue begeleiding' || vorm.titel === 'Strategietraject' ? 'Meer info' : 'Vraag aan'}
+                    </a>
                   </div>
-                  
-                  <div className="mb-6">
-                    <h3 className="text-white font-bold text-xl mb-2">Adviesrapport</h3>
-                    <p className="text-gray-400 text-sm">Uitgebreid onderzoek & advies</p>
-                  </div>
-                  
-                  <div className="mb-6">
-                    <div className="text-accent-yellow">
-                      <span className="text-4xl font-bold">€1.500</span>
-                      <span className="text-lg">,-</span>
-                    </div>
-                    <p className="text-gray-400 text-xs mt-1">vanaf prijs</p>
-                  </div>
-                  
-                  <ul className="space-y-2 mb-6">
-                    {['2-3 weken doorlooptijd', 'Diepgaand onderzoek', 'Schriftelijk adviesrapport', 'Presentatie resultaten'].map((item, i) => (
-                      <li key={i} className="flex items-center gap-2 text-sm text-gray-300">
-                        <CheckCircle2 className="w-4 h-4 text-accent-yellow" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  <a href="#aanvraag" className="block w-full text-center bg-accent-yellow text-dark py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all">
-                    Start traject
-                  </a>
-                </div>
-
-                {/* Continue begeleiding */}
-                <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border-2 border-gray-200 hover:border-accent-yellow transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
-                  <div className="mb-6">
-                    <h3 className="text-dark font-bold text-xl mb-2">Continue begeleiding</h3>
-                    <p className="text-gray-600 text-sm">Implementatie & support</p>
-                  </div>
-                  
-                  <div className="mb-6">
-                    <div className="text-dark">
-                      <span className="text-4xl font-bold">€125</span>
-                      <span className="text-lg">/uur</span>
-                    </div>
-                    <p className="text-gray-500 text-xs mt-1">uurtarief</p>
-                  </div>
-                  
-                  <ul className="space-y-2 mb-6">
-                    {['Flexibele inzet', 'Implementatie support', 'Periodiek overleg', 'Directe bereikbaarheid'].map((item, i) => (
-                      <li key={i} className="flex items-center gap-2 text-sm text-gray-700">
-                        <CheckCircle2 className="w-4 h-4 text-accent-yellow" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  <a href="#aanvraag" className="block w-full text-center border-2 border-dark text-dark py-3 rounded-lg font-semibold hover:bg-dark hover:text-white transition-all">
-                    Meer info
-                  </a>
-                </div>
-
-                {/* Second opinion */}
-                <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border-2 border-gray-200 hover:border-accent-yellow transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
-                  <div className="mb-6">
-                    <h3 className="text-dark font-bold text-xl mb-2">Second opinion</h3>
-                    <p className="text-gray-600 text-sm">Onafhankelijke beoordeling</p>
-                  </div>
-                  
-                  <div className="mb-6">
-                    <div className="text-dark">
-                      <span className="text-4xl font-bold">€750</span>
-                      <span className="text-lg">,-</span>
-                    </div>
-                    <p className="text-gray-500 text-xs mt-1">vanaf prijs</p>
-                  </div>
-                  
-                  <ul className="space-y-2 mb-6">
-                    {['1-2 weken doorlooptijd', 'Objectieve analyse', 'Vergelijking alternatieven', 'Helder advies'].map((item, i) => (
-                      <li key={i} className="flex items-center gap-2 text-sm text-gray-700">
-                        <CheckCircle2 className="w-4 h-4 text-accent-yellow" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  <a href="#aanvraag" className="block w-full text-center border-2 border-dark text-dark py-3 rounded-lg font-semibold hover:bg-dark hover:text-white transition-all">
-                    Vraag aan
-                  </a>
-                </div>
-
-                {/* Crisissituatie */}
-                <div className="group relative bg-gradient-to-br from-dark to-dark-secondary rounded-2xl p-8 border-2 border-transparent hover:border-accent-yellow transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
-                  <div className="absolute top-4 right-4">
-                    <div className="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase">
-                      Urgent
-                    </div>
-                  </div>
-                  
-                  <div className="mb-6">
-                    <h3 className="text-white font-bold text-xl mb-2">Crisissituatie</h3>
-                    <p className="text-gray-400 text-sm">Direct ingrijpen nodig</p>
-                  </div>
-                  
-                  <div className="mb-6">
-                    <div className="text-accent-yellow">
-                      <span className="text-3xl font-bold">Op aanvraag</span>
-                    </div>
-                    <p className="text-gray-400 text-xs mt-1">maatwerk tarief</p>
-                  </div>
-                  
-                  <ul className="space-y-2 mb-6">
-                    {['Binnen 24 uur', 'Crisisteam beschikbaar', 'Direct actieplan', 'Intensieve begeleiding'].map((item, i) => (
-                      <li key={i} className="flex items-center gap-2 text-sm text-gray-300">
-                        <CheckCircle2 className="w-4 h-4 text-accent-yellow" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  <a href="tel:+31541200007" className="block w-full text-center bg-accent-yellow text-dark py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all">
-                    Bel direct
-                  </a>
-                </div>
-
-                {/* Strategietraject */}
-                <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border-2 border-gray-200 hover:border-accent-yellow transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
-                  <div className="absolute top-4 right-4">
-                    <div className="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase">
-                      Compleet
-                    </div>
-                  </div>
-                  
-                  <div className="mb-6">
-                    <h3 className="text-dark font-bold text-xl mb-2">Strategietraject</h3>
-                    <p className="text-gray-600 text-sm">Toekomstplan ontwikkelen</p>
-                  </div>
-                  
-                  <div className="mb-6">
-                    <div className="text-dark">
-                      <span className="text-4xl font-bold">€5.000</span>
-                      <span className="text-lg">,-</span>
-                    </div>
-                    <p className="text-gray-500 text-xs mt-1">vanaf prijs</p>
-                  </div>
-                  
-                  <ul className="space-y-2 mb-6">
-                    {['6-8 weken traject', 'Strategiesessies', 'Volledig businessplan', 'Implementatieplan'].map((item, i) => (
-                      <li key={i} className="flex items-center gap-2 text-sm text-gray-700">
-                        <CheckCircle2 className="w-4 h-4 text-accent-yellow" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  <a href="#aanvraag" className="block w-full text-center border-2 border-dark text-dark py-3 rounded-lg font-semibold hover:bg-dark hover:text-white transition-all">
-                    Meer info
-                  </a>
-                </div>
+                ))}
               </div>
 
-              {/* Maatwerk CTA */}
               <div className="bg-gradient-to-r from-accent-yellow/20 via-accent-yellow/10 to-accent-yellow/20 rounded-2xl p-8 border-2 border-accent-yellow/30">
                 <div className="flex items-center justify-center gap-2 text-accent-yellow mb-4">
                   <MessageSquare className="w-6 h-6" />
@@ -827,7 +641,14 @@ export default function AdviesOpMaat() {
           </div>
         </section>
 
-        {/* AANVRAAG SECTIE - Prominenter dan bij andere pagina's */}
+        {/* TESTIMONIALS */}
+        <Testimonials 
+          title="Wat klanten van Riekhoff zeggen"
+          filter="algemeen"
+          bgColor="gray"
+        />
+
+        {/* AANVRAAG SECTIE */}
         <section id="aanvraag" className="py-20 lg:py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
           <div className="absolute top-0 right-0 w-96 h-96 bg-accent-yellow/10 rounded-full blur-3xl" />
           
@@ -879,7 +700,6 @@ export default function AdviesOpMaat() {
                 </div>
               </div>
 
-              {/* Contact opties */}
               <div className="grid lg:grid-cols-3 gap-6">
                 <div className="bg-white rounded-xl p-6 border-2 border-gray-100 hover:border-accent-yellow transition-all">
                   <Phone className="w-8 h-8 text-accent-yellow mb-4" />
@@ -903,7 +723,7 @@ export default function AdviesOpMaat() {
                   <MessageSquare className="w-8 h-8 text-accent-yellow mb-4" />
                   <h3 className="font-bold mb-2">Plan een gesprek</h3>
                   <p className="text-gray-600 text-sm mb-4">Vrijblijvend sparren op kantoor</p>
-                  <a href="#contact" className="text-accent-yellow font-semibold hover:text-dark transition-colors">
+                  <a href="/contact" className="text-accent-yellow font-semibold hover:text-dark transition-colors">
                     Maak afspraak →
                   </a>
                 </div>
@@ -989,28 +809,9 @@ export default function AdviesOpMaat() {
                   </details>
                 ))}
               </div>
-
-              <div className="mt-12 text-center bg-gray-50 rounded-xl p-8 border-2 border-accent-yellow/20">
-                <h3 className="text-xl font-bold mb-3">Specifieke vraag over uw situatie?</h3>
-                <p className="text-gray-600 mb-6">
-                  Bespreek uw unieke situatie met Riekhoff. Het eerste gesprek is gratis.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                  <a href="tel:+31541200007" className="inline-flex items-center justify-center gap-2 bg-accent-yellow text-dark px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all text-sm">
-                    <Phone className="w-4 h-4" />
-                    Bel: 0541 200 007
-                  </a>
-                  <a href="mailto:info@riekhoff.nl" className="inline-flex items-center justify-center gap-2 border-2 border-gray-300 text-dark px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all text-sm">
-                    <Mail className="w-4 h-4" />
-                    Mail ons
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </section>
-
-    
 
       </div>
     </>

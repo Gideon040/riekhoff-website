@@ -1,6 +1,7 @@
 import React from 'react';
 import DienstenGrid from './components/DienstenGrid';
 import RiekhoffHeader from './components/RiekhoffHeader';
+import Testimonials from './components/Testimonials';
 import { 
   ArrowRight, 
   Heart,
@@ -8,8 +9,6 @@ import {
   ShieldCheck,
   Mail,
   Phone,
-  Quote,
-  Star,
   Check,
   MapPin,
   Clock,
@@ -18,37 +17,6 @@ import {
 } from 'lucide-react';
 
 export default function Homepage() {
-  const testimonials = [
-    { 
-      name: 'Bedrijf A', 
-      company: 'MKB Bedrijf', 
-      text: 'Uitstekende service en altijd bereikbaar. Riekhoff denkt actief mee met onze fiscale planning.', 
-      rating: 5,
-      logo: 'placeholder-logo-a.jpg'
-    },
-    { 
-      name: 'Bedrijf B', 
-      company: 'Productiebedrijf', 
-      text: 'Transparant, deskundig en persoonlijk. Precies wat wij zochten in een accountant.', 
-      rating: 5,
-      logo: 'placeholder-logo-b.jpg'
-    },
-    { 
-      name: 'Bedrijf C', 
-      company: 'Retailonderneming', 
-      text: 'De combinatie van moderne tools en persoonlijke aandacht maakt het verschil.', 
-      rating: 5,
-      logo: 'placeholder-logo-c.jpg'
-    },
-    { 
-      name: 'Bedrijf D', 
-      company: 'Dienstverlener', 
-      text: 'Snelle responstijd en altijd een passende oplossing. Een betrouwbare partner.', 
-      rating: 5,
-      logo: 'placeholder-logo-d.jpg'
-    },
-  ];
-
   const faqs = [
     { 
       q: 'Wat kost Riekhoff accountants en adviseurs?', 
@@ -472,74 +440,13 @@ export default function Homepage() {
           </div>
         </section>
 
-        {/* TESTIMONIALS - Auto-scrolling */}
-        <section className="py-20 md:py-24 bg-white">
-          <div className="container mx-auto px-6">
-            <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-16">
-                <div className="inline-block bg-gray-100 px-4 py-2 rounded-lg mb-6">
-                  <span className="text-xs font-semibold text-gray-600 uppercase tracking-wider">Reviews</span>
-                </div>
-                
-                <h2 className="text-3xl lg:text-5xl font-bold mb-4">
-                  Wat klanten <span className="text-accent-yellow">vertellen</span>
-                </h2>
-              </div>
-
-              {/* Auto-scrolling testimonials */}
-              <div className="relative overflow-hidden">
-                <div className="flex animate-scroll-slow gap-6">
-                  {/* Eerste set testimonials */}
-                  {testimonials.map((t, i) => (
-                    <div key={`first-${i}`} className="flex-shrink-0 w-80 bg-gray-50 p-6 lg:p-8 rounded-lg border border-gray-200 hover:border-accent-yellow transition-all">
-                      <div className="mb-4">
-                        <img 
-                          src={t.logo} 
-                          alt={`${t.name} logo`}
-                          className="h-12 w-auto object-contain grayscale opacity-60"
-                        />
-                      </div>
-                      <Quote className="w-10 h-10 text-accent-yellow mb-4" />
-                      <div className="flex items-center gap-1 mb-4">
-                        {[...Array(t.rating)].map((_, j) => (
-                          <Star key={j} className="w-4 h-4 fill-accent-yellow text-accent-yellow" />
-                        ))}
-                      </div>
-                      <p className="text-base text-gray-600 leading-relaxed mb-6 italic">&quot;{t.text}&quot;</p>
-                      <div className="pt-6 border-t border-gray-200">
-                        <div className="text-base font-bold">{t.name}</div>
-                        <div className="text-sm text-gray-500">{t.company}</div>
-                      </div>
-                    </div>
-                  ))}
-                  {/* Duplicaat voor naadloze loop */}
-                  {testimonials.map((t, i) => (
-                    <div key={`second-${i}`} className="flex-shrink-0 w-80 bg-gray-50 p-6 lg:p-8 rounded-lg border border-gray-200 hover:border-accent-yellow transition-all">
-                      <div className="mb-4">
-                        <img 
-                          src={t.logo} 
-                          alt={`${t.name} logo`}
-                          className="h-12 w-auto object-contain grayscale opacity-60"
-                        />
-                      </div>
-                      <Quote className="w-10 h-10 text-accent-yellow mb-4" />
-                      <div className="flex items-center gap-1 mb-4">
-                        {[...Array(t.rating)].map((_, j) => (
-                          <Star key={j} className="w-4 h-4 fill-accent-yellow text-accent-yellow" />
-                        ))}
-                      </div>
-                      <p className="text-base text-gray-600 leading-relaxed mb-6 italic">&quot;{t.text}&quot;</p>
-                      <div className="pt-6 border-t border-gray-200">
-                        <div className="text-base font-bold">{t.name}</div>
-                        <div className="text-sm text-gray-500">{t.company}</div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* TESTIMONIALS - Imported Component */}
+        <Testimonials 
+          title="Wat klanten vertellen"
+          showLabel={true}
+          label="Reviews"
+          bgColor="white"
+        />
 
         {/* FAQ */}
         <section className="py-20 md:py-24 bg-gray-50">

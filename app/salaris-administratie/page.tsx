@@ -1,8 +1,8 @@
 import React from 'react';
+import Testimonials from '../components/Testimonials';
 import { 
   ArrowRight,
   Phone,
-  Mail,
   CheckCircle2,
   ChevronRight,
   Users,
@@ -10,15 +10,12 @@ import {
   Calculator,
   Calendar,
   Clock,
-  Euro,
   Building2,
   Shield,
-  Award,
   Zap
 } from 'lucide-react';
 
 export default function Salarisadministratie() {
-  // Data voor de pagina
   const voordelen = [
     'Altijd op tijd uitbetaald',
     'Correcte loonheffingen',
@@ -27,7 +24,7 @@ export default function Salarisadministratie() {
     'Verzuimregistratie',
     'Jaaropgaven automatisch',
     'Persoonlijk aanspreekpunt',
-    'Vaste lage tarieven'
+    'Transparante tarieven'
   ];
 
   const proces = [
@@ -60,12 +57,12 @@ export default function Salarisadministratie() {
 
   const faqs = [
     {
-      question: 'Wat kost salarisadministratie bij Riekhoff in Oldenzaal?',
-      answer: 'Salarisadministratie kost bij Riekhoff vanaf €25,- per loonstrook. Voor bedrijven tot 5 medewerkers hebben we een starttarief van €125,- per maand. Voor grotere bedrijven in Oldenzaal en Twente maken we graag een offerte op maat. Het eerste gesprek is altijd vrijblijvend en we bieden transparante, vaste tarieven zonder verrassingen.'
+      question: 'Wat kost salarisadministratie bij Riekhoff?',
+      answer: 'De kosten voor salarisadministratie zijn afhankelijk van het aantal medewerkers, de complexiteit van de CAO, en eventuele extra diensten zoals verzuimbegeleiding of HR-advies. Omdat iedere situatie uniek is, stellen wij graag een persoonlijke offerte voor u op. In een vrijblijvend gesprek bespreken we uw situatie en geven we een indicatie van de investering. Neem contact op voor een offerte op maat.'
     },
     {
       question: 'Hoe snel kan Riekhoff mijn salarisadministratie overnemen?',
-      answer: 'Riekhoff kan uw salarisadministratie binnen 5 werkdagen overnemen. We zorgen voor een soepele overgang van uw huidige situatie. Het team haalt alle benodigde gegevens op, richt de administratie in en zorgt dat de eerstvolgende salarisrun perfect verloopt. Voor ondernemers in Oldenzaal kunnen we indien nodig nog sneller schakelen.'
+      answer: 'Riekhoff kan uw salarisadministratie binnen enkele werkdagen overnemen. We zorgen voor een soepele overgang van uw huidige situatie. Het team haalt alle benodigde gegevens op, richt de administratie in en zorgt dat de eerstvolgende salarisrun perfect verloopt. Voor ondernemers in Oldenzaal kunnen we indien nodig nog sneller schakelen.'
     },
     {
       question: 'Voor welke bedrijven doet Riekhoff de salarisadministratie?',
@@ -81,7 +78,7 @@ export default function Salarisadministratie() {
     },
     {
       question: 'Hoe werkt de maandelijkse salarisverwerking bij Riekhoff?',
-      answer: 'U levert voor de 20e van de maand de mutaties aan via e-mail of ons online portaal. Riekhoff verwerkt de salarissen binnen 2 werkdagen. U ontvangt de concept loonstroken ter controle. Na uw akkoord maken we het betaalbestand aan en sturen de definitieve loonstroken naar uw medewerkers. De aangifte loonheffingen doen we automatisch. Bedrijven in Twente waarderen onze snelle en foutloze verwerking.'
+      answer: 'U levert voor een afgesproken datum de mutaties aan via e-mail of ons online portaal. Riekhoff verwerkt de salarissen binnen enkele werkdagen. U ontvangt de concept loonstroken ter controle. Na uw akkoord maken we het betaalbestand aan en sturen de definitieve loonstroken naar uw medewerkers. De aangifte loonheffingen doen we automatisch. Bedrijven in Twente waarderen onze snelle en foutloze verwerking.'
     },
     {
       question: 'Kan Riekhoff ook helpen met arbeidscontracten?',
@@ -101,7 +98,7 @@ export default function Salarisadministratie() {
     },
     {
       question: 'Kan ik als ZZPer ook gebruik maken van salarisadministratie?',
-      answer: 'Ja, zodra u als ZZPer uw eerste medewerker aanneemt, verzorgt Riekhoff graag uw salarisadministratie. We helpen met de aanmelding als werkgever bij de Belastingdienst, het aanvragen van een loonheffingennummer en het opstellen van het eerste arbeidscontract. Voor startende werkgevers in Oldenzaal hebben we een speciaal starterstarief.'
+      answer: 'Ja, zodra u als ZZPer uw eerste medewerker aanneemt, verzorgt Riekhoff graag uw salarisadministratie. We helpen met de aanmelding als werkgever bij de Belastingdienst, het aanvragen van een loonheffingennummer en het opstellen van het eerste arbeidscontract. Voor startende werkgevers in Oldenzaal bieden we ondersteuning op maat.'
     },
     {
       question: 'Hoe werkt het met vakantiegeld en eindejaarsuitkering?',
@@ -115,7 +112,7 @@ export default function Salarisadministratie() {
     "@type": "Service",
     "serviceType": "Salarisadministratie en personeelsadministratie",
     "name": "Salarisadministratie Oldenzaal - Riekhoff",
-    "description": "Riekhoff verzorgt complete salarisadministratie voor MKB in Oldenzaal en Twente. Loonverwerking, loonstroken, aangifte loonheffingen en personeelsadministratie vanaf €25 per loonstrook.",
+    "description": "Riekhoff verzorgt complete salarisadministratie voor MKB in Oldenzaal en Twente. Loonverwerking, loonstroken, aangifte loonheffingen en personeelsadministratie.",
     "provider": {
       "@type": "AccountingService",
       "name": "Riekhoff Accountants en Adviseurs",
@@ -139,13 +136,7 @@ export default function Salarisadministratie() {
       {"@type": "City", "name": "Almelo"},
       {"@type": "AdministrativeArea", "name": "Twente"},
       {"@type": "AdministrativeArea", "name": "Overijssel"}
-    ],
-    "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "EUR",
-      "lowPrice": "25",
-      "highPrice": "500"
-    }
+    ]
   };
 
   const faqSchema = {
@@ -180,8 +171,8 @@ export default function Salarisadministratie() {
 
       <div className="bg-white text-dark">
         
-        {/* COMPACT HERO */}
-        <section className="relative w-full overflow-hidden h-96">
+        {/* SUBTLE HERO */}
+        <section className="relative w-full overflow-hidden h-80">
           <div className="absolute inset-0 bg-dark" />
           <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
             <img
@@ -195,7 +186,7 @@ export default function Salarisadministratie() {
           <div className="relative z-10 h-full flex items-center">
             <div className="max-w-[1440px] w-full mx-auto px-6 lg:px-16">
               <div className="max-w-[500px]">
-                <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+                <div className="flex items-center gap-2 text-xs text-gray-400 mb-6">
                   <a href="/" className="hover:text-accent-yellow transition-colors">Home</a>
                   <span>/</span>
                   <a href="/#diensten" className="hover:text-accent-yellow transition-colors">Diensten</a>
@@ -203,24 +194,13 @@ export default function Salarisadministratie() {
                   <span className="text-white">Salarisadministratie</span>
                 </div>
                 
-                <p className="text-accent-yellow uppercase mb-4 text-sm font-semibold tracking-wider">
+                <p className="text-accent-yellow uppercase mb-3 text-xs font-semibold tracking-wider">
                   PERSONEELSZAKEN
                 </p>
                 
-                <h1 className="text-white text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+                <h1 className="text-white text-2xl lg:text-3xl font-bold leading-snug">
                   Salarisadministratie voor MKB in Oldenzaal
                 </h1>
-                
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <a href="#contact" className="bg-accent-yellow text-dark px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all inline-flex items-center justify-center gap-2 text-sm">
-                    Start direct
-                    <ArrowRight className="w-4 h-4" />
-                  </a>
-                  <a href="tel:+31541200007" className="border-2 border-white/30 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2 text-sm">
-                    <Phone className="w-4 h-4" />
-                    0541 200 007
-                  </a>
-                </div>
               </div>
             </div>
           </div>
@@ -270,7 +250,7 @@ export default function Salarisadministratie() {
 
                   <div className="pt-8 border-t border-gray-200">
                     <p className="text-sm font-semibold text-gray-700 mb-3">Wilt u de salarisadministratie uitbesteden?</p>
-                    <a href="#contact" className="inline-flex items-center gap-2 bg-accent-yellow text-dark px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all text-sm">
+                    <a href="/contact" className="inline-flex items-center gap-2 bg-accent-yellow text-dark px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all text-sm">
                       Vraag offerte aan
                       <ArrowRight className="w-4 h-4" />
                     </a>
@@ -288,8 +268,8 @@ export default function Salarisadministratie() {
                       <div className="flex items-center gap-3">
                         <Users className="w-8 h-8 text-dark" />
                         <div>
-                          <div className="text-xl font-bold text-dark">€25,-</div>
-                          <div className="text-xs text-dark/70">per loonstrook</div>
+                          <div className="text-xl font-bold text-dark">MKB</div>
+                          <div className="text-xs text-dark/70">Specialist</div>
                         </div>
                       </div>
                     </div>
@@ -300,7 +280,7 @@ export default function Salarisadministratie() {
           </div>
         </section>
 
-        {/* DIENSTEN - Visual design like DienstenGrid */}
+        {/* DIENSTEN */}
         <section className="py-20 lg:py-24 bg-gray-50 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-accent-yellow/8 via-transparent to-accent-yellow/8" />
           <div className="absolute top-1/4 left-1/4 w-1/2 h-1/2 bg-accent-yellow/12 blur-3xl" />
@@ -325,7 +305,7 @@ export default function Salarisadministratie() {
               <div className="grid lg:grid-cols-12 gap-6">
                 {/* Loonverwerking - Large */}
                 <div className="lg:col-span-7">
-                  <a href="#contact" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] lg:h-[500px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
+                  <a href="/contact" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] lg:h-[500px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
                     <div className="absolute inset-0">
                       <img
                         src="riekhoff-man-lachend.jpg"
@@ -357,7 +337,7 @@ export default function Salarisadministratie() {
                         ))}
                       </ul>
                       <div className="flex items-center gap-2 text-accent-yellow font-bold text-sm uppercase tracking-wider">
-                        €25,- per loonstrook
+                        Vraag offerte aan
                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                       </div>
                     </div>
@@ -366,7 +346,7 @@ export default function Salarisadministratie() {
 
                 {/* Aangifte loonheffingen */}
                 <div className="lg:col-span-5">
-                  <a href="#contact" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] lg:h-[500px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
+                  <a href="/contact" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] lg:h-[500px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
                     <div className="absolute inset-0">
                       <img
                         src="riekhoff-werk-schermen.jpg"
@@ -406,7 +386,7 @@ export default function Salarisadministratie() {
 
                 {/* Jaaropgaven */}
                 <div className="lg:col-span-6">
-                  <a href="#contact" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
+                  <a href="/contact" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
                     <div className="absolute inset-0">
                       <img
                         src="kantoor_skyline.jpg"
@@ -446,7 +426,7 @@ export default function Salarisadministratie() {
 
                 {/* Pensioenadministratie */}
                 <div className="lg:col-span-6">
-                  <a href="#contact" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
+                  <a href="/contact" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
                     <div className="absolute inset-0">
                       <img
                         src="koffie_gesprek.jpg"
@@ -511,7 +491,7 @@ export default function Salarisadministratie() {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">Altijd op tijd</h3>
                 <p className="text-gray-400 text-sm">
-                  Salarissen altijd voor de 25e uitbetaald
+                  Salarissen altijd tijdig uitbetaald
                 </p>
               </div>
 
@@ -584,7 +564,7 @@ export default function Salarisadministratie() {
                 <p className="text-gray-600 mb-4">
                   Start vandaag nog met professionele salarisadministratie
                 </p>
-                <a href="#contact" className="inline-flex items-center gap-2 bg-accent-yellow text-dark px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-all">
+                <a href="/contact" className="inline-flex items-center gap-2 bg-accent-yellow text-dark px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-all">
                   Vraag offerte aan
                   <ArrowRight className="w-5 h-5" />
                 </a>
@@ -593,172 +573,12 @@ export default function Salarisadministratie() {
           </div>
         </section>
 
-        {/* TARIEVEN - Visual cards */}
-        <section className="py-20 lg:py-24 bg-white relative overflow-hidden">
-          <div className="absolute inset-0">
-            <div className="absolute top-0 right-0 w-96 h-96 bg-accent-yellow/10 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent-yellow/5 rounded-full blur-3xl" />
-          </div>
-          
-          <div className="container mx-auto px-6 relative z-10">
-            <div className="max-w-7xl mx-auto">
-              <div className="mb-16">
-                <div className="bg-accent-yellow/10 px-4 py-2 rounded-lg mb-6 inline-block">
-                  <span className="text-xs font-semibold text-accent-yellow uppercase tracking-wider">
-                    Transparante tarieven
-                  </span>
-                </div>
-                <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                  Wat kost salarisadministratie bij <span className="text-accent-yellow">Riekhoff</span>?
-                </h2>
-                <p className="text-gray-600 max-w-2xl">
-                  Vaste, lage tarieven voor loonadministratie. Geen verrassingen, altijd duidelijk 
-                  wat u betaalt. Voor bedrijven in Oldenzaal en Twente.
-                </p>
-              </div>
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-                {/* Per loonstrook - Featured */}
-                <div className="group relative bg-gradient-to-br from-dark to-dark-secondary rounded-2xl p-8 border-2 border-transparent hover:border-accent-yellow transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
-                  <div className="absolute top-4 right-4">
-                    <div className="bg-accent-yellow text-dark px-3 py-1 rounded-full text-xs font-bold uppercase">
-                      Meest gekozen
-                    </div>
-                  </div>
-                  
-                  <div className="mb-6">
-                    <h3 className="text-white font-bold text-xl mb-2">Per loonstrook</h3>
-                    <p className="text-gray-400 text-sm">Flexibel tarief per medewerker</p>
-                  </div>
-                  
-                  <div className="mb-6">
-                    <div className="text-accent-yellow">
-                      <span className="text-4xl font-bold">€25</span>
-                      <span className="text-lg">,-</span>
-                    </div>
-                    <p className="text-gray-400 text-xs mt-1">per loonstrook per maand</p>
-                  </div>
-                  
-                  <ul className="space-y-2 mb-6">
-                    {['Complete loonberekening', 'Digitale loonstrook', 'Aangifte loonheffingen', 'Jaaropgave inbegrepen'].map((item, i) => (
-                      <li key={i} className="flex items-center gap-2 text-sm text-gray-300">
-                        <CheckCircle2 className="w-4 h-4 text-accent-yellow" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  <a href="#contact" className="block w-full text-center bg-accent-yellow text-dark py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all">
-                    Start direct
-                  </a>
-                </div>
-
-                {/* Starterstarief */}
-                <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border-2 border-gray-200 hover:border-accent-yellow transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
-                  <div className="absolute top-4 right-4">
-                    <div className="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase">
-                      Starters
-                    </div>
-                  </div>
-                  
-                  <div className="mb-6">
-                    <h3 className="text-dark font-bold text-xl mb-2">Starterstarief</h3>
-                    <p className="text-gray-600 text-sm">Tot 5 medewerkers</p>
-                  </div>
-                  
-                  <div className="mb-6">
-                    <div className="text-dark">
-                      <span className="text-4xl font-bold">€125</span>
-                      <span className="text-lg">,-</span>
-                    </div>
-                    <p className="text-gray-500 text-xs mt-1">per maand (all-in)</p>
-                  </div>
-                  
-                  <ul className="space-y-2 mb-6">
-                    {['Maximaal 5 loonstroken', 'Alle diensten inbegrepen', 'Ideaal voor starters', 'Geen opstartkosten'].map((item, i) => (
-                      <li key={i} className="flex items-center gap-2 text-sm text-gray-700">
-                        <CheckCircle2 className="w-4 h-4 text-accent-yellow" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  <a href="#contact" className="block w-full text-center border-2 border-dark text-dark py-3 rounded-lg font-semibold hover:bg-dark hover:text-white transition-all">
-                    Vraag aan
-                  </a>
-                </div>
-
-                {/* Volume tarief */}
-                <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border-2 border-gray-200 hover:border-accent-yellow transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
-                  <div className="mb-6">
-                    <h3 className="text-dark font-bold text-xl mb-2">Volume tarief</h3>
-                    <p className="text-gray-600 text-sm">Vanaf 20 medewerkers</p>
-                  </div>
-                  
-                  <div className="mb-6">
-                    <div className="text-dark">
-                      <span className="text-4xl font-bold">€20</span>
-                      <span className="text-lg">,-</span>
-                    </div>
-                    <p className="text-gray-500 text-xs mt-1">per loonstrook (korting)</p>
-                  </div>
-                  
-                  <ul className="space-y-2 mb-6">
-                    {['Volume korting', 'Dedicated contactpersoon', 'Priority support', 'Maatwerk rapportages'].map((item, i) => (
-                      <li key={i} className="flex items-center gap-2 text-sm text-gray-700">
-                        <CheckCircle2 className="w-4 h-4 text-accent-yellow" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  <a href="#contact" className="block w-full text-center border-2 border-dark text-dark py-3 rounded-lg font-semibold hover:bg-dark hover:text-white transition-all">
-                    Offerte aanvragen
-                  </a>
-                </div>
-
-                {/* Extra diensten */}
-                <div className="lg:col-span-3 grid md:grid-cols-3 gap-6">
-                  <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
-                    <h4 className="font-bold mb-2">Verzuimregistratie</h4>
-                    <p className="text-sm text-gray-600 mb-3">Complete verzuimbegeleiding</p>
-                    <p className="text-accent-yellow font-bold">€15,- p/m</p>
-                  </div>
-                  
-                  <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
-                    <h4 className="font-bold mb-2">HR Advies</h4>
-                    <p className="text-sm text-gray-600 mb-3">Arbeidsrecht ondersteuning</p>
-                    <p className="text-accent-yellow font-bold">€95,- per uur</p>
-                  </div>
-                  
-                  <div className="bg-gray-50 rounded-xl p-6 border border-gray-200">
-                    <h4 className="font-bold mb-2">Contracten opstellen</h4>
-                    <p className="text-sm text-gray-600 mb-3">Arbeidscontracten op maat</p>
-                    <p className="text-accent-yellow font-bold">vanaf €75,-</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Maatwerk CTA */}
-              <div className="bg-gradient-to-r from-accent-yellow/20 via-accent-yellow/10 to-accent-yellow/20 rounded-2xl p-8 border-2 border-accent-yellow/30">
-                <div className="flex items-center justify-center gap-2 text-accent-yellow mb-4">
-                  <Euro className="w-6 h-6" />
-                  <p className="font-bold text-lg">Geen verborgen kosten</p>
-                </div>
-                <p className="text-center text-gray-600 mb-6 max-w-2xl mx-auto">
-                  Bij Riekhoff werkt u met vaste, transparante tarieven. Geen opstartkosten, geen verrassingen. 
-                  Het eerste gesprek is altijd vrijblijvend.
-                </p>
-                <div className="text-center">
-                  <a href="#contact" className="inline-flex items-center gap-2 bg-dark text-white px-8 py-4 rounded-lg font-semibold hover:bg-dark-secondary transition-all">
-                    Vraag vrijblijvende offerte aan
-                    <ArrowRight className="w-4 h-4" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* TESTIMONIALS */}
+        <Testimonials 
+          title="Wat klanten van Riekhoff zeggen"
+          filter="salaris"
+          bgColor="gray"
+        />
 
         {/* QUOTE SECTION */}
         <section className="py-24 bg-dark text-white relative overflow-hidden">
@@ -784,7 +604,7 @@ export default function Salarisadministratie() {
 
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-2xl font-bold mb-3">100% foutloos sinds 2020</h3>
+                  <h3 className="text-2xl font-bold mb-3">Foutloze verwerking sinds 2020</h3>
                   <p className="text-gray-300 leading-relaxed">
                     Riekhoff heeft sinds de oprichting in 2020 duizenden loonstroken verwerkt voor bedrijven 
                     in Oldenzaal en Twente. Altijd correct, altijd op tijd.
@@ -829,28 +649,9 @@ export default function Salarisadministratie() {
                   </details>
                 ))}
               </div>
-
-              <div className="mt-12 text-center bg-gray-50 rounded-xl p-8 border-2 border-accent-yellow/20">
-                <h3 className="text-xl font-bold mb-3">Heeft u een specifieke vraag?</h3>
-                <p className="text-gray-600 mb-6">
-                  Neem contact op met Riekhoff voor persoonlijk advies over salarisadministratie
-                </p>
-                <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                  <a href="tel:+31541200007" className="inline-flex items-center justify-center gap-2 bg-accent-yellow text-dark px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all text-sm">
-                    <Phone className="w-4 h-4" />
-                    Bel: 0541 200 007
-                  </a>
-                  <a href="mailto:info@riekhoff.nl" className="inline-flex items-center justify-center gap-2 border-2 border-gray-300 text-dark px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all text-sm">
-                    <Mail className="w-4 h-4" />
-                    Mail ons
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </section>
-
-        
 
       </div>
     </>

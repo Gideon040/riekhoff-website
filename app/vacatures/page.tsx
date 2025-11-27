@@ -127,10 +127,7 @@ export default function VacaturesPage() {
       question: 'Hoe ziet de werkcultuur eruit bij Riekhoff?',
       answer: 'Ons kantoor heeft een open sfeer waarbij professionaliteit en collegialiteit hand in hand gaan. We zijn positief-kritisch, tonen deskundigheid en werken samen als team. Informele omgang, korte lijnen en ruimte voor eigen inbreng.'
     },
-    {
-      question: 'Is thuiswerken mogelijk bij Riekhoff?',
-      answer: 'Ja, we bieden flexibele werkvormen. In overleg kun je deels thuiswerken. We vinden het wel belangrijk dat er regelmatig momenten zijn waarop het hele team bij elkaar is op kantoor in Oldenzaal.'
-    }
+
   ];
 
   // Schema.org markup

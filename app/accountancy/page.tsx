@@ -1,4 +1,5 @@
 import React from 'react';
+import Testimonials from '../components/Testimonials';
 import { 
   Calculator,
   CheckCircle2,
@@ -10,8 +11,7 @@ import {
   Phone,
   Users,
   Shield,
-  Clock,
-  Euro
+  Clock
 } from 'lucide-react';
 import { Metadata } from 'next';
 
@@ -65,35 +65,11 @@ export default function AccountancyPage() {
     'Snelle service - binnen 24 uur reactie'
   ];
 
-  const tarieven = [
-    { dienst: 'Belastingaangifte eenmanszaak', prijs: 'vanaf €350,-' },
-    { dienst: 'Belastingaangifte BV', prijs: 'vanaf €750,-' },
-    { dienst: 'Jaarrekening samenstellen', prijs: 'vanaf €500,-' },
-    { dienst: 'Maandelijkse administratie', prijs: 'vanaf €150,- p/m' },
-  ];
-
-  const testimonials = [
-    {
-      name: 'Jan S.',
-      company: 'Eenmanszaak Oldenzaal',
-      text: 'Riekhoff heeft mijn belastingaangifte perfect geregeld. Snelle service en persoonlijke aandacht!',
-      rating: 5
-    },
-    {
-      name: 'Maria K.',
-      company: 'MKB Bedrijf Twente',
-      text: 'Eindelijk een accountant die meedenkt. De administratie is altijd op orde en ik krijg proactief advies.',
-      rating: 5
-    },
-    {
-      name: 'Peter H.',
-      company: 'BV Oldenzaal',
-      text: 'Kleinschalig kantoor met de expertise van een groot bureau. Riekhoff is een aanrader!',
-      rating: 5
-    },
-  ];
-
   const faqs = [
+    {
+      question: 'Wat kost accountancy bij Riekhoff?',
+      answer: 'De kosten voor accountancy zijn maatwerk en afhankelijk van diverse factoren zoals de omvang van uw onderneming, het aantal transacties, de complexiteit van uw administratie en de gewenste dienstverlening. Omdat iedere situatie uniek is, stellen wij graag een persoonlijke offerte voor u op. Neem contact met ons op voor een vrijblijvend kennismakingsgesprek waarin we uw wensen bespreken en een passend voorstel doen.'
+    },
     {
       question: 'Wat is het verschil tussen een samenstelopdracht en een controle-opdracht?',
       answer: 'Bij een samenstelopdracht stelt Riekhoff de jaarrekening samen op basis van de door jou aangeleverde gegevens. Een controle-opdracht gaat verder en houdt in dat een accountant de jaarrekening controleert en een accountantsverklaring afgeeft. Voor de meeste MKB-bedrijven in Oldenzaal en Twente is een samenstelopdracht voldoende.'
@@ -116,7 +92,7 @@ export default function AccountancyPage() {
     },
   ];
 
-  // Schema.org data
+  // Schema.org data (zonder concrete prijzen)
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -145,20 +121,6 @@ export default function AccountancyPage() {
       { "@type": "AdministrativeArea", "name": "Twente" },
       { "@type": "AdministrativeArea", "name": "Overijssel" }
     ],
-    "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "EUR",
-      "lowPrice": "350",
-      "highPrice": "1500",
-      "offers": tarieven.map(t => ({
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": t.dienst
-        },
-        "description": t.prijs
-      }))
-    },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Accountancy diensten Riekhoff",
@@ -227,56 +189,56 @@ export default function AccountancyPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-<div className="bg-white text-dark">
+      <div className="bg-white text-dark">
   
-  {/* SUBTLE HERO */}
-  <section className="relative w-full overflow-hidden h-80">
-    {/* Background - Dark color */}
-    <div className="absolute inset-0 bg-dark" />
+        {/* SUBTLE HERO */}
+        <section className="relative w-full overflow-hidden h-80">
+          {/* Background - Dark color */}
+          <div className="absolute inset-0 bg-dark" />
 
-    {/* Background Image */}
-    <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
-      <img
-        src="/riekhoff-werk-schermen.jpg"
-        alt="Accountancy Riekhoff Oldenzaal"
-        className="w-full h-full object-cover object-center"
-      />
-    </div>
-
-    {/* Gradient Overlay */}
-    <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-dark/30 lg:from-dark lg:via-dark/90 lg:to-transparent" />
-
-    {/* Content Container */}
-    <div className="relative z-10 h-full flex items-center">
-      <div className="max-w-[1440px] w-full mx-auto px-6 lg:px-16">
-        <div className="max-w-[500px]">
-          
-          {/* Breadcrumb */}
-          <div className="flex items-center gap-2 text-xs text-gray-400 mb-6">
-            <a href="/" className="hover:text-accent-yellow transition-colors">Home</a>
-            <span>/</span>
-            <a href="/#diensten" className="hover:text-accent-yellow transition-colors">Diensten</a>
-            <span>/</span>
-            <span className="text-white">Accountancy</span>
+          {/* Background Image */}
+          <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
+            <img
+              src="/riekhoff-werk-schermen.jpg"
+              alt="Accountancy Riekhoff Oldenzaal"
+              className="w-full h-full object-cover object-center"
+            />
           </div>
 
-          {/* Label */}
-          <p className="text-accent-yellow uppercase mb-3 text-xs font-semibold tracking-wider">
-            JAARREKENINGEN
-          </p>
+          {/* Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-dark/30 lg:from-dark lg:via-dark/90 lg:to-transparent" />
 
-          {/* Main Heading */}
-          <h1 className="text-white text-2xl lg:text-3xl font-bold leading-snug">
-            Accountancy voor MKB ondernemers in Oldenzaal
-          </h1>
+          {/* Content Container */}
+          <div className="relative z-10 h-full flex items-center">
+            <div className="max-w-[1440px] w-full mx-auto px-6 lg:px-16">
+              <div className="max-w-[500px]">
+                
+                {/* Breadcrumb */}
+                <div className="flex items-center gap-2 text-xs text-gray-400 mb-6">
+                  <a href="/" className="hover:text-accent-yellow transition-colors">Home</a>
+                  <span>/</span>
+                  <a href="/#diensten" className="hover:text-accent-yellow transition-colors">Diensten</a>
+                  <span>/</span>
+                  <span className="text-white">Accountancy</span>
+                </div>
 
-        </div>
-      </div>
-    </div>
+                {/* Label */}
+                <p className="text-accent-yellow uppercase mb-3 text-xs font-semibold tracking-wider">
+                  JAARREKENINGEN
+                </p>
 
-    {/* Mobile: Extra dark overlay */}
-    <div className="absolute inset-0 lg:hidden bg-gradient-to-b from-black/30 via-transparent to-black/30" />
-  </section>
+                {/* Main Heading */}
+                <h1 className="text-white text-2xl lg:text-3xl font-bold leading-snug">
+                  Accountancy voor MKB ondernemers in Oldenzaal
+                </h1>
+
+              </div>
+            </div>
+          </div>
+
+          {/* Mobile: Extra dark overlay */}
+          <div className="absolute inset-0 lg:hidden bg-gradient-to-b from-black/30 via-transparent to-black/30" />
+        </section>
 
         {/* INTRO */}
         <section className="py-20 lg:py-24 bg-white">
@@ -363,82 +325,12 @@ export default function AccountancyPage() {
           </div>
         </section>
 
-        {/* TARIEVEN - NIEUW! */}
-        <section className="py-20 lg:py-24 bg-white">
-          <div className="container mx-auto px-6">
-            <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-16">
-                <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                  Wat kost accountancy bij <span className="text-accent-yellow">Riekhoff</span>?
-                </h2>
-                <p className="text-gray-600 max-w-2xl mx-auto">
-                  Transparante tarieven voor ondernemers in Oldenzaal en Twente. 
-                  Neem contact op voor een vrijblijvende offerte op maat.
-                </p>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                {tarieven.map((tarief, i) => (
-                  <div key={i} className="bg-gray-50 rounded-xl p-6 border-2 border-gray-100 hover:border-accent-yellow transition-all">
-                    <div className="flex items-start justify-between gap-4">
-                      <div className="flex-1">
-                        <h3 className="font-bold mb-2">{tarief.dienst}</h3>
-                      </div>
-                      <div className="text-accent-yellow font-bold text-lg whitespace-nowrap">
-                        {tarief.prijs}
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="text-center mt-8">
-                <p className="text-sm text-gray-500 mb-4">
-                  Prijzen zijn indicatief en afhankelijk van de complexiteit van je administratie
-                </p>
-                <a 
-                  href="#contact" 
-                  className="inline-flex items-center gap-2 text-dark font-semibold hover:text-accent-yellow transition-colors"
-                >
-                  Vraag offerte aan
-                  <ArrowRight className="w-4 h-4" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* TESTIMONIALS - NIEUW! */}
-        <section className="py-20 lg:py-24 bg-gray-50">
-          <div className="container mx-auto px-6">
-            <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-16">
-                <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                  Wat klanten van <span className="text-accent-yellow">Riekhoff</span> zeggen
-                </h2>
-              </div>
-
-              <div className="grid md:grid-cols-3 gap-8">
-                {testimonials.map((testimonial, i) => (
-                  <div key={i} className="bg-white rounded-xl p-8 border-2 border-gray-100">
-                    <div className="flex items-center gap-1 mb-4">
-                      {[...Array(testimonial.rating)].map((_, j) => (
-                        <svg key={j} className="w-5 h-5 fill-accent-yellow text-accent-yellow" viewBox="0 0 20 20">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                        </svg>
-                      ))}
-                    </div>
-                    <p className="text-gray-600 italic mb-6">&quot;{testimonial.text}&quot;</p>
-                    <div className="pt-6 border-t border-gray-200">
-                      <div className="font-bold">{testimonial.name}</div>
-                      <div className="text-sm text-gray-500">{testimonial.company}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* TESTIMONIALS - Imported Component */}
+        <Testimonials 
+          title="Wat klanten van Riekhoff zeggen"
+          filter="accountancy"
+          bgColor="white"
+        />
 
         {/* USP'S BANNER */}
         <section className="py-16 bg-dark">
@@ -478,7 +370,7 @@ export default function AccountancyPage() {
         </section>
 
         {/* FAQ */}
-        <section className="py-20 lg:py-24 bg-white">
+        <section className="py-20 lg:py-24 bg-gray-50">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16">
@@ -492,7 +384,7 @@ export default function AccountancyPage() {
 
               <div className="space-y-4">
                 {faqs.map((faq, i) => (
-                  <details key={i} className="group bg-gray-50 rounded-xl border-2 border-gray-100 hover:border-accent-yellow transition-all">
+                  <details key={i} className="group bg-white rounded-xl border-2 border-gray-100 hover:border-accent-yellow transition-all">
                     <summary className="flex items-center justify-between p-6 cursor-pointer">
                       <h3 className="font-bold pr-8">{faq.question}</h3>
                       <ArrowRight className="w-5 h-5 text-accent-yellow transform group-open:rotate-90 transition-transform flex-shrink-0" />
@@ -503,12 +395,36 @@ export default function AccountancyPage() {
                   </details>
                 ))}
               </div>
+
+              {/* CTA naar contact */}
+              <div className="text-center mt-12 p-8 bg-accent-yellow/5 rounded-xl border-2 border-accent-yellow/20">
+                <h3 className="text-2xl font-bold mb-4">
+                  Benieuwd wat Riekhoff voor jou kan betekenen?
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  Neem contact op voor een vrijblijvend kennismakingsgesprek en een offerte op maat.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a 
+                    href="/contact" 
+                    className="inline-flex items-center justify-center gap-2 bg-accent-yellow text-dark px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-all"
+                  >
+                    <Mail className="w-5 h-5" />
+                    Neem contact op
+                  </a>
+                  <a 
+                    href="tel:+31541200007" 
+                    className="inline-flex items-center justify-center gap-2 border-2 border-dark text-dark px-8 py-4 rounded-lg font-semibold hover:bg-dark hover:text-white transition-all"
+                  >
+                    <Phone className="w-5 h-5" />
+                    0541 200 007
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
-
-
-
+        
       </div>
     </>
   );

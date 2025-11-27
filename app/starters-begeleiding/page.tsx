@@ -1,4 +1,5 @@
 import React from 'react';
+import Testimonials from '../components/Testimonials';
 import { 
   ArrowRight,
   Phone,
@@ -10,17 +11,12 @@ import {
   Calculator,
   Users,
   Clock,
-  Euro,
   Target,
-  TrendingUp,
   Shield,
-  Sparkles,
-  Briefcase,
-  BookOpen
+  Sparkles
 } from 'lucide-react';
 
 export default function Startersbegeleiding() {
-  // Data voor de pagina
   const diensten = [
     {
       icon: Building2,
@@ -57,7 +53,7 @@ export default function Startersbegeleiding() {
     {
       nummer: '02',
       titel: 'Plan van aanpak',
-      beschrijving: 'Riekhoff maakt een stappenplan voor uw onderneming: van KvK-inschrijving tot eerste klant. Inclusief tijdlijn, to-do lijst en overzicht van kosten voor starters in Oldenzaal.'
+      beschrijving: 'Riekhoff maakt een stappenplan voor uw onderneming: van KvK-inschrijving tot eerste klant. Inclusief tijdlijn, to-do lijst en overzicht voor starters in Oldenzaal.'
     },
     {
       nummer: '03',
@@ -76,18 +72,9 @@ export default function Startersbegeleiding() {
     }
   ];
 
-  const tarieven = [
-    { dienst: 'Starterspakket Basis', prijs: 'vanaf €125/maand' },
-    { dienst: 'Starterspakket Plus', prijs: 'vanaf €195/maand' },
-    { dienst: 'Ondernemingsplan', prijs: 'vanaf €750,-' },
-    { dienst: 'Rechtsvorm advies', prijs: 'vanaf €350,-' },
-    { dienst: 'BV oprichten (all-in)', prijs: 'vanaf €1.250,-' },
-    { dienst: 'Administratie setup', prijs: 'vanaf €450,-' }
-  ];
-
   const voordelen = [
-    'Specialist voor starters sinds 2020',
-    'Vaste lage maandprijs',
+    'Specialist voor starters',
+    'Vaste maandprijs',
     'Persoonlijke begeleiding',
     'Kennis van subsidies',
     'Netwerk in Twente',
@@ -98,8 +85,8 @@ export default function Startersbegeleiding() {
 
   const faqs = [
     {
-      question: 'Wat kost startersbegeleiding bij Riekhoff in Oldenzaal?',
-      answer: 'Startersbegeleiding bij Riekhoff kost vanaf €125,- per maand voor het basispakket. Dit is inclusief kwartaal check-ups, BTW-aangiften en basis boekhouding. Het uitgebreide pakket kost vanaf €195,- per maand en bevat extra diensten zoals salarisadministratie en maandrapportages. Maatwerk is altijd mogelijk voor ondernemers in Oldenzaal.'
+      question: 'Wat kost startersbegeleiding bij Riekhoff?',
+      answer: 'De kosten voor startersbegeleiding zijn afhankelijk van de diensten die u nodig heeft, zoals rechtsvorm advies, ondernemingsplan, administratie setup en de intensiteit van begeleiding. Omdat iedere starter uniek is, stellen wij graag een persoonlijke offerte voor u op. In een vrijblijvend gesprek bespreken we uw plannen en geven we een indicatie van de maandelijkse of eenmalige investering. Neem contact op voor een offerte op maat.'
     },
     {
       question: 'Wanneer is het beste moment om een accountant in te schakelen als starter?',
@@ -107,7 +94,7 @@ export default function Startersbegeleiding() {
     },
     {
       question: 'Moet ik als starter een BV oprichten of kan ik beter als eenmanszaak beginnen?',
-      answer: 'Dit hangt af van uw situatie. Een eenmanszaak is snel en goedkoop op te richten, ideaal voor starters in Oldenzaal met weinig risico. Een BV biedt bescherming van privévermogen en is fiscaal voordeliger vanaf €50.000 winst. Riekhoff maakt een persoonlijke berekening welke rechtsvorm het beste past bij uw plannen in Twente.'
+      answer: 'Dit hangt af van uw situatie. Een eenmanszaak is snel en goedkoop op te richten, ideaal voor starters in Oldenzaal met weinig risico. Een BV biedt bescherming van privévermogen en kan fiscaal voordeliger zijn bij hogere winsten. Riekhoff maakt een persoonlijke berekening welke rechtsvorm het beste past bij uw plannen in Twente.'
     },
     {
       question: 'Welke administratieve verplichtingen heb ik als startende ondernemer?',
@@ -123,7 +110,7 @@ export default function Startersbegeleiding() {
     },
     {
       question: 'Wat is het verschil tussen de starterspakketten van Riekhoff?',
-      answer: 'Het Basis pakket (€125/maand) bevat: BTW-aangiften, jaarstukken, kwartaal check-ups en basis advies. Het Plus pakket (€195/maand) bevat extra: maandrapportages, liquiditeitsprognose, salarisadministratie tot 3 personen en onbeperkt advies. Beide pakketten zijn speciaal voor starters in Oldenzaal met vaste lage prijzen.'
+      answer: 'Riekhoff biedt verschillende starterspakketten, van basis begeleiding tot complete ondersteuning met maandrapportages en salarisadministratie. Welk pakket bij u past hangt af van uw situatie en behoeften. In een persoonlijk gesprek bespreken we wat u nodig heeft en stellen we een passend pakket samen voor starters in Oldenzaal.'
     },
     {
       question: 'Moet ik verstand hebben van boekhouden om te starten?',
@@ -131,7 +118,7 @@ export default function Startersbegeleiding() {
     },
     {
       question: 'Kan ik later overstappen van eenmanszaak naar BV?',
-      answer: 'Ja, dit kan altijd. Riekhoff begeleidt veel ondernemers in Twente bij deze overstap. We adviseren het juiste moment (meestal bij €50.000+ winst), regelen de geruisloze inbreng en begeleiden het hele traject. De overstap kan fiscaal voordelig gebeuren zonder afrekenen over stille reserves.'
+      answer: 'Ja, dit kan altijd. Riekhoff begeleidt veel ondernemers in Twente bij deze overstap. We adviseren het juiste moment (vaak bij hogere winsten), regelen de geruisloze inbreng en begeleiden het hele traject. De overstap kan fiscaal voordelig gebeuren zonder afrekenen over stille reserves.'
     },
     {
       question: 'Wat gebeurt er na het eerste jaar met de begeleiding?',
@@ -145,7 +132,7 @@ export default function Startersbegeleiding() {
     "@type": "Service",
     "serviceType": "Startersbegeleiding",
     "name": "Startersbegeleiding Oldenzaal",
-    "description": "Riekhoff begeleidt startende ondernemers in Oldenzaal en Twente. Van rechtsvorm advies tot administratie opzetten. Complete startersbegeleiding vanaf €125 per maand.",
+    "description": "Riekhoff begeleidt startende ondernemers in Oldenzaal en Twente. Van rechtsvorm advies tot administratie opzetten. Complete startersbegeleiding met persoonlijke aanpak.",
     "provider": {
       "@type": "AccountingService",
       "name": "Riekhoff Accountants en Adviseurs",
@@ -169,13 +156,7 @@ export default function Startersbegeleiding() {
       {"@type": "City", "name": "Almelo"},
       {"@type": "AdministrativeArea", "name": "Twente"},
       {"@type": "AdministrativeArea", "name": "Overijssel"}
-    ],
-    "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "EUR",
-      "lowPrice": "125",
-      "highPrice": "1250"
-    }
+    ]
   };
 
   const faqSchema = {
@@ -210,12 +191,12 @@ export default function Startersbegeleiding() {
 
       <div className="bg-white text-dark">
         
-        {/* COMPACT HERO - Same structure as Financiele page */}
-        <section className="relative w-full overflow-hidden h-96">
+        {/* SUBTLE HERO */}
+        <section className="relative w-full overflow-hidden h-80">
           <div className="absolute inset-0 bg-dark" />
           <div className="absolute top-0 right-0 w-full lg:w-4/5 h-full lg:-mr-20">
             <img
-              src="kantoor_open_2.jpg"
+              src="/kantoor_open_2.jpg"
               alt="Startersbegeleiding Oldenzaal"
               className="w-full h-full object-cover object-center"
             />
@@ -225,7 +206,7 @@ export default function Startersbegeleiding() {
           <div className="relative z-10 h-full flex items-center">
             <div className="max-w-[1440px] w-full mx-auto px-6 lg:px-16">
               <div className="max-w-[500px]">
-                <div className="flex items-center gap-2 text-sm text-gray-400 mb-4">
+                <div className="flex items-center gap-2 text-xs text-gray-400 mb-6">
                   <a href="/" className="hover:text-accent-yellow transition-colors">Home</a>
                   <span>/</span>
                   <a href="/#diensten" className="hover:text-accent-yellow transition-colors">Diensten</a>
@@ -233,24 +214,13 @@ export default function Startersbegeleiding() {
                   <span className="text-white">Startersbegeleiding</span>
                 </div>
                 
-                <p className="text-accent-yellow uppercase mb-4 text-sm font-semibold tracking-wider">
+                <p className="text-accent-yellow uppercase mb-3 text-xs font-semibold tracking-wider">
                   VOOR STARTENDE ONDERNEMERS
                 </p>
                 
-                <h1 className="text-white text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+                <h1 className="text-white text-2xl lg:text-3xl font-bold leading-snug">
                   Startersbegeleiding voor ondernemers in Oldenzaal
                 </h1>
-                
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <a href="#contact" className="bg-accent-yellow text-dark px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all inline-flex items-center justify-center gap-2 text-sm">
-                    Start uw onderneming
-                    <ArrowRight className="w-4 h-4" />
-                  </a>
-                  <a href="tel:+31541200007" className="border-2 border-white/30 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-all inline-flex items-center justify-center gap-2 text-sm">
-                    <Phone className="w-4 h-4" />
-                    0541 200 007
-                  </a>
-                </div>
               </div>
             </div>
           </div>
@@ -269,7 +239,7 @@ export default function Startersbegeleiding() {
                 </div>
                 <div className="lg:col-span-1 lg:mt-4">
                   <p className="text-lg text-gray-600 leading-relaxed">
-                    Riekhoff Accountants in Oldenzaal helpt starters in Twente met persoonlijke begeleiding vanaf dag één. Van rechtsvorm advies tot complete administratie. Vanaf €125 per maand.
+                    Riekhoff Accountants in Oldenzaal helpt starters in Twente met persoonlijke begeleiding vanaf dag één. Van rechtsvorm advies tot complete administratie.
                   </p>
                 </div>
               </div>
@@ -300,7 +270,7 @@ export default function Startersbegeleiding() {
 
                   <div className="pt-8 border-t border-gray-200">
                     <p className="text-sm font-semibold text-gray-700 mb-3">Klaar om te starten als ondernemer?</p>
-                    <a href="#contact" className="inline-flex items-center gap-2 bg-accent-yellow text-dark px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all text-sm">
+                    <a href="/contact" className="inline-flex items-center gap-2 bg-accent-yellow text-dark px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all text-sm">
                       Plan gratis startgesprek
                       <ArrowRight className="w-4 h-4" />
                     </a>
@@ -310,7 +280,7 @@ export default function Startersbegeleiding() {
                 <div className="lg:col-span-1">
                   <div className="relative">
                     <img 
-                      src="kantoor_open_2.jpg"
+                      src="/kantoor_open_2.jpg"
                       alt="Starter Oldenzaal Riekhoff"
                       className="rounded-2xl shadow-xl w-full h-auto"
                     />
@@ -319,7 +289,7 @@ export default function Startersbegeleiding() {
                         <Sparkles className="w-8 h-8 text-dark" />
                         <div>
                           <div className="text-xl font-bold text-dark">50+</div>
-                          <div className="text-xs text-dark/70">Starters begeleid in 2024</div>
+                          <div className="text-xs text-dark/70">Starters begeleid</div>
                         </div>
                       </div>
                     </div>
@@ -330,9 +300,8 @@ export default function Startersbegeleiding() {
           </div>
         </section>
 
-        {/* DIENSTEN - Modern visual design */}
+        {/* DIENSTEN */}
         <section className="py-20 lg:py-24 bg-gray-50 relative overflow-hidden">
-          {/* Subtle gradient effect */}
           <div className="absolute inset-0 bg-gradient-to-b from-accent-yellow/8 via-transparent to-accent-yellow/8" />
           <div className="absolute top-1/4 left-1/4 w-1/2 h-1/2 bg-accent-yellow/12 blur-3xl" />
           
@@ -353,14 +322,13 @@ export default function Startersbegeleiding() {
                 </p>
               </div>
 
-              {/* Asymmetric grid with visual cards */}
               <div className="grid lg:grid-cols-12 gap-6">
-                {/* Row 1 - Large card left, medium right */}
+                {/* Rechtsvorm advies - Large */}
                 <div className="lg:col-span-7">
-                  <a href="#contact" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] lg:h-[500px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
+                  <a href="/contact" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] lg:h-[500px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
                     <div className="absolute inset-0">
                       <img
-                        src="riekhoff-man-closeup.jpg"
+                        src="/riekhoff-man-closeup.jpg"
                         alt="Rechtsvorm advies"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
@@ -389,18 +357,19 @@ export default function Startersbegeleiding() {
                         ))}
                       </ul>
                       <div className="flex items-center gap-2 text-accent-yellow font-bold text-sm uppercase tracking-wider">
-                        Vanaf €350,-
+                        Vraag offerte aan
                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                       </div>
                     </div>
                   </a>
                 </div>
 
+                {/* Ondernemingsplan */}
                 <div className="lg:col-span-5">
-                  <a href="#contact" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] lg:h-[500px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
+                  <a href="/contact" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] lg:h-[500px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
                     <div className="absolute inset-0">
                       <img
-                        src="riekhoff-man-meeting.jpg"
+                        src="/riekhoff-man-meeting.jpg"
                         alt="Ondernemingsplan"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
@@ -428,19 +397,19 @@ export default function Startersbegeleiding() {
                         ))}
                       </ul>
                       <div className="flex items-center gap-2 text-accent-yellow font-bold text-sm uppercase tracking-wider">
-                        Vanaf €750,-
+                        Op maat
                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                       </div>
                     </div>
                   </a>
                 </div>
 
-                {/* Row 2 - Medium cards */}
+                {/* Administratie opzetten */}
                 <div className="lg:col-span-6">
-                  <a href="#contact" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
+                  <a href="/contact" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
                     <div className="absolute inset-0">
                       <img
-                        src="riekhoff-vrouw-bureau.jpg"
+                        src="/riekhoff-vrouw-bureau.jpg"
                         alt="Administratie opzetten"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
@@ -468,18 +437,19 @@ export default function Startersbegeleiding() {
                         ))}
                       </ul>
                       <div className="flex items-center gap-2 text-accent-yellow font-bold text-sm uppercase tracking-wider">
-                        Vanaf €450,-
+                        Eenmalig
                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                       </div>
                     </div>
                   </a>
                 </div>
 
+                {/* Eerste jaar begeleiding */}
                 <div className="lg:col-span-6">
-                  <a href="#contact" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
+                  <a href="/contact" className="relative block overflow-hidden rounded-2xl group cursor-pointer h-[400px] border-2 border-gray-100 hover:border-accent-yellow transition-all duration-500">
                     <div className="absolute inset-0">
                       <img
-                        src="vergader_deur.jpg"
+                        src="/vergader_deur.jpg"
                         alt="Eerste jaar begeleiding"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
@@ -496,7 +466,7 @@ export default function Startersbegeleiding() {
                       </div>
                       <h3 className="text-white font-bold text-xl lg:text-2xl mb-3">Eerste jaar begeleiding</h3>
                       <p className="text-gray-300 mb-4 text-sm">
-                        Complete ondersteuning tijdens het cruciale eerste jaar. Met vaste lage maandprijs.
+                        Complete ondersteuning tijdens het cruciale eerste jaar. Met vaste maandprijs.
                       </p>
                       <ul className="space-y-1.5 mb-4">
                         {['Kwartaal check-ups', 'BTW aangiften', 'Proactief advies'].map((item, i) => (
@@ -507,7 +477,7 @@ export default function Startersbegeleiding() {
                         ))}
                       </ul>
                       <div className="flex items-center gap-2 text-accent-yellow font-bold text-sm uppercase tracking-wider">
-                        Vanaf €125/maand
+                        Vaste prijs
                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                       </div>
                     </div>
@@ -537,9 +507,9 @@ export default function Startersbegeleiding() {
             <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 text-center">
               <div>
                 <div className="w-16 h-16 bg-accent-yellow/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Euro className="w-8 h-8 text-accent-yellow" />
+                  <Sparkles className="w-8 h-8 text-accent-yellow" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">€125/maand</h3>
+                <h3 className="text-xl font-bold text-white mb-2">Starters Specialist</h3>
                 <p className="text-gray-400 text-sm">
                   Vaste lage prijs voor complete begeleiding
                 </p>
@@ -549,7 +519,7 @@ export default function Startersbegeleiding() {
                 <div className="w-16 h-16 bg-accent-yellow/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Clock className="w-8 h-8 text-accent-yellow" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">Binnen 1 week</h3>
+                <h3 className="text-xl font-bold text-white mb-2">Snelle Start</h3>
                 <p className="text-gray-400 text-sm">
                   Snel gestart met uw onderneming
                 </p>
@@ -614,7 +584,7 @@ export default function Startersbegeleiding() {
                 <p className="text-gray-600 mb-4">
                   Start vandaag nog uw onderneming met begeleiding van Riekhoff
                 </p>
-                <a href="#contact" className="inline-flex items-center gap-2 bg-accent-yellow text-dark px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-all">
+                <a href="/contact" className="inline-flex items-center gap-2 bg-accent-yellow text-dark px-8 py-4 rounded-lg font-semibold hover:bg-yellow-400 transition-all">
                   Plan gratis startgesprek
                   <ArrowRight className="w-5 h-5" />
                 </a>
@@ -623,246 +593,17 @@ export default function Startersbegeleiding() {
           </div>
         </section>
 
-        {/* TARIEVEN - Visual card design */}
-        <section className="py-20 lg:py-24 bg-white relative overflow-hidden">
-          {/* Subtle gradient background */}
-          <div className="absolute inset-0">
-            <div className="absolute top-0 right-0 w-96 h-96 bg-accent-yellow/10 rounded-full blur-3xl" />
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent-yellow/5 rounded-full blur-3xl" />
-          </div>
-          
-          <div className="container mx-auto px-6 relative z-10">
-            <div className="max-w-7xl mx-auto">
-              <div className="mb-16">
-                <div className="bg-accent-yellow/10 px-4 py-2 rounded-lg mb-6 inline-block">
-                  <span className="text-xs font-semibold text-accent-yellow uppercase tracking-wider">
-                    Transparante prijzen
-                  </span>
-                </div>
-                <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-                  Investeer in een <span className="text-accent-yellow">goede start</span>
-                </h2>
-                <p className="text-gray-600 max-w-2xl">
-                  Vaste lage prijzen voor starters in Oldenzaal. Geen verrassingen, 
-                  altijd duidelijk wat u krijgt.
-                </p>
-              </div>
-
-              {/* Visual pricing cards grid */}
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-                {/* Starterspakket Basis - Featured */}
-                <div className="group relative bg-gradient-to-br from-dark to-dark-secondary rounded-2xl p-8 border-2 border-transparent hover:border-accent-yellow transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
-                  <div className="absolute top-4 right-4">
-                    <div className="bg-accent-yellow text-dark px-3 py-1 rounded-full text-xs font-bold uppercase">
-                      Populair
-                    </div>
-                  </div>
-                  
-                  <div className="mb-6">
-                    <h3 className="text-white font-bold text-xl mb-2">Starterspakket Basis</h3>
-                    <p className="text-gray-400 text-sm">Alles wat u nodig heeft om te starten</p>
-                  </div>
-                  
-                  <div className="mb-6">
-                    <div className="text-accent-yellow">
-                      <span className="text-4xl font-bold">€125</span>
-                      <span className="text-lg">/maand</span>
-                    </div>
-                    <p className="text-gray-400 text-xs mt-1">vaste prijs eerste jaar</p>
-                  </div>
-                  
-                  <ul className="space-y-2 mb-6">
-                    {['BTW aangiften', 'Jaarstukken', 'Kwartaal check-ups', 'Basis advies'].map((item, i) => (
-                      <li key={i} className="flex items-center gap-2 text-sm text-gray-300">
-                        <CheckCircle2 className="w-4 h-4 text-accent-yellow" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  <a href="#contact" className="block w-full text-center bg-accent-yellow text-dark py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all">
-                    Start nu
-                  </a>
-                </div>
-
-                {/* Starterspakket Plus */}
-                <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border-2 border-gray-200 hover:border-accent-yellow transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
-                  <div className="mb-6">
-                    <h3 className="text-dark font-bold text-xl mb-2">Starterspakket Plus</h3>
-                    <p className="text-gray-600 text-sm">Extra begeleiding en services</p>
-                  </div>
-                  
-                  <div className="mb-6">
-                    <div className="text-dark">
-                      <span className="text-4xl font-bold">€195</span>
-                      <span className="text-lg">/maand</span>
-                    </div>
-                    <p className="text-gray-500 text-xs mt-1">inclusief meer diensten</p>
-                  </div>
-                  
-                  <ul className="space-y-2 mb-6">
-                    {['Alles uit Basis', 'Maandrapportages', 'Salarisadministratie', 'Onbeperkt advies'].map((item, i) => (
-                      <li key={i} className="flex items-center gap-2 text-sm text-gray-700">
-                        <CheckCircle2 className="w-4 h-4 text-accent-yellow" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  <a href="#contact" className="block w-full text-center border-2 border-dark text-dark py-3 rounded-lg font-semibold hover:bg-dark hover:text-white transition-all">
-                    Meer info
-                  </a>
-                </div>
-
-                {/* Ondernemingsplan */}
-                <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border-2 border-gray-200 hover:border-accent-yellow transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
-                  <div className="mb-6">
-                    <h3 className="text-dark font-bold text-xl mb-2">Ondernemingsplan</h3>
-                    <p className="text-gray-600 text-sm">Voor financiering of subsidie</p>
-                  </div>
-                  
-                  <div className="mb-6">
-                    <div className="text-dark">
-                      <span className="text-4xl font-bold">€750</span>
-                      <span className="text-lg">,-</span>
-                    </div>
-                    <p className="text-gray-500 text-xs mt-1">eenmalig</p>
-                  </div>
-                  
-                  <ul className="space-y-2 mb-6">
-                    {['Marktanalyse', '3 jaar prognose', 'Break-even', 'Presentatie'].map((item, i) => (
-                      <li key={i} className="flex items-center gap-2 text-sm text-gray-700">
-                        <CheckCircle2 className="w-4 h-4 text-accent-yellow" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  <a href="#contact" className="block w-full text-center border-2 border-dark text-dark py-3 rounded-lg font-semibold hover:bg-dark hover:text-white transition-all">
-                    Meer info
-                  </a>
-                </div>
-
-                {/* Rechtsvorm advies */}
-                <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border-2 border-gray-200 hover:border-accent-yellow transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
-                  <div className="mb-6">
-                    <h3 className="text-dark font-bold text-xl mb-2">Rechtsvorm advies</h3>
-                    <p className="text-gray-600 text-sm">Eenmanszaak of BV?</p>
-                  </div>
-                  
-                  <div className="mb-6">
-                    <div className="text-dark">
-                      <span className="text-4xl font-bold">€350</span>
-                      <span className="text-lg">,-</span>
-                    </div>
-                    <p className="text-gray-500 text-xs mt-1">incl. berekeningen</p>
-                  </div>
-                  
-                  <ul className="space-y-2 mb-6">
-                    {['Fiscale vergelijking', 'Risico analyse', 'Groei scenarios', 'Adviesgesprek'].map((item, i) => (
-                      <li key={i} className="flex items-center gap-2 text-sm text-gray-700">
-                        <CheckCircle2 className="w-4 h-4 text-accent-yellow" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  <a href="#contact" className="block w-full text-center border-2 border-dark text-dark py-3 rounded-lg font-semibold hover:bg-dark hover:text-white transition-all">
-                    Meer info
-                  </a>
-                </div>
-
-                {/* BV oprichten */}
-                <div className="group relative bg-gradient-to-br from-dark to-dark-secondary rounded-2xl p-8 border-2 border-transparent hover:border-accent-yellow transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
-                  <div className="mb-6">
-                    <h3 className="text-white font-bold text-xl mb-2">BV oprichten</h3>
-                    <p className="text-gray-400 text-sm">All-in begeleiding</p>
-                  </div>
-                  
-                  <div className="mb-6">
-                    <div className="text-accent-yellow">
-                      <span className="text-4xl font-bold">€1.250</span>
-                      <span className="text-lg">,-</span>
-                    </div>
-                    <p className="text-gray-400 text-xs mt-1">inclusief notaris</p>
-                  </div>
-                  
-                  <ul className="space-y-2 mb-6">
-                    {['Notaris geregeld', 'Statuten opstellen', 'KvK inschrijving', 'BTW nummer'].map((item, i) => (
-                      <li key={i} className="flex items-center gap-2 text-sm text-gray-300">
-                        <CheckCircle2 className="w-4 h-4 text-accent-yellow" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  <a href="#contact" className="block w-full text-center bg-accent-yellow text-dark py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all">
-                    Direct regelen
-                  </a>
-                </div>
-
-                {/* Administratie setup */}
-                <div className="group relative bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border-2 border-gray-200 hover:border-accent-yellow transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl">
-                  <div className="absolute top-4 right-4">
-                    <div className="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase">
-                      Aanrader
-                    </div>
-                  </div>
-                  
-                  <div className="mb-6">
-                    <h3 className="text-dark font-bold text-xl mb-2">Administratie setup</h3>
-                    <p className="text-gray-600 text-sm">Direct goed geregeld</p>
-                  </div>
-                  
-                  <div className="mb-6">
-                    <div className="text-dark">
-                      <span className="text-4xl font-bold">€450</span>
-                      <span className="text-lg">,-</span>
-                    </div>
-                    <p className="text-gray-500 text-xs mt-1">inclusief training</p>
-                  </div>
-                  
-                  <ul className="space-y-2 mb-6">
-                    {['Software inrichten', 'Grootboekschema', 'Factuur templates', 'Training 2 uur'].map((item, i) => (
-                      <li key={i} className="flex items-center gap-2 text-sm text-gray-700">
-                        <CheckCircle2 className="w-4 h-4 text-accent-yellow" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  <a href="#contact" className="block w-full text-center border-2 border-dark text-dark py-3 rounded-lg font-semibold hover:bg-dark hover:text-white transition-all">
-                    Meer info
-                  </a>
-                </div>
-              </div>
-
-              {/* Special offer CTA */}
-              <div className="bg-gradient-to-r from-accent-yellow/20 via-accent-yellow/10 to-accent-yellow/20 rounded-2xl p-8 border-2 border-accent-yellow/30">
-                <div className="flex items-center justify-center gap-2 text-accent-yellow mb-4">
-                  <Sparkles className="w-6 h-6" />
-                  <p className="font-bold text-lg">Speciaal voor starters</p>
-                </div>
-                <p className="text-center text-gray-600 mb-6 max-w-2xl mx-auto">
-                  Het eerste gesprek is altijd gratis en vrijblijvend. Kom langs op ons kantoor in Oldenzaal 
-                  voor een kop koffie en persoonlijk advies over uw ondernemingsplannen.
-                </p>
-                <div className="text-center">
-                  <a href="#contact" className="inline-flex items-center gap-2 bg-dark text-white px-8 py-4 rounded-lg font-semibold hover:bg-dark-secondary transition-all">
-                    Plan gratis startgesprek
-                    <ArrowRight className="w-4 h-4" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* TESTIMONIALS */}
+        <Testimonials 
+          title="Wat klanten van Riekhoff zeggen"
+          bgColor="gray"
+        />
 
         {/* QUOTE SECTION */}
         <section className="py-24 bg-dark text-white relative overflow-hidden">
           <div className="absolute inset-0 opacity-10">
             <img 
-              src="skyline_detail.jpg"
+              src="/skyline_detail.jpg"
               alt="Oldenzaal centrum"
               className="w-full h-full object-cover"
             />
@@ -872,7 +613,7 @@ export default function Startersbegeleiding() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div>
                 <blockquote className="text-3xl lg:text-4xl font-bold leading-tight mb-8">
-                  "Wij geloven in starters. Daarom maken we professionele begeleiding betaalbaar met vaste lage maandprijzen."
+                  "Wij geloven in starters. Daarom maken we professionele begeleiding betaalbaar met persoonlijke aandacht."
                 </blockquote>
                 <cite className="block">
                   <p className="text-accent-yellow text-xl font-semibold mb-1">Bas Riekhoff</p>
@@ -882,14 +623,14 @@ export default function Startersbegeleiding() {
 
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-2xl font-bold mb-3">50+ starters begeleid</h3>
+                  <h3 className="text-2xl font-bold mb-3">Meer dan 50 starters begeleid</h3>
                   <p className="text-gray-300 leading-relaxed">
-                    Sinds 2020 hebben we meer dan 50 starters in Oldenzaal en Twente geholpen 
+                    We hebben inmiddels meer dan 50 starters in Oldenzaal en Twente geholpen 
                     met het opzetten van hun onderneming. Van ZZP tot BV.
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-3">90% groeit door</h3>
+                  <h3 className="text-2xl font-bold mb-3">Hoog succespercentage</h3>
                   <p className="text-gray-300 leading-relaxed">
                     Het merendeel van onze starters is na 3 jaar nog actief en groeiend. 
                     Dat komt door goede begeleiding vanaf dag één.
@@ -900,7 +641,7 @@ export default function Startersbegeleiding() {
           </div>
         </section>
 
-        {/* FAQ */}
+{/* FAQ */}
         <section className="py-20 lg:py-24 bg-white">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
@@ -927,28 +668,9 @@ export default function Startersbegeleiding() {
                   </details>
                 ))}
               </div>
-
-              <div className="mt-12 text-center bg-gray-50 rounded-xl p-8 border-2 border-accent-yellow/20">
-                <h3 className="text-xl font-bold mb-3">Andere vragen over starten?</h3>
-                <p className="text-gray-600 mb-6">
-                  Het eerste gesprek is gratis. Kom langs voor persoonlijk advies in Oldenzaal.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                  <a href="tel:+31541200007" className="inline-flex items-center justify-center gap-2 bg-accent-yellow text-dark px-6 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition-all text-sm">
-                    <Phone className="w-4 h-4" />
-                    Bel: 0541 200 007
-                  </a>
-                  <a href="mailto:info@riekhoff.nl" className="inline-flex items-center justify-center gap-2 border-2 border-gray-300 text-dark px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all text-sm">
-                    <Mail className="w-4 h-4" />
-                    Mail ons
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </section>
-
-       
 
       </div>
     </>

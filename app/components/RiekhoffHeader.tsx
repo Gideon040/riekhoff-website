@@ -51,8 +51,8 @@ const RiekhoffHeader = () => {
           description: 'Belastingaangifte en fiscaal advies'
         },
         {
-          label: 'Financiële dienstverlening',
-          href: '/financiele-dienstverlening',
+          label: 'Financiële administratie',
+          href: '/financiele-administratie',
           icon: TrendingUp,
           description: 'Businessplannen en financiering'
         },
