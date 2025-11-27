@@ -1,0 +1,36 @@
+# Riekhoff Accountants & Adviseurs - robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.riekhoff.nl/sitemap.xml
+
+# Block access to admin and test areas
+Disallow: /admin/
+Disallow: /test/
+Disallow: /_next/
+Disallow: /api/
+
+# Block access to specific file types
+Disallow: /*.json$
+Disallow: /*.pdf$
+
+# Allow specific directories
+Allow: /accountancy
+Allow: /diensten/
+Allow: /over-ons
+Allow: /contact
+Allow: /faq
+Allow: /vacatures
+Allow: /advies-op-maat
+
+# Crawl delay (optional, removes if too restrictive)
+Crawl-delay: 1
+
+# Block specific bots (optional)
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10

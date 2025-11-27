@@ -5,9 +5,7 @@ import {
   MapPin,
   Clock,
   ArrowRight,
-  Facebook,
   Linkedin,
-  Instagram,
   Award,
   Shield,
   Star,
@@ -19,10 +17,10 @@ const RiekhoffFooter = () => {
 
   const diensten = [
     { label: 'Accountancy', href: '/accountancy' },
-    { label: 'Fiscale dienstverlening', href: '/fiscale-dienstverlening' },
-    { label: 'Financiële dienstverlening', href: '/financiele-dienstverlening' },
-    { label: 'Salarisadministratie', href: '/salarisadministratie' },
-    { label: 'Startersbegeleiding', href: '/startersbegeleiding' },
+    { label: 'Fiscale dienstverlening', href: '/diensten/fiscale-dienstverlening' },
+    { label: 'Financiële administratie', href: '/diensten/financiele-administratie' },
+    { label: 'Salarisadministratie', href: '/diensten/salarisadministratie' },
+    { label: 'Startersbegeleiding', href: '/diensten/startersbegeleiding' },
     { label: 'Advies op maat', href: '/advies-op-maat' }
   ];
 
@@ -31,8 +29,8 @@ const RiekhoffFooter = () => {
     { label: 'Het team', href: '/over-ons#team' },
     { label: 'FAQ', href: '/faq' },
     { label: 'Contact', href: '/contact' },
-    { label: 'Werken bij', href: '/vacatures' },
-    { label: 'Privacy', href: '/privacy' }
+    { label: 'Vacatures', href: '/vacatures' },
+    { label: 'De Accountant Verklaart', href: '/accountant-verklaart' }
   ];
 
   return (
@@ -194,40 +192,27 @@ const RiekhoffFooter = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
 
-            {/* Social Media */}
-            <div className="mt-12 pt-8 border-t border-white/10">
-              <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                <div className="flex items-center gap-4">
+                {/* LinkedIn alleen */}
+                <div className="mt-6">
                   <a
-                    href="https://facebook.com"
-                    aria-label="Facebook"
-                    className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-accent-yellow hover:text-dark transition-all"
-                  >
-                    <Facebook className="w-5 h-5" />
-                  </a>
-                  <a
-                    href="https://linkedin.com"
+                    href="https://linkedin.com/company/riekhoff-accountants"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label="LinkedIn"
-                    className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-accent-yellow hover:text-dark transition-all"
+                    className="inline-flex w-10 h-10 rounded-lg bg-white/10 items-center justify-center hover:bg-accent-yellow hover:text-dark transition-all"
                   >
                     <Linkedin className="w-5 h-5" />
                   </a>
-                  <a
-                    href="https://instagram.com"
-                    aria-label="Instagram"
-                    className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center hover:bg-accent-yellow hover:text-dark transition-all"
-                  >
-                    <Instagram className="w-5 h-5" />
-                  </a>
                 </div>
-                
-                <p className="text-gray-400 text-sm">
-                  Werkgebied: Oldenzaal, Losser, Denekamp, Enschede, Hengelo, Almelo en heel Twente
-                </p>
               </div>
+            </div>
+
+            {/* Werkgebied */}
+            <div className="mt-12 pt-8 border-t border-white/10">
+              <p className="text-gray-400 text-sm text-center">
+                Werkgebied: Oldenzaal, Losser, Denekamp, Enschede, Hengelo, Almelo en heel Twente
+              </p>
             </div>
           </div>
         </div>
@@ -244,13 +229,13 @@ const RiekhoffFooter = () => {
               <a href="/privacy" className="hover:text-accent-yellow transition-colors">
                 Privacy
               </a>
-              <a href="/voorwaarden" className="hover:text-accent-yellow transition-colors">
+              <a href="/algemene-voorwaarden" className="hover:text-accent-yellow transition-colors">
                 Voorwaarden
               </a>
-              <a href="/cookies" className="hover:text-accent-yellow transition-colors">
-                Cookies
+              <a href="/klachtenregeling" className="hover:text-accent-yellow transition-colors">
+                Klachten
               </a>
-              <a href="/sitemap" className="hover:text-accent-yellow transition-colors">
+              <a href="/sitemap.xml" className="hover:text-accent-yellow transition-colors">
                 Sitemap
               </a>
             </div>
